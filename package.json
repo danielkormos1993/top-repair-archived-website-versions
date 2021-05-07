@@ -1,0 +1,11 @@
+{
+  "name": "toprepair.hu_v4.0",
+  "version": "4.0.0",
+  "description": "TOP REPAIR dent removal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Kormos",
+  "license": "ISC"
+}
