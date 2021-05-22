@@ -57,6 +57,10 @@ app.get('/kapcsolat', (req,res)=>{
     res.render('layouts/layout.ejs', { page: 'contact'});
 });
 
+app.get('*', (req,res)=>{
+    res.render('layouts/layout.ejs', { page: 'notfound'});
+});
+
 app.listen(process.env.PORT || 3000, () => {
     console.log('TOP REPAIR Server has started successfully');
 });

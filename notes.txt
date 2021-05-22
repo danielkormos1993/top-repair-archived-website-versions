@@ -1,2 +1,7 @@
-﻿- media elements and loading screens go through header ( z-index )
-- if scrolled down the body loader wont show there
+﻿- gap property for flex is not supported by android and safari :(((((((( LAST
+- in safari the whole thing looks bad LAST
+- check lighthouse if i can do more BEFORELAST
+- setup ssg BEFORELAST
+- head data BEFORELAST
+- adatvedelem BEFORELAST
+- sometimes body loader out of sight LAST
