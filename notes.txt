@@ -1,0 +1,2 @@
+﻿- media elements and loading screens go through header ( z-index )
+- if scrolled down the body loader wont show there

@@ -1,0 +1,15 @@
+﻿<%- include('../components/pdr_hero.ejs') %>
+<%- include('../components/pdr_timeline.ejs') %>
+<%- include('../components/pdr_getrepair.ejs') %>
+<%- include('../components/reviews.ejs') %>
+<%- include('../components/works.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js';
+    initCategory(document.getElementById('works-category'), 'pdr');
+</script>
+<%- include('../components/faq.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js';
+    initCategory(document.getElementById('faq-category'), 'pdr');
+</script>
+<%- include('../components/contact.ejs') %>
