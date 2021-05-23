@@ -1,5 +1,5 @@
 ﻿- gap property for flex is not supported by android and safari :(((((((( LAST
 - in safari the whole thing looks bad LAST
 - check lighthouse if i can do more BEFORELAST
-- setup ssg BEFORELAST
 - sometimes body loader out of sight LASTs
+- migrate trb when all finished

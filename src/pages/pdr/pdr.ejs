@@ -1,0 +1,15 @@
+﻿<%- include('sections/pdr_hero.ejs') %>
+<%- include('sections/pdr_timeline.ejs') %>
+<%- include('sections/pdr_getrepair.ejs') %>
+<%- include('../../sections/reviews.ejs') %>
+<%- include('../../sections/works.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('works-category'), 'pdr');
+</script>
+<%- include('../../sections/faq.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('faq-category'), 'pdr');
+</script>
+<%- include('../../sections/contact.ejs') %>

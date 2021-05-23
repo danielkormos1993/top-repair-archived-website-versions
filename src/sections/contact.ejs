@@ -1,4 +1,21 @@
-﻿<% const contactData = JSON.parse(include('../../public/cdn/data/contact.json')) %>
+﻿<% const contactData = 
+    [{
+        "city": "Győr",
+        "phoneNumber": "+36 70 593 9393",
+        "address": "A Céltrans 97 Zrt. telephelyén található. 9028 Győr, Sashegy puszta 1.",
+        "googleMapsLink": "https://goo.gl/maps/jEsfocXRGT9Ezg6U9"
+    },{
+        "city": "Budapest",
+        "phoneNumber": "+36 70 389 5187",
+        "address": "A Fugio Kft. telephelyén található. 1037 Budapest, Kunigunda útja 80.",
+        "googleMapsLink": "https://goo.gl/maps/Xf7j1UjkcwmaE4M49"
+    },{
+        "city": "Mohács",
+        "phoneNumber": "+36 70 883 8764",
+        "address": "7700 Mohács, Virág utca 45.",
+        "googleMapsLink": "https://goo.gl/maps/yAjXeYWW6jK9dSzK7"
+    }];
+%>
 <trb-section>
     <trb-stack>
         <trb-title level="2" class="trb-title--uppercasegrey">Kapcsolat</trb-title>

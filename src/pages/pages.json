@@ -62,7 +62,7 @@
     "description": "GDPR szabályzatunkban megtalál minden fontos információt adatai biztonságáról.",
     "url": "/adatvedelem"
 },{
-    "name": "notfound",
+    "name": "404",
     "title": "Az oldal nem található",
     "description": "404-es hiba.",
     "url": "*"

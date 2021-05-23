@@ -1,77 +1,60 @@
 ﻿const express = require('express');
-const app = express();
+const server = express();
 const cors = require('cors');
 
 // setup
-app.use(cors());
-app.set('view engine', 'ejs');
-app.use(express.static(__dirname + '/public'));
-
-// data
-const pages = require('./public/cdn/data/pages.json');
-const contactData = require('./public/cdn/data/contact.json');
-const reviews = require('./public/cdn/data/reviews.json');
-
-const isProduction = process.env.mode === 'production';
-
-app.use(function(req, res, next){
-    res.locals.contactData = contactData;
-    res.locals.reviews = reviews;
-    res.locals.isProduction = isProduction;
-    res.locals.hostUrl = isProduction ? 'https://toprepair.hu' : 'http://192.168.0.101:3000';
-    res.locals.pages = pages;
-    next();
-});
+server.use(cors());
+server.use(express.static(__dirname + '/public'));
 
 // routes
-app.get('/', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'index'});
+server.get('/', (req,res)=>{
+    res.sendFile('index.html', {root: 'public/pages'});
 });
 
-app.get('/jegkarjavitas', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'hdr'});
+server.get('/jegkarjavitas', (req,res)=>{
+    res.sendFile('hdr.html', {root: 'public/pages'});
 });
 
-app.get('/jegkarjavitas/cascojegkar', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'hdr_casco'});
+server.get('/jegkarjavitas/cascojegkar', (req,res)=>{
+    res.sendFile('hdr_casco.html', {root: 'public/pages'});
 });
 
-app.get('/jegkarjavitas/nemcascojegkar', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'hdr_nemcasco'});
+server.get('/jegkarjavitas/nemcascojegkar', (req,res)=>{
+    res.sendFile('hdr_nemcasco.html', {root: 'public/pages'});
 });
 
-app.get('/horpadasjavitas', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'pdr'});
+server.get('/horpadasjavitas', (req,res)=>{
+    res.sendFile('pdr.html', {root: 'public/pages'});
 });
 
-app.get('/pdrtechnologia', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'technology'});
+server.get('/pdrtechnologia', (req,res)=>{
+    res.sendFile('technology.html', {root: 'public/pages'});
 });
 
-app.get('/munkaink', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'works'});
+server.get('/munkaink', (req,res)=>{
+    res.sendFile('works.html', {root: 'public/pages'});
 });
 
-app.get('/rolunk', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'aboutus'});
+server.get('/rolunk', (req,res)=>{
+    res.sendFile('aboutus.html', {root: 'public/pages'});
 });
 
-app.get('/gyik', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'faq'});
+server.get('/gyik', (req,res)=>{
+    res.sendFile('faq.html', {root: 'public/pages'});
 });
 
-app.get('/kapcsolat', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'contact'});
+server.get('/kapcsolat', (req,res)=>{
+    res.sendFile('contact.html', {root: 'public/pages'});
 });
 
-app.get('/adatvedelem', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'pp'});
+server.get('/adatvedelem', (req,res)=>{
+    res.sendFile('pp.html', {root: 'public/pages'});
 });
 
-app.get('*', (req,res)=>{
-    res.render('layouts/layout.ejs', { page: 'notfound'});
+server.get('*', (req,res)=>{
+    res.sendFile('notfound.html', {root: 'public/pages'});
 });
 
-app.listen(process.env.PORT || 3000, () => {
+server.listen(process.env.PORT || 3000, () => {
     console.log('TOP REPAIR Server has started successfully');
 });

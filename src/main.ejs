@@ -1,17 +1,17 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <%- include('../partials/head.ejs') %>
+    <%- include('head.ejs') %>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <%- include('../components/header.ejs') %>
+    <%- include('sections/header.ejs') %>
     <trb-main>
-        <%- include('../pages/'+page.name+'.ejs') %>
+        <%- include(`pages/${page.name}/${page.name}.ejs`) %>
     </trb-main>
-    <%- include('../components/footer.ejs') %>
-    <%- include('../components/cookiebar.ejs') %>
+    <%- include('sections/footer.ejs') %>
+    <%- include('sections/cookiebar.ejs') %>
 </body>
 </html>
