@@ -30,11 +30,11 @@
                                 <trb-icon icon="phone" style="color:var(--trb-red)"></trb-icon>
                                 <trb-text><b><%- contact.phoneNumber %></b></trb-text>
                             </trb-anchor>
-                            <trb-anchor>
+                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
                                 <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
                                 <trb-text>Hétfő-Péntek, 8:00 - 17:00</trb-text>
-                            </trb-anchor>
-                            <trb-anchor class="isavailable">
+                            </trb-grid>
+                            <trb-grid class="isavailable trb-grid--elements" style="flex-wrap: nowrap">
                                 <trb-icon icon="circle" style="color:var(--trb-red);flex-shrink: 0;"></trb-icon>
                                 <trb-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trb-text>
                             </trb-anchor>
@@ -43,14 +43,14 @@
                     <trb-stack style="gap:var(--trb-space--3)">
                         <trb-title level="4">Műhely</trb-title>
                         <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-anchor>
+                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
                                 <trb-icon icon="map-marker-alt" style="color:var(--trb-red);  flex-shrink: 0; align-self: baseline"></trb-icon>
                                 <trb-text><%- contact.address %></trb-text>
-                            </trb-anchor>
-                            <trb-anchor>
+                            </trb-grid>
+                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
                                 <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
                                 <trb-text>Nyitvatartás bejelentkezés alapján</trb-text>
-                            </trb-anchor>
+                            </trb-grid>
                         </trb-stack>
                     </trb-stack>
                     <trb-button style="align-self: end; margin-top:var(--trb-space--2)" text="Megnyitás google mapsben" href="<%- contact.googleMapsLink %>" icon="map-marked-alt" class="trb-button--icon-on-right"></trb-button>
