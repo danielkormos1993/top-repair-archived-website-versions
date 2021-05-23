@@ -1,10 +1,10 @@
-﻿const fs = require("fs");
+﻿const fs = require("fs-extra");
 const ejsRenderFile = require("ejs").renderFile;
 
 fs.rmdirSync('dist', { recursive: true });
 fs.mkdirSync('dist');
 
-const pages = require('src/data/pages.json');
+const pages = require('./src/pages.json');
 
 pages.forEach(page => {
 
@@ -13,11 +13,19 @@ pages.forEach(page => {
 
     const folder = page.folder.slice(0, -1);
 
-    ejsRenderFile(`./views/layouts/layout.ejs`, { page: page })
+    ejsRenderFile(`src/main.ejs`, { page: page })
     .then(layoutContent => {
         if(!fs.existsSync(`dist/${folder}`)) fs.mkdirSync(`dist/${folder}`);
-        fs.writeFileSync(`dist/${page.folder}index.html`, layoutContent);
+        if(page.name != '404') fs.writeFileSync(`dist/${page.folder}index.html`, layoutContent);
+        else fs.writeFileSync(`dist/404.html`, layoutContent);
+        
     })
     .catch(err => console.error(err));
 
+});
+
+fs.mkdirSync('dist/cdn');
+
+fs.copy('cdn', 'dist/cdn', function (err) {
+    if (err) return console.error(err)
 });

@@ -2,18 +2,16 @@
   "name": "toprepair.hu_v4.0",
   "version": "4.0.0",
   "description": "TOP REPAIR dent removal website",
-  "main": "server.js",
+  "main": "dist/index.html",
   "scripts": {
     "build": "node build.js",
-    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Daniel Kormos",
   "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
+  "dependencies": {},
+  "devDependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1",
-    "express-ejs-layouts": "^2.5.0"
+    "fs-extra": "^10.0.0"
   }
 }
