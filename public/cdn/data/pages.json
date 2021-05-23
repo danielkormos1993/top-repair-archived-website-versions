@@ -1,1 +1,69 @@
-﻿
+﻿[{
+    "name": "index",
+    "title": "Jégkár javítás, horpadás javítás",
+    "description": "Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat.",
+    "url": "/",
+    "header_link": "Főoldal"
+},{
+    "name": "hdr",
+    "title": "Jégkár javítás mesterfokon",
+    "description": "Jégkár javítás fényezés nélküli technológiával. Autóját, flottáját, kereskedését rövid határidővel jégkár mentesítjük. CASCO-s jégkár javítás ügyintézés.",
+    "url": "/jegkarjavitas",
+    "header_link": "Jégkár javítás"
+},{
+    "name": "hdr_casco",
+    "title": "CASCO-s jégkár javítás",
+    "description": "CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz.",
+    "url": "/jegkarjavitas/cascojegkar"
+},{
+    "name": "hdr_nemcasco",
+    "title": "Önfinanszírozott jégkár javítás",
+    "description": "Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja.",
+    "url": "/jegkarjavitas/nemcascojegkar"
+},{
+    "name": "pdr",
+    "title": "Horpadás javítás fényezés nélkül",
+    "description": "Horpadás javítás fényezés nélküli technológiával. Autóját, flottáját, kereskedését rövid határidővel horpadás mentesítjük.",
+    "url": "/horpadasjavitas",
+    "header_link": "Horpadás javítás"
+},{
+    "name": "technology",
+    "title": "PDR technológia",
+    "description": "A PDR (Paintless Dent Removal) lényege, hogy a karosszériáról a horpadásokat gittelés és fényezés nélkül távolítjuk el, speciálisan erre kifejlesztett eszközökkel, és nyomószerszámokkal. Tekintse meg technológiánkat akció közben.",
+    "url": "/pdrtechnologia",
+    "header_link": "A technológia"
+},{
+    "name": "works",
+    "title": "Munkáink",
+    "description": "Jégkár javításos munkáinkról videókat teszünk közzé, míg a horpadás javításos munkáinkról képeket a jobb szemléltetés érdekében.",
+    "url": "/munkaink",
+    "header_link": "Munkáink"
+},{
+    "name": "aboutus",
+    "title": "Rólunk",
+    "description": "Ez számunkra nem csak egy szakma, hanem művészet. Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat.",
+    "url": "/rolunk",
+    "header_link": "Rólunk"
+},{
+    "name": "faq",
+    "title": "Gyakran ismételt kérdések",
+    "description": "Ügyfeleink által legtöbbet feltett kérdéseket böngészheti itt, kategorizálva.",
+    "url": "/gyik",
+    "header_link": "Gyakran ismételt kérdések"
+},{
+    "name": "contact",
+    "title": "Kapcsolat",
+    "description": "Könnyedén veheti fel velünk a kapcsolatot az alábbi lehetőségek bármelyikével!",
+    "url": "/kapcsolat",
+    "header_link": "Kapcsolat"
+},{
+    "name": "pp",
+    "title": "Adatvédelmi tájékoztató",
+    "description": "GDPR szabályzatunkban megtalál minden fontos információt adatai biztonságáról.",
+    "url": "/adatvedelem"
+},{
+    "name": "notfound",
+    "title": "Az oldal nem található",
+    "description": "404-es hiba.",
+    "url": "*"
+}]

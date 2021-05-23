@@ -2,6 +2,4 @@
 - in safari the whole thing looks bad LAST
 - check lighthouse if i can do more BEFORELAST
 - setup ssg BEFORELAST
-- head data BEFORELAST
-- adatvedelem BEFORELAST
-- sometimes body loader out of sight LAST
+- sometimes body loader out of sight LASTs

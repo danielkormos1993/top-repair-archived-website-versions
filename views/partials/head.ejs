@@ -1,20 +1,28 @@
-﻿<!-- analytics code here and turn off this machine in analytics dashboard -->
+﻿<% if(isProduction) { %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146720645-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-146720645-1");
+    </script>
+<% } %>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/trb/trb.css">
 <script src="/trb/trb.js" type="module"></script>
-<!-- under this needs to be done -->
-<!-- <title>TOP REPAIR KFT.</title>
-<title>%= data.page.title %> - %= data.title %></title>
-<meta name="description" content="%= data.page.description %>" />
+<title><%= pageData.title %> - TOP REPAIR KFT.</title>
+<meta name="description" content="<%= pageData.description %>"/>
 <meta name="keywords" content="jégkár, horpadás, jégkár javítás, horpadás javítás"/>
-<link rel="icon" href="%= data.url %>/cdn/favicon.ico" />
-<link rel="apple-touch-icon" href="%= data.url %>/cdn/images/apple-touch-icon.png"/>
-<link rel="canonical" href="%= data.url %>%= data.page.url %>" />
-<meta property="og:url" content="%= data.url %>%= data.page.url %>" />
+<link rel="icon" href="/cdn/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/cdn/images/apple-touch-icon.png"/>
+<link rel="canonical" href="<%= hostUrl %><%= pageData.url %>"/>
+<meta property="og:url" content="<%= hostUrl %><%= pageData.url %>" />
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="TOP REPAIR Kft."> 
-<meta property="og:title" content="%= data.page.title %> - %= data.title %>" />
-<meta property="og:description" content="%= data.page.description %>" />
-<meta property="og:image" content="%= data.url %>/cdn/images/hero__bg1920.jpg" /> -->
+<meta property="og:site_name" content="TOP REPAIR KFT."> 
+<meta property="og:title" content="<%= pageData.title %>" />
+<meta property="og:description" content="<%= pageData.description %>" />
+<meta property="og:image" content="<%= hostUrl %>/cdn/images/hero__bg1920.jpg" />
