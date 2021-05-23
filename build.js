@@ -1,8 +1,12 @@
-﻿const fs = require("fs-extra");
+﻿const fs = require("fs");
 const ejsRenderFile = require("ejs").renderFile;
 
-fs.rmdirSync('dist', { recursive: true });
-fs.mkdirSync('dist');
+fs.readdir('dist', (err, files) => {
+    if (err) console.log(err);
+    files.forEach(file => {
+        if(file != 'cdn') fs.rmSync(`dist/${file}`, {recursive: true});
+    });
+});
 
 const pages = require('./src/pages.json');
 
@@ -22,10 +26,4 @@ pages.forEach(page => {
     })
     .catch(err => console.error(err));
 
-});
-
-fs.mkdirSync('dist/cdn');
-
-fs.copy('cdn', 'dist/cdn', function (err) {
-    if (err) return console.error(err)
 });

@@ -1,0 +1,37 @@
+﻿[{
+    "question":"Bármikor oda lehet vinni a műhelybe az autót megtekintésre?",
+    "answer":"Nem. Műhelyünk bejelentkezés alapján tart nyitva. Kérjük hívjon minket időpontfoglaláshoz.",
+    "category":"common"
+    },{
+    "question":"Milyen időintervallumon belül történik a megtekintés, illetve a javítás a bejelentkezéstől számítva?",
+    "answer":"Árajánlatot akár már aznap adunk, a javítások pedig általában 1-2 héten belül történnek.",
+    "category":"common"
+    },{
+    "question":"Vákummal javítanak?",
+    "answer":"Nem. Vákumos javítást nagyon ritkán alkalmazunk, akkor is csak a horpadás megindításához, de a javítást fényezés nélküli technológiánkkal fejezzük be.",
+    "category":"common"
+    },{
+    "question":"Milyen minőségű lesz a jégkár javítás eredménye?",
+    "answer":"Gyári. Szakszerű javítással az autó teljesen visszanyeri gyári állapotát.",
+    "category":"hdr"
+    },{
+    "question":"Mennyi időt vesz igénybe egy jégkár javítás?",
+    "answer":"Könnyű jégkár esetén 1 napon belül történik a javítás, nehéz jégkár esetében pedig maximum 1 héttel lehet számolni.",
+    "category":"hdr"
+    },{
+    "question":"Az összes jégkárt meg lehet javítani fényezés nélkül?",
+    "answer":"Nem. Extrém jégkár esetén technológiánk alkalmazása után szükséggessé válhat fényezni, illetve akár cserélni is azokat az elemeket, melyeken akkora lemeznyúlás ment végbe az ütések során, hogy  szimplán a fényezés nélküli  technológia által már nem javíthatóak.",
+    "category":"hdr"
+    },{
+    "question":"Mennyibe fog kerülni a horpadás javítás?",
+    "answer":"A javítás költsége függ a horpadások számától, elhelyezkedésüktől, méretüktől, mélységüktől és az autó karosszériaanyagától. Mivel ez egy komplex téma, így hiteles árajánlatot csak élő szemrevételezés után tudunk adni. Cégünknél 8.000 Ft a minimum javítási összeg(kicsi, könnyen hozzáférhető horpadás esetén), ám több horpadás egyidejű javíttatása esetén az ár/darab sokkal alacsonyabb lesz(Pl. két vagy három darab kicsi, könnyen hozzáférhető horpadás esetén 10-12.000 Ft a teljes javítási kölség.). A maximum áraink(nagyobb, mélyebb, nehezebben hozzáférhető, de még fényezés nélkül javítható horpadások esetén) kb. 50.000 Ft körül mozognak.",
+    "category":"pdr"
+    },{
+    "question":"Milyen horpadásokat lehet megjavítani a fényezés nélküli technológiával?",
+    "answer":"Mi azt szoktuk mondani, ameddig a fényezés nem sérült, addig nagy valószínűséggel megtudjuk menteni az elemet, de vannak kivételes esetek, amikor a lemez sérülés közben megnyúlt és szimplán technológiánk segítségével már nem javítható, így hagyományos(lakatolás-fényezés) megoldást kell alkalmazni.",
+    "category":"pdr"
+    },{
+    "question":"Mennyi ideig tart egy horpadásnak a javítása?",
+    "answer":"A kisebb horpadásokat akár 15 percen belül, míg a lehetséges legnagyobb javítható horpadást pár órán belüli határidővel javítjuk.",
+    "category":"pdr"
+}]

@@ -1,3 +1,2 @@
-﻿- gap property for flex is not supported by android and safari :(((((((( LAST
-- in safari the whole thing looks bad LAST
+﻿- in safari the whole thing looks bad LAST
 - migrate trb when all finished
