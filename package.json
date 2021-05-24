@@ -2,22 +2,24 @@
   "name": "toprepair.hu_v4.0",
   "version": "4.0.0",
   "description": "TOP REPAIR dent removal website",
-  "main": "dist/index.html",
+  "main": "server/server.js",
   "scripts": {
-    "build": "node build.js",
+    "build": "node src/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npm-watch",
-    "deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages"
+    "watch": "npm-watch"
   },
   "watch": {
     "build": "src/**/*.*"
   },
   "author": "Daniel Kormos",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
   "devDependencies": {
     "ejs": "^3.1.6",
-    "gh-pages": "^3.1.0",
     "npm-watch": "^0.9.0"
   }
 }

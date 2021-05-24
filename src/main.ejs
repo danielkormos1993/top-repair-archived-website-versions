@@ -1,6 +1,5 @@
 ﻿<% 
-    locals.isProduction = true;
-    locals.trbUrl = isProduction ? 'https://cdn.jsdelivr.net/gh/danielkormos1993/trb@1.3.0' : 'http://192.168.0.101:3000';
+    locals.trbUrl = process.env.mode === 'production' ? 'https://cdn.jsdelivr.net/gh/danielkormos1993/trb@1.3.0' : 'http://192.168.0.101:5050';
 %> 
 <!DOCTYPE html>
 <html lang="en">
