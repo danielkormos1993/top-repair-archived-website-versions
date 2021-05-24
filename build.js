@@ -1,11 +1,9 @@
 ﻿const fs = require("fs");
 const ejsRenderFile = require("ejs").renderFile;
 
-fs.readdir('dist', (err, files) => {
-    if (err) console.log(err);
-    files.forEach(file => {
-        if(file != 'cdn') fs.rmSync(`dist/${file}`, {recursive: true});
-    });
+const distDirectory = fs.readdirSync('dist');
+distDirectory.forEach(file => {
+    if(file != 'cdn') fs.rmSync(`dist/${file}`, {recursive: true});
 });
 
 const pages = require('./src/pages.json');
