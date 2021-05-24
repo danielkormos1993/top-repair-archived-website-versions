@@ -3,8 +3,8 @@
         compression = require('compression'), 
         cors = require('cors'),
         isProduction = process.env.mode === 'production',
-        urlRedirecter = require('./urlRedirecter'),
-        pages = require('../src/pages.json');
+        urlRedirecter = require(`./server/urlRedirecter`),
+        pages = require('./src/pages.json');
         
 if(isProduction){website.use(urlRedirecter)}        
 website.use(compression());

@@ -1,9 +1,10 @@
 ﻿const fs = require("fs");
 const ejsRenderFile = require("ejs").renderFile;
 
-fs.rmdirSync('dist/pages', {recursive: true});
+fs.rmdirSync(`dist/pages`, {recursive: true});
+fs.mkdirSync('dist/pages');
 
-const pages = require('./pages.json');
+const pages = require(`./src/pages.json`);
 
 pages.forEach(page => {
 
