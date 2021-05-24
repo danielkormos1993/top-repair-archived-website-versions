@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "npm-watch"
+    "watch": "npm-watch",
+    "deploy": "git push origin master"
   },
   "watch": {
     "build": "src/**/*.*"
