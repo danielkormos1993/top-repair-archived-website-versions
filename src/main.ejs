@@ -5,15 +5,17 @@
 <html lang="en">
 <head>
     <%- include('sections/head.ejs') %>
+    <script type="module" src="<%- trbUrl %>/layout/trbs-layout.js"></script>
+    <script type="module" src="<%- trbUrl %>/theme/tr-theme.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <%- include('sections/header.ejs') %>
-    <trb-main>
+    <main>
         <%- include(`pages/${page.name}/${page.name}.ejs`) %>
-    </trb-main>
+    <main>
     <%- include('sections/footer.ejs') %>
     <%- include('sections/cookiebar.ejs') %>
 </body>

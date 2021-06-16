@@ -12,9 +12,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- SET ACCORDINGLY IN PRODUCTION -->
-<link rel="stylesheet" href="http://192.168.0.101:5050/trb.css">
-<script src="http://192.168.0.101:5050/trb.js" type="module"></script>
 <!-- END -->
 <title>Önfinanszírozott jégkár javítás - TOP REPAIR KFT.</title>
 <meta name="description" content="Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja."/>
@@ -28,21 +25,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Önfinanszírozott jégkár javítás" />
 <meta property="og:description" content="Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
+    <script type="module" src="http://192.168.0.101:5050/layout/trbs-layout.js"></script>
+    <script type="module" src="http://192.168.0.101:5050/theme/tr-theme.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <trb-header>
-    <trb-anchor href="/jegkarjavitas">Jégkár javítás</trb-anchor>
-    <trb-anchor href="/horpadasjavitas">Horpadás javítás</trb-anchor>
-    <trb-anchor href="/pdrtechnologia">A technológia</trb-anchor>
-    <trb-anchor href="/munkaink">Munkáink</trb-anchor>
-    <trb-anchor href="/rolunk">Rólunk</trb-anchor>
-    <trb-anchor href="/gyik">Gyakran ismételt kérdések</trb-anchor>
-    <trb-anchor href="/kapcsolat">Kapcsolat</trb-anchor>
-</trb-header>
-    <trb-main>
+    <script type="module" src="http://192.168.0.101:5050/components/trbs-header.js"></script>
+<trbs-header>
+    <a href="/jegkarjavitas">Jégkár javítás</a>
+    <a href="/horpadasjavitas">Horpadás javítás</a>
+    <a href="/pdrtechnologia">A technológia</a>
+    <a href="/munkaink">Munkáink</a>
+    <a href="/rolunk">Rólunk</a>
+    <a href="/gyik">Gyakran ismételt kérdések</a>
+    <a href="/kapcsolat">Kapcsolat</a>
+</trbs-header>
+    <main>
         <trb-section style="background-color: var(--trb-red);">
     <trb-stack style="gap:var(--trb-space--2)">
         <trb-title level="1" style="color: var(--trb-lightgrey)" class="trb-title--uppercasegrey">ÖNFINANSZÍROZOTT JÉGKÁR JAVÍTÁS</trb-title>
@@ -231,15 +231,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </trb-anchor>
     </trb-grid>
 </trb-section>
-    </trb-main>
-    <trb-footer>
-    <trb-anchor href="/adatvedelem">Adatvédelmi tájékoztató</trb-anchor>
-</trb-footer>
-    <trb-cookiebar cookieName="gdpr" cookieValue="accepted">
-    <trb-stack style="text-align:center; justify-items:center">
-        <trb-paragraph>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <trb-anchor href="/adatvedelem">adatvédelmi tájékoztatónkat</trb-anchor>.</trb-paragraph>
-        <trb-button text="Ok" class="trb-button--outline trb-cookiebar__setCookieButton"></trb-button>
-    </trb-stack>
-</trb-cookiebar>
+    <main>
+    <script type="module" src="http://192.168.0.101:5050/components/trbs-footer.js"></script>
+<trbs-footer>
+    <a class="link" href="/adatvedelem">Adatvédelmi tájékoztató</a>
+</trbs-footer>
+    <trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
+    <trbs-stack style="text-align:center; justify-items:center">
+        <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
+        <trbs-button text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></trbs-button>
+    </trbs-stack>
+</trbs-cookiebar>
 </body>
 </html>
