@@ -13,47 +13,46 @@
         "reviewText": "Nagyon ügyesek, rugalmasak, szépen, gyorsan dolgoznak. Forduljatok hozzájuk bizalommal!"
     }]
 %>
-<trb-section class="reviews">
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Google vélemények</trb-title>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <trb-grid class="trb-grid--elements">
-                <trb-text class="trb-text-size--6"><b>4.9</b></trb-text>
-                <trb-grid class="trb-grid--elements" style="color: var(--trb-yellow); width: max-content">
-                    <trb-icon icon="star"></trb-icon>
-                    <trb-icon icon="star"></trb-icon>
-                    <trb-icon icon="star"></trb-icon>
-                    <trb-icon icon="star"></trb-icon>
-                    <trb-icon icon="star"></trb-icon>
-                </trb-grid>
-            </trb-grid>
-            <trb-anchor href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">
-                <trb-text class="trb-text--tooltip"><u>59 vélemény</u></trb-text>
-            </trb-anchor>
-        </trb-stack>
-        <trb-paragraph>Néhány, a <trb-anchor href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkon</trb-anchor> szereplő értékelésekből összeállított válogatás.</trb-paragraph>
-        <trb-grid class="trb-grid--boxes">
+<section class="reviews">
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Google vélemények</h2>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <trbs-grid class="elements">
+                <span class="trbs-size--xxl" style="font-weight: bold;">4.9</span>
+                <trbs-grid class="elements" style="color: var(--trbs-color--yellow); width: max-content">
+                    <trbs-icon icon="solid/star"></trbs-icon>
+                    <trbs-icon icon="solid/star"></trbs-icon>
+                    <trbs-icon icon="solid/star"></trbs-icon>
+                    <trbs-icon icon="solid/star"></trbs-icon>
+                    <trbs-icon icon="solid/star"></trbs-icon>
+                </trbs-grid>
+            </trbs-grid>
+            <a href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="width: max-content">
+                <span class="tooltip" style="text-decoration: underline;">60 vélemény</span>
+            </a>
+        </trbs-stack>
+        <p>Néhány, a <a class="link" style="color:inherit" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkon</a> szereplő értékelésekből összeállított válogatás.</p>
+        <trbs-grid class="boxes">
             <% reviews.forEach(review => { %>
-                <trb-card>
-                    <div class="trb-card__body">
-                        <trb-stack>
-                            <trb-grid class="trb-grid--elements" style="gap:var(--trb-space--3)">
-                                <trb-image src="<%- review.profileImgUrl %>" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trb-image>
-                                <trb-text><%- review.profileName %></trb-text>
-                            </trb-grid>
-                            <trb-grid class="trb-grid--elements" style="color: var(--trb-yellow)">
-                                <trb-icon icon="star"></trb-icon>
-                                <trb-icon icon="star"></trb-icon>
-                                <trb-icon icon="star"></trb-icon>
-                                <trb-icon icon="star"></trb-icon>
-                                <trb-icon icon="star"></trb-icon>
-                            </trb-grid>
-                            <trb-paragraph><%- review.reviewText %></trb-paragraph>
-                            </trb-stack>
-                        </trb-stack>
-                    </div>
-                </trb-card>
+                <trbs-card>
+                    <trbs-card__body>
+                        <trbs-stack>
+                            <trbs-grid class="elements" style="gap:var(--trbs-space--m)">
+                                <trbs-image src="<%- review.profileImgUrl %>" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trbs-image>
+                                <span><%- review.profileName %></span>
+                            </trbs-grid>
+                            <trbs-grid class="elements" style="color: var(--trbs-color--yellow)">
+                                <trbs-icon icon="solid/star"></trbs-icon>
+                                <trbs-icon icon="solid/star"></trbs-icon>
+                                <trbs-icon icon="solid/star"></trbs-icon>
+                                <trbs-icon icon="solid/star"></trbs-icon>
+                                <trbs-icon icon="solid/star"></trbs-icon>
+                            </trbs-grid>
+                            <p><%- review.reviewText %></p>
+                        </trbs-stack>
+                    </trbs-card__body>
+                </trbs-card>
             <% }); %>
-        </trb-grid>
-    </trb-stack>
-</trb-section>
+        </trbs-grid>
+    </trbs-stack>
+</section>
