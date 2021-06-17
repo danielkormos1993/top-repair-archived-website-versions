@@ -25,8 +25,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Rólunk" />
 <meta property="og:description" content="Ez számunkra nem csak egy szakma, hanem művészet. Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
-    <script type="module" src="http://192.168.0.101:5050/layout/trbs-layout.js"></script>
-    <script type="module" src="http://192.168.0.101:5050/theme/tr-theme.js"></script>
+    <script type="module" src="http://192.168.0.101:5050/trbs-bundle.js"></script>
+    <script type="module" src="http://192.168.0.101:5050/themes/tr-theme.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -77,10 +77,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <trbs-footer>
     <a class="link" href="/adatvedelem">Adatvédelmi tájékoztató</a>
 </trbs-footer>
-    <trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
+    <script type="module" src="http://192.168.0.101:5050/components/trbs-cookiebar.js"></script>
+<trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
     <trbs-stack style="text-align:center; justify-items:center">
-        <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
-        <trbs-button text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></trbs-button>
+        <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a class="link" style="color: inherit" href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
+        <button is="trbs-button" text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></button>
     </trbs-stack>
 </trbs-cookiebar>
 </body>

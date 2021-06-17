@@ -25,8 +25,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Jégkár javítás, horpadás javítás" />
 <meta property="og:description" content="Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
-    <script type="module" src="http://192.168.0.101:5050/layout/trbs-layout.js"></script>
-    <script type="module" src="http://192.168.0.101:5050/theme/tr-theme.js"></script>
+    <script type="module" src="http://192.168.0.101:5050/trbs-bundle.js"></script>
+    <script type="module" src="http://192.168.0.101:5050/themes/tr-theme.js"></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -43,14 +43,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/kapcsolat">Kapcsolat</a>
 </trbs-header>
     <main>
-        <trb-section style="background-position:top center">
-    <trb-bg-image src="/cdn/images/hero__bg1920.jpg"></trb-bg-image>
-    <trb-stack style="gap:var(--trb-space--2)">
-        <trb-title>Jégkár javítás, horpadás javítás mesterfokon.</trb-title>
-        <trb-text>A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat.</trb-text>
-        <trb-button href="/kapcsolat" text="Kapcsolat" icon="arrow-right" class="trb-button--icon-on-right"></trb-button>
-    </trb-stack>
-</trb-section>
+        <section
+    class="trbs-bg-image"
+    style="--trbs-bg-image-url: url('/cdn/images/hero__bg1920.jpg');background-position:top center;">
+    <trbs-stack style="gap:var(--trbs-space--s)">
+        <h1>Jégkár javítás, horpadás javítás mesterfokon.</h1>
+        <p style="margin-bottom: var(--trbs-space--xs);">A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat.</p>
+        <button is="trbs-button" href="/kapcsolat" text="Kapcsolat" icon="solid/arrow-right" class="trbs-button--icon-on-right"></button>
+    </trbs-stack>
+</section>
 <trb-section class="services">
     <trb-stack>
         <trb-title level="2" class="trb-title--uppercasegrey">Szolgáltatásaink</trb-title>
@@ -443,10 +444,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <trbs-footer>
     <a class="link" href="/adatvedelem">Adatvédelmi tájékoztató</a>
 </trbs-footer>
-    <trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
+    <script type="module" src="http://192.168.0.101:5050/components/trbs-cookiebar.js"></script>
+<trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
     <trbs-stack style="text-align:center; justify-items:center">
-        <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
-        <trbs-button text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></trbs-button>
+        <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a class="link" style="color: inherit" href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
+        <button is="trbs-button" text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></button>
     </trbs-stack>
 </trbs-cookiebar>
 </body>
