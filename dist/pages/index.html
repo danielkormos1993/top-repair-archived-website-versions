@@ -169,83 +169,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </trbs-grid>
     </trbs-stack>
 </section>
-<trb-section class="extraservices">
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Extra szolgáltatásaink</trb-title>
-        <trb-grid class="trb-grid--boxes">
-            <trb-card>
-                <div class="trb-card__body">
-                    <trb-stack>
-                        <trb-icon icon="plus" class="trb-text-size--5" style="color: var(--trb-green)"></trb-icon>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-title level="3">Ingyenes kiszállás</trb-title>
-                            <trb-paragraph class="trb-text-size--2">Árajánlatot, illetve a javítást is kérheti kiszállással, amennyiben úgy kívánja. Technikusaink teljes felszereltséggel érkeznek Önhöz, és orvosolják horpadásait. ** Nem minden sérülést tudunk javítani kiszállással.</trb-paragraph>
-                        </trb-stack>
-                    </trb-stack>
-                </div>
-            </trb-card>
-            <trb-card>
-                <div class="trb-card__body">
-                    <trb-stack>
-                        <trb-icon icon="plus" class="trb-text-size--5" style="color: var(--trb-green)"></trb-icon>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-title level="3">Ingyenes árajánlat</trb-title>
-                            <trb-paragraph class="trb-text-size--2">Árajánlataink mindenkorra ingyenesek, és nem járnak semmilyen kötelezettséggel.</trb-paragraph>
-                        </trb-stack>
-                    </trb-stack>
-                </div>
-            </trb-card>
-            <trb-card>
-                <div class="trb-card__body">
-                    <trb-stack>
-                        <trb-icon icon="plus" class="trb-text-size--5" style="color: var(--trb-green)"></trb-icon>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-title level="3">Elégedettségi garancia</trb-title>
-                            <trb-paragraph class="trb-text-size--2">Amennyiben Ön szerint a javítás eredménye nem az előre megbeszélt minőségben történt, nem kell kifizetnie a javítást. Ilyen egyszerű.</trb-paragraph>
-                        </trb-stack>
-                    </trb-stack>
-                </div>
-            </trb-card>
-        </trb-grid>
-    </trb-stack>
-</trb-section>
-<trb-section class="callus" style="background-color: var(--trb-red);">
-    <trb-stack>
-        <trb-text class="trb-text-size--5"><b>Kérdése van? Hívjon minket.</b></trb-text>
-        <trb-button class="trb-button--call trb-button--outline" number="+36 70 593 9393"></trb-button>
-    </trb-stack>
-</trb-section>
-<trb-section>
-    <trb-bg-image src="/cdn/images/aboutus__bg1920.jpg"></trb-bg-image>
-    <trb-stack style="gap: var(--trb-space--2)">
-        <trb-title level="2" class="trb-title--uppercasegrey">Rólunk</trb-title>
-        <trb-text class="trb-text-size--5"><b>Számunkra ez nem egy szakma, hanem művészet.</b></trb-text>
-        <trb-paragraph style="margin-bottom: 1rem; color: var(--trb-lightgrey)">Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat. Több ezer megjavított áll a hátuk mögött, bejárták már szinte az egész világot, ahol gyárakban, nagyobb jégeső verte kereskedésekben illetve logisztikai parkokban állították vissza az autók karosszériáját gyári állapotra. Cégünk 2019-ben alakult,de technikusaink több mint 6 éves tapasztalattal rendelkeznek, melyet egy brazil mester (a szakma legjobbjai) által tartott 1 éves képzés előzött meg.</trb-paragraph>
-        <trb-button text="Tovább" href="/rolunk" icon="arrow-right" class="trb-button--icon-on-right"></trb-button>
-    </trb-stack>
-</trb-section>
-<trb-section style="background-color: var(--trb-red);">
-    <trb-grid>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <b><trb-counter to="500000" class="trb-text-size--5">0</trb-counter></b>
-            <trb-text>Megjavított horpadás</trb-text>
-        </trb-stack>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <b><trb-counter to="5000" class="trb-text-size--5">0</trb-counter></b>
-            <trb-text>Megjavított autó</trb-text>
-        </trb-stack>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <trb-text class="trb-text-size--5"><b><trb-counter to="5">0</trb-counter>/5</b></trb-text>
-            <trb-text>Ügyfél elégedettség</trb-text>
-        </trb-stack>
-    </trb-grid>
-</trb-section>
-<trb-section>
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Gyakran ismételt kérdések</trb-title>
+<section class="extraservices">
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Extra szolgáltatásaink</h2>
+        <trbs-grid class="boxes">
+            <trbs-card>
+                <trbs-card__body>
+                    <trbs-stack>
+                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <h3>Ingyenes kiszállás</h3>
+                            <p class="trbs-size--s">Árajánlatot, illetve a javítást is kérheti kiszállással, amennyiben úgy kívánja. Technikusaink teljes felszereltséggel érkeznek Önhöz, és orvosolják horpadásait. ** Nem minden sérülést tudunk javítani kiszállással.</p>
+                        </trbs-stack>
+                    </trbs-stack>
+                </trbs-card__body>
+            </trbs-card>
+            <trbs-card>
+                <trbs-card__body>
+                    <trbs-stack>
+                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <h3>Ingyenes árajánlat</h3>
+                            <p class="trbs-size--s">Árajánlataink mindenkorra ingyenesek, és nem járnak semmilyen kötelezettséggel.</p>
+                        </trbs-stack>
+                    </trbs-stack>
+                </trbs-card__body>
+            </trbs-card>
+            <trbs-card>
+                <trbs-card__body>
+                    <trbs-stack>
+                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <h3>Elégedettségi garancia</h3>
+                            <p class="trbs-size--s">Amennyiben Ön szerint a javítás eredménye nem az előre megbeszélt minőségben történt, nem kell kifizetnie a javítást. Ilyen egyszerű.</p>
+                        </trbs-stack>
+                    </trbs-stack>
+                </trbs-card__body>
+            </trbs-card>
+        </trbs-grid>
+    </trbs-stack>
+</section>
+<section class="callus" style="background-color: var(--trbs-color--red);">
+    <trbs-stack>
+        <span class="trbs-size--xl" style="font-weight: bold;">Kérdése van? Hívjon minket.</span>
+        <button is="trbs-button" class="trbs-button--call trbs-button--outline" number="+36 70 593 9393"></button>
+    </trbs-stack>
+</section>
+<section
+    class="trbs-bg-image"
+    style="--trbs-bg-image-url: url('/cdn/images/aboutus__bg1920.jpg');background-position:top center;--trbs-bg-image-overlay: var(--trbs-color--darkgrey2-overlay);">
+    <trbs-stack style="gap: var(--trbs-space--s)">
+        <h2 class="trbs-title--uppercasegrey">Rólunk</h2>
+        <span class="trbs-size--xl" style="font-weight: bold;">Számunkra ez nem egy szakma, hanem művészet.</span>
+        <p style="margin-bottom: var(--trbs-space--s); color: var(--trbs-color--lightgrey)">Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat. Több ezer megjavított áll a hátuk mögött, bejárták már szinte az egész világot, ahol gyárakban, nagyobb jégeső verte kereskedésekben illetve logisztikai parkokban állították vissza az autók karosszériáját gyári állapotra. Cégünk 2019-ben alakult,de technikusaink több mint 6 éves tapasztalattal rendelkeznek, melyet egy brazil mester (a szakma legjobbjai) által tartott 1 éves képzés előzött meg.</p>
+        <button is="trbs-button" text="Tovább" href="/rolunk" icon="solid/arrow-right" class="trbs-button--icon-on-right"></button>
+    </trbs-stack>
+</section>
+<script type="module" src="http://192.168.0.101:5050/elements/trbs-counter.js"></script>
+<section style="background-color: var(--trbs-color--red);">
+    <trbs-grid>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <trbs-counter to="500000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
+            <span>Megjavított horpadás</span>
+        </trbs-stack>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <trbs-counter to="5000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
+            <span>Megjavított autó</span>
+        </trbs-stack>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <span style="font-weight: bold;" class="trbs-size--xl"><trbs-counter to="5">0</trbs-counter>/5</span>
+            <span>Ügyfél elégedettség</span>
+        </trbs-stack>
+    </trbs-grid>
+</section>
+<section>
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Gyakran ismételt kérdések</h2>
         <trb-form>
-            <trb-stack style="gap:var(--trb-space--1)">
-                <trb-label for="faq-category">Kategória</trb-label>
+            <trbs-stack style="gap:var(--trbs-space--xs)">
+                <label for="faq-category">Kategória</label>
                 <select 
                     name="faq-category"
                     id="faq-category"
@@ -257,145 +259,145 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <option value="pdr">Horpadás javítás</option>
                     <option value="hdr">Jégkár javítás</option>
                 </select>
-            </trb-stack>
+            </trbs-stack>
         </trb-form>
-        <trb-grid id="faq_category_target" class="trb-grid--boxes"></trb-grid>
-    </trb-stack>
+        <trbs-grid id="faq_category_target" class="boxes"></trbs-grid>
+    </trbs-stack>
     <script>
 
         document.getElementById('faq-category').viewTemplate = `
-            <trb-card>
-                <div class="trb-card__body">
-                    <trb-stack>
-                        <trb-title level="3" style="text-transform: none">{{question}}</trb-title>
-                        <trb-paragraph>{{answer}}</trb-paragraph>
-                    </trb-stack>
-                </div>
-            </trb-card>
+            <trbs-card>
+                <trbs-card__body>
+                    <trbs-stack>
+                        <h3 style="text-transform: none">{{question}}</h3>
+                        <p>{{answer}}</p>
+                    </trbs-stack>
+                </trbs-card__body>
+            </trbs-card>
         `;
 
     </script>
-    <script type="module">
-        // set accodringly in production
-        import 'http://192.168.0.101:5050/components/trb-card.js';
-        import 'http://192.168.0.101:5050/components/trb-paragraph.js';
-
-    </script>
-</trb-section>
+</section>
 <script type="module">
     import { initCategory } from '/cdn/js/category.js'; // port to cdn
     initCategory(document.getElementById('faq-category'));
 </script>
 
-<trb-section>
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Kapcsolat</trb-title>
-        <trb-grid>
+<section>
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Kapcsolat</h2>
+        <trbs-grid>
             
-                <trb-stack style="gap:var(--trb-space--3); grid-template-rows: auto auto auto 1fr">
-                    <trb-title level="3">Győr</trb-title>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Időpontfoglalás</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-anchor href="tel:+36 70 593 9393">
-                                <trb-icon icon="phone" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text><b>+36 70 593 9393</b></trb-text>
-                            </trb-anchor>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Hétfő-Péntek, 8:00 - 17:00</trb-text>
-                            </trb-grid>
-                            <trb-grid class="isavailable trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="circle" style="color:var(--trb-red);flex-shrink: 0;"></trb-icon>
-                                <trb-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trb-text>
-                            </trb-anchor>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Műhely</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="map-marker-alt" style="color:var(--trb-red);  flex-shrink: 0; align-self: baseline"></trb-icon>
-                                <trb-text>A Céltrans 97 Zrt. telephelyén található. 9028 Győr, Sashegy puszta 1.</trb-text>
-                            </trb-grid>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Nyitvatartás bejelentkezés alapján</trb-text>
-                            </trb-grid>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-button style="align-self: end; margin-top:var(--trb-space--2)" text="Megnyitás google mapsben" href="https://goo.gl/maps/jEsfocXRGT9Ezg6U9" icon="map-marked-alt" class="trb-button--icon-on-right"></trb-button>
-                </trb-stack>
+                <trbs-stack style="gap:var(--trbs-space--m); grid-template-rows: auto auto auto 1fr">
+                    <h3>Győr</h3>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Időpontfoglalás</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <a href="tel:+36 70 593 9393">
+                                <trbs-grid class="elements">
+                                    <trbs-icon icon="solid/phone" style="color:var(--trbs-color--red)"></trbs-icon>
+                                    <span style="font-weight: bold;">+36 70 593 9393</span>
+                                </trbs-grid>
+                            </a>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Hétfő-Péntek, 8:00 - 17:00</span>
+                            </trbs-grid>
+                            <trbs-grid class="isavailable elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/circle" style="color:var(--trbs-color--red);flex-shrink: 0;"></trbs-icon>
+                                <span>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Műhely</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/map-marker-alt" style="color:var(--trbs-color--red);  flex-shrink: 0; align-self: baseline"></trbs-icon>
+                                <span>A Céltrans 97 Zrt. telephelyén található. 9028 Győr, Sashegy puszta 1.</span>
+                            </trbs-grid>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Nyitvatartás bejelentkezés alapján</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <button is="trbs-button" style="align-self: end; margin-top:var(--trbs-space--s)" text="Megnyitás google mapsben" href="https://goo.gl/maps/jEsfocXRGT9Ezg6U9" icon="solid/map-marked-alt" class="trbs-button--icon-on-right"></button>
+                </trbs-stack>
             
-                <trb-stack style="gap:var(--trb-space--3); grid-template-rows: auto auto auto 1fr">
-                    <trb-title level="3">Budapest</trb-title>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Időpontfoglalás</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-anchor href="tel:+36 70 389 5187">
-                                <trb-icon icon="phone" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text><b>+36 70 389 5187</b></trb-text>
-                            </trb-anchor>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Hétfő-Péntek, 8:00 - 17:00</trb-text>
-                            </trb-grid>
-                            <trb-grid class="isavailable trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="circle" style="color:var(--trb-red);flex-shrink: 0;"></trb-icon>
-                                <trb-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trb-text>
-                            </trb-anchor>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Műhely</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="map-marker-alt" style="color:var(--trb-red);  flex-shrink: 0; align-self: baseline"></trb-icon>
-                                <trb-text>A Fugio Kft. telephelyén található. 1037 Budapest, Kunigunda útja 80.</trb-text>
-                            </trb-grid>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Nyitvatartás bejelentkezés alapján</trb-text>
-                            </trb-grid>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-button style="align-self: end; margin-top:var(--trb-space--2)" text="Megnyitás google mapsben" href="https://goo.gl/maps/Xf7j1UjkcwmaE4M49" icon="map-marked-alt" class="trb-button--icon-on-right"></trb-button>
-                </trb-stack>
+                <trbs-stack style="gap:var(--trbs-space--m); grid-template-rows: auto auto auto 1fr">
+                    <h3>Budapest</h3>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Időpontfoglalás</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <a href="tel:+36 70 389 5187">
+                                <trbs-grid class="elements">
+                                    <trbs-icon icon="solid/phone" style="color:var(--trbs-color--red)"></trbs-icon>
+                                    <span style="font-weight: bold;">+36 70 389 5187</span>
+                                </trbs-grid>
+                            </a>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Hétfő-Péntek, 8:00 - 17:00</span>
+                            </trbs-grid>
+                            <trbs-grid class="isavailable elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/circle" style="color:var(--trbs-color--red);flex-shrink: 0;"></trbs-icon>
+                                <span>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Műhely</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/map-marker-alt" style="color:var(--trbs-color--red);  flex-shrink: 0; align-self: baseline"></trbs-icon>
+                                <span>A Fugio Kft. telephelyén található. 1037 Budapest, Kunigunda útja 80.</span>
+                            </trbs-grid>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Nyitvatartás bejelentkezés alapján</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <button is="trbs-button" style="align-self: end; margin-top:var(--trbs-space--s)" text="Megnyitás google mapsben" href="https://goo.gl/maps/Xf7j1UjkcwmaE4M49" icon="solid/map-marked-alt" class="trbs-button--icon-on-right"></button>
+                </trbs-stack>
             
-                <trb-stack style="gap:var(--trb-space--3); grid-template-rows: auto auto auto 1fr">
-                    <trb-title level="3">Mohács</trb-title>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Időpontfoglalás</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-anchor href="tel:+36 70 883 8764">
-                                <trb-icon icon="phone" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text><b>+36 70 883 8764</b></trb-text>
-                            </trb-anchor>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Hétfő-Péntek, 8:00 - 17:00</trb-text>
-                            </trb-grid>
-                            <trb-grid class="isavailable trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="circle" style="color:var(--trb-red);flex-shrink: 0;"></trb-icon>
-                                <trb-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trb-text>
-                            </trb-anchor>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-stack style="gap:var(--trb-space--3)">
-                        <trb-title level="4">Műhely</trb-title>
-                        <trb-stack style="gap:var(--trb-space--2)">
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="map-marker-alt" style="color:var(--trb-red);  flex-shrink: 0; align-self: baseline"></trb-icon>
-                                <trb-text>7700 Mohács, Virág utca 45.</trb-text>
-                            </trb-grid>
-                            <trb-grid class="trb-grid--elements" style="flex-wrap: nowrap">
-                                <trb-icon icon="clock" style="color:var(--trb-red)"></trb-icon>
-                                <trb-text>Nyitvatartás bejelentkezés alapján</trb-text>
-                            </trb-grid>
-                        </trb-stack>
-                    </trb-stack>
-                    <trb-button style="align-self: end; margin-top:var(--trb-space--2)" text="Megnyitás google mapsben" href="https://goo.gl/maps/yAjXeYWW6jK9dSzK7" icon="map-marked-alt" class="trb-button--icon-on-right"></trb-button>
-                </trb-stack>
+                <trbs-stack style="gap:var(--trbs-space--m); grid-template-rows: auto auto auto 1fr">
+                    <h3>Mohács</h3>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Időpontfoglalás</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <a href="tel:+36 70 883 8764">
+                                <trbs-grid class="elements">
+                                    <trbs-icon icon="solid/phone" style="color:var(--trbs-color--red)"></trbs-icon>
+                                    <span style="font-weight: bold;">+36 70 883 8764</span>
+                                </trbs-grid>
+                            </a>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Hétfő-Péntek, 8:00 - 17:00</span>
+                            </trbs-grid>
+                            <trbs-grid class="isavailable elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/circle" style="color:var(--trbs-color--red);flex-shrink: 0;"></trbs-icon>
+                                <span>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <trbs-stack style="gap:var(--trbs-space--m)">
+                        <h4>Műhely</h4>
+                        <trbs-stack style="gap:var(--trbs-space--s)">
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/map-marker-alt" style="color:var(--trbs-color--red);  flex-shrink: 0; align-self: baseline"></trbs-icon>
+                                <span>7700 Mohács, Virág utca 45.</span>
+                            </trbs-grid>
+                            <trbs-grid class="elements" style="flex-wrap: nowrap">
+                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
+                                <span>Nyitvatartás bejelentkezés alapján</span>
+                            </trbs-grid>
+                        </trbs-stack>
+                    </trbs-stack>
+                    <button is="trbs-button" style="align-self: end; margin-top:var(--trbs-space--s)" text="Megnyitás google mapsben" href="https://goo.gl/maps/yAjXeYWW6jK9dSzK7" icon="solid/map-marked-alt" class="trbs-button--icon-on-right"></button>
+                </trbs-stack>
             
             <script async>
 
@@ -405,37 +407,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         
                 if(isAvailable && $isAvailable.length > 0){
                     $isAvailable.forEach(el =>{
-                        el.querySelector('trb-icon').style.color = 'var(--trb-green)';
-                        el.querySelector('trb-text').textContent = 'Időpontfoglalás lehetséges'
+                        el.querySelector('trbs-icon').style.color = 'var(--trbs-color--green)';
+                        el.querySelector('span').textContent = 'Időpontfoglalás lehetséges'
                     });
                 }
         
             </script>
-        </trb-grid>
-    </trb-stack>
-</trb-section>
-<trb-section style="background-color: var(--trb-red);">
-    <trb-grid>
-        <trb-anchor href="mailto:toprepair.hu@gmail.com" style="justify-content: center;">
-            <trb-stack style="justify-items: center;">
-                <trb-icon icon="envelope" class="trb-text-size--5"></trb-icon>
-                <trb-text>toprepair.hu@gmail.com</trb-text>
-            </trb-stack>
-        </trb-anchor>
-        <trb-anchor href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="justify-content: center;">
-            <trb-stack style="justify-items: center;">
-                <trb-icon icon="google" class="trb-text-size--5"></trb-icon>
-                <trb-text>TOP REPAIR HUNGARY</trb-text>
-            </trb-stack>
-        </trb-anchor>
-        <trb-anchor href="https://facebook.com/toprepairhungary" style="justify-content: center;">
-            <trb-stack style="justify-items: center;">
-                <trb-icon icon="facebook" class="trb-text-size--5"></trb-icon>
-                <trb-text>@toprepairhungary</trb-text>
-            </trb-stack>
-        </trb-anchor>
-    </trb-grid>
-</trb-section>
+        </trbs-grid>
+    </trbs-stack>
+</section>
+<section style="background-color: var(--trbs-color--red);">
+    <trbs-grid>
+        <a href="mailto:toprepair.hu@gmail.com" style="justify-content: center;">
+            <trbs-stack style="justify-items: center;">
+                <trbs-icon icon="solid/envelope" class="trbs-size--xl"></trbs-icon>
+                <span>toprepair.hu@gmail.com</span>
+            </trbs-stack>
+        </a>
+        <a href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="justify-content: center;">
+            <trbs-stack style="justify-items: center;">
+                <trbs-icon icon="brands/google" class="trbs-size--xl"></trbs-icon>
+                <span>TOP REPAIR HUNGARY</span>
+            </trbs-stack>
+        </a>
+        <a href="https://facebook.com/toprepairhungary" style="justify-content: center;">
+            <trbs-stack style="justify-items: center;">
+                <trbs-icon icon="brands/facebook" class="trbs-size--xl"></trbs-icon>
+                <span>@toprepairhungary</span>
+            </trbs-stack>
+        </a>
+    </trbs-grid>
+</section>
     <main>
     <script type="module" src="http://192.168.0.101:5050/components/trbs-footer.js"></script>
 <trbs-footer>

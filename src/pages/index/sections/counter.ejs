@@ -1,16 +1,17 @@
-﻿<trb-section style="background-color: var(--trb-red);">
-    <trb-grid>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <b><trb-counter to="500000" class="trb-text-size--5">0</trb-counter></b>
-            <trb-text>Megjavított horpadás</trb-text>
-        </trb-stack>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <b><trb-counter to="5000" class="trb-text-size--5">0</trb-counter></b>
-            <trb-text>Megjavított autó</trb-text>
-        </trb-stack>
-        <trb-stack style="gap:var(--trb-space--0)">
-            <trb-text class="trb-text-size--5"><b><trb-counter to="5">0</trb-counter>/5</b></trb-text>
-            <trb-text>Ügyfél elégedettség</trb-text>
-        </trb-stack>
-    </trb-grid>
-</trb-section>
+﻿<script type="module" src="<%- trbUrl %>/elements/trbs-counter.js"></script>
+<section style="background-color: var(--trbs-color--red);">
+    <trbs-grid>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <trbs-counter to="500000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
+            <span>Megjavított horpadás</span>
+        </trbs-stack>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <trbs-counter to="5000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
+            <span>Megjavított autó</span>
+        </trbs-stack>
+        <trbs-stack style="gap:var(--trbs-space--0)">
+            <span style="font-weight: bold;" class="trbs-size--xl"><trbs-counter to="5">0</trbs-counter>/5</span>
+            <span>Ügyfél elégedettség</span>
+        </trbs-stack>
+    </trbs-grid>
+</section>

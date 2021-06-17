@@ -1,9 +1,9 @@
-﻿<trb-section>
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Gyakran ismételt kérdések</trb-title>
+﻿<section>
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Gyakran ismételt kérdések</h2>
         <trb-form>
-            <trb-stack style="gap:var(--trb-space--1)">
-                <trb-label for="faq-category">Kategória</trb-label>
+            <trbs-stack style="gap:var(--trbs-space--xs)">
+                <label for="faq-category">Kategória</label>
                 <select 
                     name="faq-category"
                     id="faq-category"
@@ -15,28 +15,22 @@
                     <option value="pdr">Horpadás javítás</option>
                     <option value="hdr">Jégkár javítás</option>
                 </select>
-            </trb-stack>
+            </trbs-stack>
         </trb-form>
-        <trb-grid id="faq_category_target" class="trb-grid--boxes"></trb-grid>
-    </trb-stack>
+        <trbs-grid id="faq_category_target" class="boxes"></trbs-grid>
+    </trbs-stack>
     <script>
 
         document.getElementById('faq-category').viewTemplate = `
-            <trb-card>
-                <div class="trb-card__body">
-                    <trb-stack>
-                        <trb-title level="3" style="text-transform: none">{{question}}</trb-title>
-                        <trb-paragraph>{{answer}}</trb-paragraph>
-                    </trb-stack>
-                </div>
-            </trb-card>
+            <trbs-card>
+                <trbs-card__body>
+                    <trbs-stack>
+                        <h3 style="text-transform: none">{{question}}</h3>
+                        <p>{{answer}}</p>
+                    </trbs-stack>
+                </trbs-card__body>
+            </trbs-card>
         `;
 
     </script>
-    <script type="module">
-        // set accodringly in production
-        import '<%= trbUrl %>/components/trb-card.js';
-        import '<%= trbUrl %>/components/trb-paragraph.js';
-
-    </script>
-</trb-section>
+</section>
