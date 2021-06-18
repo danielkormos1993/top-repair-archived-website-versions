@@ -1,9 +1,9 @@
-﻿<trb-section>
-    <trb-stack>
-        <trb-title level="2" class="trb-title--uppercasegrey">Munkáink</trb-title>
-        <trb-form>
-            <trb-stack style="gap:var(--trb-space--1)">
-                <trb-label for="faq-category">Kategória</trb-label>
+﻿<section>
+    <trbs-stack>
+        <h2 class="trbs-title--uppercasegrey">Munkáink</h2>
+        <form>
+            <trbs-stack style="gap:var(--trbs-space--xs)">
+                <label for="faq-category">Kategória</label>
                 <select 
                     name="works-category"
                     id="works-category"
@@ -14,21 +14,17 @@
                     <option value="pdr">Horpadás javítás</option>
                     <option value="hdr">Jégkár javítás</option>
                 </select>
-            </trb-stack>
-        </trb-form>
-        <trb-grid id="works_category_target" class="trb-grid--boxes"></trb-grid>
-        <trb-paragraph>További munkáinkért kérjük látogasson el <trb-anchor href="https://facebook.com/toprepairhungary">facebook oldalunkra</trb-anchor>, vagy <trb-anchor href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkra</trb-anchor>.</trb-paragraph>
-    </trb-stack>
+            </trbs-stack>
+        </form>
+        <trbs-grid id="works_category_target" class="boxes"></trbs-grid>
+        <p>További munkáinkért kérjük látogasson el <a class="link" href="https://facebook.com/toprepairhungary">facebook oldalunkra</a>, vagy <a class="link" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkra</a>.</p>
+    </trbs-stack>
     <script>
 
         document.getElementById('works-category').viewTemplate = `
-            <trb-work format="{{format}}" src="{{src}}"></trb-work>
+            <trbs-work format="{{format}}" src="{{src}}"></trbs-work>
         `;
 
     </script>
-    <script type="module">
-        // set accodringly in production
-        import '<%= trbUrl %>/components/trb-work.js';
-
-    </script>
-</trb-section>
+    <script type="module" src="<%= trbUrl %>/components/trbs-work.js"></script>
+</section>

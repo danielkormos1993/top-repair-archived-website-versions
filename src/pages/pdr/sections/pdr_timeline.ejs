@@ -1,25 +1,26 @@
-﻿<trb-section>
-    <trb-stack style="gap:var(--trb-space--5)">
-        <trb-title level="2" class="trb-title--uppercasegrey">A JAVÍTÁS MENETE</trb-title>
-        <trb-timeline>
-            <div class="trb-timeline__step" number="1">
-                <trb-stack>
-                    <trb-title level="3">INGYENES ÁRAJÁNLAT</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">Időpont foglalás után, kiszállással vagy műhelyünkben soron kivül fogadjuk és felmérjük javítandó horpadásait. Ez a folyamat maximum 15 percet vesz igénybe, ami után egyből megkapja árajánlatunkat. Időpontot foglalni <trb-anchor href="/kapcsolat"> telefonon</trb-anchor> lehetséges.</trb-paragraph>
-                </trb-stack>
-            </div>
-            <div class="trb-timeline__step" number="2">
-                <trb-stack>
-                    <trb-title level="3">IDŐPONTFOGLALÁS JAVÍTÁSRA</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">Amennyiben árajánlatunk megfelelt Önnek, Ön eldönti hogy kiszállással vagy műhelyünkbe szeretné megjavíttatni autóját, majd időpontot foglal a javításra.</trb-paragraph>
-                </trb-stack>
-            </div>
-            <div class="trb-timeline__step" number="3">
-                <trb-stack>
-                    <trb-title level="3">JAVÍTÁS</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">Egy kisebb jégverés javítása 1 napon belül történik, és egy nagyobb jégverés javítása is maximum pár napot vehet igénybe, illetve extrém esetekben akár 1 hetet is. Szakszerű javítással a gépjármű teljesen visszanyeri gyári állapotát.</trb-paragraph>
-                </trb-stack>
-            </div>
-        </trb-timeline>
-    </trb-stack>
-</trb-section>
+﻿<script type="module" src="<%- trbUrl %>/components/trbs-timeline.js"></script>
+<section>
+    <trbs-stack style="gap:var(--trbs-space--xl)">
+        <h2 class="trbs-title--uppercasegrey">A KÁRRENDEZÉS MENETE</h2>
+        <trbs-timeline>
+            <trbs-timeline__step number="1">
+                <trbs-stack>
+                    <h3>INGYENES ÁRAJÁNLAT</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">Időpont foglalás után, kiszállással vagy műhelyünkben soron kivül fogadjuk és felmérjük javítandó horpadásait. Ez a folyamat maximum 15 percet vesz igénybe, ami után egyből megkapja árajánlatunkat. Időpontot foglalni <a class="link" href="/kapcsolat"> telefonon</a> lehetséges.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+            <trbs-timeline__step number="2">
+                <trbs-stack>
+                    <h3>IDŐPONTFOGLALÁS JAVÍTÁSRA</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">Amennyiben árajánlatunk megfelelt Önnek, Ön eldönti hogy kiszállással vagy műhelyünkbe szeretné megjavíttatni autóját, majd időpontot foglal a javításra.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+            <trbs-timeline__step number="3">
+                <trbs-stack>
+                    <h3>JAVÍTÁS</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">A lefoglalt időpontban horpadásait minimum 15 perc, maximum pár órán belüli határidővel gyári állapotra varázsoljuk. Ez a TOP REPAIR élmény.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+        </trbs-timeline>
+    </trbs-stack>
+</section>

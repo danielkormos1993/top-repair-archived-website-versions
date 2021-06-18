@@ -43,45 +43,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <a href="/kapcsolat">Kapcsolat</a>
 </trbs-header>
     <main>
-        <trb-section style="background-color: var(--trb-red);">
-    <trb-stack style="gap:var(--trb-space--2)">
-        <trb-title level="1" style="color: var(--trb-lightgrey)" class="trb-title--uppercasegrey">CASCO-S JÉGKÁR JAVÍTÁS</trb-title>
-        <trb-paragraph class="trb-text-size--5"><b>CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz.</b></trb-paragraph>
-        <trb-paragraph><b>CASCO-s jégkár javításnál 10% visszajár!</b> A javítási számla 10%-át az önrész finanszírozására, vagy amennyiben Ön szeretne kedvezményes bérautót a javítás idejére, úgy annak finanszírozására is fordíthajta azt!</trb-paragraph>
-    </trb-stack>
-</trb-section>
-<trb-section>
-    <trb-stack style="gap:var(--trb-space--5)">
-        <trb-title level="2" class="trb-title--uppercasegrey">A KÁRRENDEZÉS MENETE</trb-title>
-        <trb-timeline>
-            <div class="trb-timeline__step" number="1">
-                <trb-stack>
-                    <trb-title level="3">A KÁR BEJELENTÉSE</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">A kár bejelentése történhet ONLINE vagy telefonon keresztül is. A biztosító a bejelentést követően kárszakértőt küld a kár felmérésére, mely a kárszakártővel előre egyeztetett időpontban történik.</trb-paragraph>
-                </trb-stack>
-            </div>
-            <div class="trb-timeline__step" number="2">
-                <trb-stack>
-                    <trb-title level="3">SZEMLE (KÁRFELVÉTEL)</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">A jégeső okozta horpadások feljelölésre kerülnek, illetve minden cserélendő alkatrészt jegyzőkönyvbe vesz a kárszakértő. Ezt a lépést érdemes jégkárjavító szakember közreműködésével megtenni, mivel a kárszakértő szaktudás hiányában lehetséges, hogy nem látja, nem veszi fel a kár egészét. Amennyiben a kárt elsőre nem sikerült helyesen felvenni, úgy pótszemlére kerül sor.</trb-paragraph>
-                </trb-stack>
-            </div>
-            <div class="trb-timeline__step" number="3">
-                <trb-stack>
-                    <trb-title level="3">JAVÍTÁS</trb-title>
-                    <trb-paragraph style="color:var(--trb-lightgrey)" class="trb-text-size--2">Egy kisebb jégverés javítása 1 napon belül történik, és egy nagyobb jégverés javítása is maximum pár napot vehet igénybe, illetve extrém esetekben akár 1 hetet is. Szakszerű javítással a gépjármű teljesen visszanyeri gyári állapotát.</trb-paragraph>
-                </trb-stack>
-            </div>
-        </trb-timeline>
-    </trb-stack>
-</trb-section>
-<trb-section style="background-color: var(--trb-red);">
-    <trb-stack>
-        <trb-title level="2" style="color: var(--trb-white)" class="trb-title--uppercasegrey">ÜGYINTÉZÉS INDÍTÁSA</trb-title>
-        <trb-paragraph>Amennyiben szeretné velünk intéztetni bejelentését, úgy kérjük vegye fel velünk a kapcsolatot.</trb-paragraph>
-        <trb-button class="trb-button--outline trb-button--call" number="+36 70 593 9393"></trb-button>
-    </trb-stack>
-</trb-section>
+        <section style="background-color: var(--trbs-color--red);">
+    <trbs-stack style="gap:var(--trbs-space--s)">
+        <h1 style="color: var(--trbs-color--lightgrey)" class="trbs-title--uppercasegrey">CASCO-S JÉGKÁR JAVÍTÁS</h1>
+        <p class="trbs-size--xl" style="font-weight: bold">CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz.</p>
+        <p><b>CASCO-s jégkár javításnál 10% visszajár!</b> A javítási számla 10%-át az önrész finanszírozására, vagy amennyiben Ön szeretne kedvezményes bérautót a javítás idejére, úgy annak finanszírozására is fordíthajta azt!</p>
+    </trbs-stack>
+</section>
+<script type="module" src="http://192.168.0.101:5050/components/trbs-timeline.js"></script>
+<section>
+    <trbs-stack style="gap:var(--trbs-space--xl)">
+        <h2 class="trbs-title--uppercasegrey">A KÁRRENDEZÉS MENETE</h2>
+        <trbs-timeline>
+            <trbs-timeline__step number="1">
+                <trbs-stack>
+                    <h3>A KÁR BEJELENTÉSE</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">A kár bejelentése történhet ONLINE vagy telefonon keresztül is. A biztosító a bejelentést követően kárszakértőt küld a kár felmérésére, mely a kárszakártővel előre egyeztetett időpontban történik.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+            <trbs-timeline__step number="2">
+                <trbs-stack>
+                    <h3>SZEMLE (KÁRFELVÉTEL)</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">A jégeső okozta horpadások feljelölésre kerülnek, illetve minden cserélendő alkatrészt jegyzőkönyvbe vesz a kárszakértő. Ezt a lépést érdemes jégkárjavító szakember közreműködésével megtenni, mivel a kárszakértő szaktudás hiányában lehetséges, hogy nem látja, nem veszi fel a kár egészét. Amennyiben a kárt elsőre nem sikerült helyesen felvenni, úgy pótszemlére kerül sor.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+            <trbs-timeline__step number="3">
+                <trbs-stack>
+                    <h3>JAVÍTÁS</h3>
+                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">Egy kisebb jégverés javítása 1 napon belül történik, és egy nagyobb jégverés javítása is maximum pár napot vehet igénybe, illetve extrém esetekben akár 1 hetet is. Szakszerű javítással a gépjármű teljesen visszanyeri gyári állapotát.</p>
+                </trbs-stack>
+            </trbs-timeline__step>
+        </trbs-timeline>
+    </trbs-stack>
+</section>
+<section style="background-color: var(--trbs-color--red);">
+    <trbs-stack>
+        <h2 style="color: var(--trbs-color--white)" class="trbs-title--uppercasegrey">ÜGYINTÉZÉS INDÍTÁSA</h2>
+        <p>Amennyiben szeretné velünk intéztetni bejelentését, úgy kérjük vegye fel velünk a kapcsolatot.</p>
+        <button is="trbs-button" class="trbs-button--call trbs-button--outline" number="+36 70 593 9393"></button>
+    </trbs-stack>
+</section>
 
 <section>
     <trbs-stack>
