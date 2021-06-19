@@ -25,6 +25,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Jégkár javítás mesterfokon" />
 <meta property="og:description" content="Jégkár javítás fényezés nélküli technológiával. Autóját, flottáját, kereskedését rövid határidővel jégkár mentesítjük. CASCO-s jégkár javítás ügyintézés." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
+    <script>
+
+        window.isProduction = false;
+
+    </script>
     <script src="http://192.168.0.101:5050/components/trbs-pageloader.js"></script>
     <script type="module" src="http://192.168.0.101:5050/themes/tr-theme.js"></script>
     <script type="module" src="http://192.168.0.101:5050/trbs-bundle.js"></script>
@@ -52,7 +57,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <p>Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.</p>
         </trbs-stack>
         <div>
-            <video is="trbs-video" src="/cdn/works/hdr/bmwjegkar.mp4" loop autoplay muted playsinline></video>
+            <video is="trbs-video" lazy-src="/cdn/works/hdr/bmwjegkar.mp4" controls loop autoplay muted playsinline></video>
         </div>
     </trbs-grid>
 </section>

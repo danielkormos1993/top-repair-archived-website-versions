@@ -5,6 +5,11 @@
 <html lang="en">
 <head>
     <%- include('sections/head.ejs') %>
+    <script>
+
+        window.isProduction = <%= process.env.mode === 'production' %>;
+
+    </script>
     <script src="<%- trbUrl %>/components/trbs-pageloader.js"></script>
     <script type="module" src="<%- trbUrl %>/themes/tr-theme.js"></script>
     <script type="module" src="<%- trbUrl %>/trbs-bundle.js"></script>
