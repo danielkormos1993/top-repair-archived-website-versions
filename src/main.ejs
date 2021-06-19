@@ -10,7 +10,8 @@
         window.isProduction = <%= process.env.mode === 'production' %>;
 
     </script>
-    <script src="<%- trbUrl %>/components/trbs-pageloader.js"></script>
+    <!-- this is until client side routing implemented -->
+    <script src="/cdn/pageloader.js"></script>
     <script type="module" src="<%- trbUrl %>/themes/tr-theme.js"></script>
     <script type="module" src="<%- trbUrl %>/trbs-bundle.js"></script>
 </head>
