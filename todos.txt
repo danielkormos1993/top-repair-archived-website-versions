@@ -1,3 +1,2 @@
-﻿- loading screen implementation without fouc
-- http2 somehow (can try without node)
+﻿- http2 somehow (can try without node)
 - implement client side routing

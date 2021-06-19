@@ -5,17 +5,18 @@
 <html lang="en">
 <head>
     <%- include('sections/head.ejs') %>
-    <script type="module" src="<%- trbUrl %>/trbs-bundle.js"></script>
+    <script src="<%- trbUrl %>/components/trbs-pageloader.js"></script>
     <script type="module" src="<%- trbUrl %>/themes/tr-theme.js"></script>
+    <script type="module" src="<%- trbUrl %>/trbs-bundle.js"></script>
 </head>
-<body>
+<body class="trbs-loader--active">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <%- include('sections/header.ejs') %>
     <main>
         <%- include(`pages/${page.name}/${page.name}.ejs`) %>
-    <main>
+    </main>
     <%- include('sections/footer.ejs') %>
     <%- include('sections/cookiebar.ejs') %>
 </body>
