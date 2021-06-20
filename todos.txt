@@ -1,3 +1,4 @@
-﻿- from some places dns server not working(or sometimes?) ... domdom?(investigation) !!!!
-- implement client side routing !!
+﻿- implement client side routing !!
 - publish new sitemap to search console !!!
+
+- cloudflare for cdn? or netlify?

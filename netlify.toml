@@ -69,3 +69,6 @@
   to = "/pages/404.html"
   status = 200
   force = false
+
+[dev]
+  publish = "dist"
