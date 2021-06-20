@@ -11,8 +11,56 @@
   force = false
 
 [[redirects]]
+  from = "/jegkarjavitas/cascojegkar"
+  to = "/pages/hdr_casco.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/jegkarjavitas/nemcascojegkar"
+  to = "/pages/hdr_nemcasco.html"
+  status = 200
+  force = false
+
+[[redirects]]
   from = "/horpadasjavitas"
   to = "/pages/pdr.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/pdrtechnologia"
+  to = "/pages/technology.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/munkaink"
+  to = "/pages/works.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/rolunk"
+  to = "/pages/aboutus.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/gyik"
+  to = "/pages/faq.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/kapcsolat"
+  to = "/pages/contact.html"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/adatvedelem"
+  to = "/pages/pp.html"
   status = 200
   force = false
 
