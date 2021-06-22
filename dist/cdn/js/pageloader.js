@@ -14,6 +14,7 @@ pageloaderStyle.textContent = `
         overflow: hidden;
         height: 100vh;
         width: 100vw;
+        visibility: hidden;
     }
 
     .trbs-loader--active:before{
@@ -24,6 +25,7 @@ pageloaderStyle.textContent = `
         position: absolute;
         background-color: inherit;
         z-index: 101;
+        visibility: visible;
     }
 
     .trbs-loader--active:after{
@@ -42,6 +44,7 @@ pageloaderStyle.textContent = `
         border-radius: 50%;
         animation: TrbsSpin 2s linear infinite;
         z-index: 102;
+        visibility: visible;
     }
 
     @keyframes TrbsSpin {
@@ -53,4 +56,6 @@ pageloaderStyle.textContent = `
 
 document.head.appendChild(pageloaderStyle);
 
-window.addEventListener('load', () => document.body.classList.remove('trbs-loader--active'));
+window.addEventListener('load', () => {
+    document.body.classList.remove('trbs-loader--active');
+});
