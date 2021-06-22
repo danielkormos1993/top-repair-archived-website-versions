@@ -1,4 +1,2 @@
 ﻿- implement client side routing !!
 - publish new sitemap to search console !!!
-
-- cloudflare for cdn? or netlify?
