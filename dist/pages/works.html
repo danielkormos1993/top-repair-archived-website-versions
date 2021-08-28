@@ -27,21 +27,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
     <script>
 
-        window.isProduction = true;
+        window.isProduction = false;
 
     </script>
     <!-- this is until client side routing implemented -->
     <script src="/cdn/js/pageloader.js"></script>
-    <script type="module" async src="https://trbs.netlify.app/themes/tr-theme.js"></script>
-    <script type="module" async src="https://trbs.netlify.app/trbs-bundle.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/themes/tr-theme.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/trbs-bundle.js"></script>
 </head>
 <body class="trbs-loader--active">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <script type="module" async src="https://trbs.netlify.app/components/trbs-header.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/components/trbs-header.js"></script>
 <trbs-header>
-    <a href="javascript:void(0)" onclick="document.getElementById('fontosinfo').show()">Fontos információ</a>
+    <!-- <a href="javascript:void(0)" onclick="document.getElementById('fontosinfo').show()">Fontos információ</a> -->
     <a href="/jegkarjavitas">Jégkár javítás</a>
     <a href="/horpadasjavitas">Horpadás javítás</a>
     <a href="/pdrtechnologia">A technológia</a>
@@ -79,26 +79,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `;
 
     </script>
-    <script type="module" async src="https://trbs.netlify.app/components/trbs-work.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/components/trbs-work.js"></script>
 </section>
 <script type="module">
     import { initCategory } from '/cdn/js/category.js'; // port to cdn
     initCategory(document.getElementById('works-category'));
 </script>
     </main>
-    <script type="module" async src="https://trbs.netlify.app/components/trbs-footer.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/components/trbs-footer.js"></script>
 <trbs-footer>
     <a class="link" href="/adatvedelem">Adatvédelmi tájékoztató</a>
 </trbs-footer>
-    <script type="module" async src="https://trbs.netlify.app/components/trbs-cookiebar.js"></script>
+    <script type="module" async src="http://192.168.0.101:5050/components/trbs-cookiebar.js"></script>
 <trbs-cookiebar cookieName="gdpr" cookieValue="accepted">
     <trbs-stack style="text-align:center; justify-items:center">
         <p>Ez a weboldal Google Analytics sütiket használ a látogatottság elemzése céljából. Weboldalunk böngészésével Ön megértette és elfogadja <a class="link" style="color: inherit" href="/adatvedelem">adatvédelmi tájékoztatónkat</a>.</p>
         <button is="trbs-button" text="Ok" class="trbs-button--outline trbs-cookiebar__setCookieButton"></button>
     </trbs-stack>
 </trbs-cookiebar>
-    <script type="module" async src="https://trbs.netlify.app/components/trbs-modal.js"></script>
-    <trbs-modal id="fontosinfo" showonfirsthit title="Fontos információ - 2021.07.01.">
+    <script type="module" async src="http://192.168.0.101:5050/components/trbs-modal.js"></script>
+    <!-- <trbs-modal id="fontosinfo" showonfirsthit title="Fontos információ - 2021.07.01.">
         <trbs-stack>
             <p>
             Kedves Ügyfeleink!<br>
@@ -111,6 +111,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <br>
             Megèrtèsüket köszönjük.</p>
         </trbs-stack>
-    </trbs-modal>
+    </trbs-modal> -->
 </body>
 </html>
