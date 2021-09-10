@@ -12,8 +12,7 @@
     },{
         "city": "Mohács",
         "phoneNumber": "+36 70 883 8764",
-        "address": "7700 Mohács",
-        "googleMapsLink": "https://goo.gl/maps/yAjXeYWW6jK9dSzK7"
+        "address": "7700 Mohács"
     }];
 %>
 <section>
@@ -55,7 +54,9 @@
                             </trbs-grid>
                         </trbs-stack>
                     </trbs-stack>
+                    <% if(contact.googleMapsLink){ %>
                     <button is="trbs-button" style="align-self: end; margin-top:var(--trbs-space--s)" text="Megnyitás google mapsben" href="<%- contact.googleMapsLink %>" icon="solid/map-marked-alt" class="trbs-button--icon-on-right"></button>
+                    <% } %>
                 </trbs-stack>
             <% }); %>
             <script async>

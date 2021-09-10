@@ -1,5 +1,6 @@
 ﻿<% 
-    locals.trbUrl = process.env.mode === 'production' ? 'https://trbs.netlify.app' : 'http://192.168.0.101:5050';
+    process.env.mode = "production";
+    locals.trbUrl = process.env.mode === 'production' ? 'https://trbs.netlify.app' : 'http://192.168.56.1:5050';
 %> 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,19 +27,33 @@
     <%- include('sections/footer.ejs') %>
     <%- include('sections/cookiebar.ejs') %>
     <script type="module" async src="<%- trbUrl %>/components/trbs-modal.js"></script>
-    <!-- <trbs-modal id="fontosinfo" showonfirsthit title="Fontos információ - 2021.07.01.">
+    <trbs-modal id="fontosinfo" showonfirsthit title="Fontos információ - 2021.09.11.">
         <trbs-stack>
             <p>
             Kedves Ügyfeleink!<br>
             <br>
-            Határozatlan ideig szüneteltetjük magyarországi tevèkenysègünket.<br>
+            Csapatunk megkezdte a magyarországi jégkáros autók javítását  🚗🔨<br>
             <br>
-            Csapatunk Ausztriába kapott meghívást, ahol több mint 200 totálkár közeli jègkáros autót kell megjavítanunk.<br>
+            Első körben szerződött partnereink autóit javítjuk meg:<br>
+            ➡️ Emil frey Magyarország<br>
+            ➡️ Opel Maxabo<br>
+            ➡️ Suzuki Szeleczky<br>
+            ➡️ Autopalace Buda<br>
+            ➡️ Wallis British Motors<br>
+            ➡️ Honda Budaörs<br>
+            ➡️ Honda M&M<br>
+            ➡️ Novofleet<br>
+            ➡️ Citroen Peugeot Pásztor<br>
             <br>
-            Előreláthatólag 2021 Október környèkèn tudunk fogadni ismèt javítandó járműveket magyarországi műhelyeinkbe.<br>
+            Várólistás ügyfeleink autóit 2021. Októberében kezdjük el javítani Győrben, és Budapesten is.<br>
             <br>
-            Megèrtèsüket köszönjük.</p>
+            Várólistánkra (JELENLEG 2022. FEBRUÁRNÁL TARTUNK) való feliratkozáshoz hívjanak minket Győrben a +36705939393-as telefonszámon, Budapesten pedig a +36703895187-es telefonszámon.<br>
+            <br>
+            ✔️ CASCO jégkár ügyintézés, javítás<br>
+            ✔️ Önfinanszírozott jégkár javítás<br>
+            ✔️ Horpadás javítás<br>
+            </p>
         </trbs-stack>
-    </trbs-modal> -->
+    </trbs-modal>
 </body>
 </html>
