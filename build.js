@@ -1,7 +1,9 @@
 ﻿const fs = require("fs");
 const ejsRenderFile = require("ejs").renderFile;
 
-fs.rmdirSync(`dist/pages`, {recursive: true});
+if(!fs.existsSync('dist/pages')) return console.error('dist/pages folder must be created manually. Exited.');
+
+fs.rmSync(`dist/pages`, {force: true, recursive: true});
 fs.mkdirSync('dist/pages');
 
 const pages = require(`./src/pages.json`);
