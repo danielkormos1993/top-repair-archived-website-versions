@@ -1,10 +1,17 @@
 ﻿const fs = require("fs");
 const ejsRenderFile = require("ejs").renderFile;
 
-if(!fs.existsSync('dist/pages')) return console.error('dist/pages folder must be created manually. Exited.');
+const buildPath = 'dist/pages';
 
-fs.rmSync(`dist/pages`, {force: true, recursive: true});
-fs.mkdirSync('dist/pages'); //lol
+if(!fs.existsSync(buildPath)) fs.mkdirSync(buildPath);
+
+const oldFiles = fs.readdirSync(buildPath);
+console.log(oldFiles);
+oldFiles.forEach(file => {
+   fs.unlink(`${buildPath}/${file}`, err => {
+        if(err) return console.log(err);
+    });
+});
 
 const pages = require(`./src/pages.json`);
 
