@@ -6,7 +6,7 @@ const buildPath = 'dist/pages';
 if(!fs.existsSync(buildPath)) fs.mkdirSync(buildPath);
 
 const oldFiles = fs.readdirSync(buildPath);
-console.log(oldFiles);
+
 oldFiles.forEach(file => {
    fs.unlink(`${buildPath}/${file}`, err => {
         if(err) return console.log(err);

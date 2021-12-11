@@ -15,11 +15,6 @@
   },
   "author": "Daniel Kormos",
   "license": "ISC",
-  "dependencies": {
-    "compression": "^1.7.4",
-    "cors": "^2.8.5",
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "ejs": "^3.1.6",
     "npm-watch": "^0.9.0"
