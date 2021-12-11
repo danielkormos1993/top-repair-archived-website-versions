@@ -1,1 +1,1 @@
-left -> technology page, pp, pdr, index, hdrall
+left -> pdr, index(here now), hdrall
