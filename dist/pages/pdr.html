@@ -46,48 +46,51 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </trds-header>
 
     <trds-main>
-        <section style="background-color: var(--trbs-color--red);">
-    <trbs-grid>
-        <trbs-stack style="gap:var(--trbs-space--s)">
-            <h1 style="color: var(--trbs-color--lightgrey)" class="trbs-title--uppercasegrey">HORPADÁS JAVÍTÁS FÉNYEZÉS NÉLKÜL</h1>
-            <p class="trbs-size--xl" style="font-weight: bold;">A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat</p>
-            <p>Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.</p>
-        </trbs-stack>
-        <trbs-showcase style="align-self: start" before-image-src="/cdn/works/pdr/10before.jpg" after-image-src="/cdn/works/pdr/10after.jpg"></trbs-showcase>
-    </trbs-grid>
-</section>
-<section>
-    <trbs-stack style="gap:var(--trbs-space--xl)">
-        <h2 class="trbs-title--uppercasegrey">A JAVÍTÁS MENETE</h2>
-        <trbs-timeline>
-            <trbs-timeline__step number="1">
-                <trbs-stack>
-                    <h3>INGYENES ÁRAJÁNLAT</h3>
-                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">Időpont foglalás után, kiszállással vagy műhelyünkben soron kivül fogadjuk és felmérjük javítandó horpadásait. Ez a folyamat maximum 15 percet vesz igénybe, ami után egyből megkapja árajánlatunkat. Időpontot foglalni <a class="link" href="/kapcsolat"> telefonon</a> lehetséges.</p>
-                </trbs-stack>
-            </trbs-timeline__step>
-            <trbs-timeline__step number="2">
-                <trbs-stack>
-                    <h3>IDŐPONTFOGLALÁS JAVÍTÁSRA</h3>
-                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">Amennyiben árajánlatunk megfelelt Önnek, Ön eldönti hogy kiszállással vagy műhelyünkbe szeretné megjavíttatni autóját, majd időpontot foglal a javításra.</p>
-                </trbs-stack>
-            </trbs-timeline__step>
-            <trbs-timeline__step number="3">
-                <trbs-stack>
-                    <h3>JAVÍTÁS</h3>
-                    <p style="color:var(--trbs-color--lightgrey)" class="trbs-size--s">A lefoglalt időpontban horpadásait minimum 15 perc, maximum pár órán belüli határidővel gyári állapotra varázsoljuk. Ez a TOP REPAIR élmény.</p>
-                </trbs-stack>
-            </trbs-timeline__step>
-        </trbs-timeline>
-    </trbs-stack>
-</section>
-<section style="background-color: var(--trbs-color--red);">
-    <trbs-stack>
-        <h2 style="color: var(--trbs-color--white)" class="trbs-title--uppercasegrey">BEJELENTKEZÉS</h2>
-        <p>Bejelentkezéshez hívjon minket, és munkatársunk az Ön számára legmegfelelőbb időpontot biztosítja.</p>
-        <button is="trbs-button" href="/kapcsolat" class="trbs-button--outline trbs-button--icon-on-right" text="Tovább" icon="solid/arrow-right"></button>
-    </trbs-stack>
-</section>
+        <trds-section style="background-color: var(--trds-theme--primary);">
+    <trds-grid>
+        <trds-stack style="gap:var(--trds-space--s)">
+            <trds-title level="1" style="color: var(--trds-theme--secondary-text)" class="variant--1">HORPADÁS JAVÍTÁS FÉNYEZÉS NÉLKÜL</trds-title>
+            <trds-text class="trds-size--xl" style="font-weight: bold;">A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat</trds-text>
+            <trds-paragraph>Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.</trds-paragraph>
+        </trds-stack>
+        <trds-showcase style="align-self: start">
+            <trds-image slot="before" src="/cdn/works/pdr/10before.jpg"></trds-image>
+            <trds-image slot="after" src="/cdn/works/pdr/10after.jpg"></trds-image>
+        </trds-showcase>
+    </trds-grid>
+</trds-section>
+<trds-section>
+    <trds-stack style="gap:var(--trds-space--xl)">
+        <trds-title level="2" class="variant--1">A JAVÍTÁS MENETE</trds-title>
+        <trds-timeline>
+            <trds-timeline__step number="1">
+                <trds-stack>
+                    <trds-title level="3">INGYENES ÁRAJÁNLAT</trds-title>
+                    <trds-paragraph style="color:var(--trds-theme--secondary-text)" class="trds-size--s">Időpont foglalás után, kiszállással vagy műhelyünkben soron kivül fogadjuk és felmérjük javítandó horpadásait. Ez a folyamat maximum 15 percet vesz igénybe, ami után egyből megkapja árajánlatunkat. Időpontot foglalni <trds-link-text href="/kapcsolat"> telefonon</trds-link-text> lehetséges.</trds-paragraph>
+                </trds-stack>
+            </trds-timeline__step>
+            <trds-timeline__step number="2">
+                <trds-stack>
+                    <trds-title level="3">IDŐPONTFOGLALÁS JAVÍTÁSRA</trds-title>
+                    <trds-paragraph style="color:var(--trds-theme--secondary-text)" class="trds-size--s">Amennyiben árajánlatunk megfelelt Önnek, Ön eldönti hogy kiszállással vagy műhelyünkbe szeretné megjavíttatni autóját, majd időpontot foglal a javításra.</trds-paragraph>
+                </trds-stack>
+            </trds-timeline__step>
+            <trds-timeline__step number="3">
+                <trds-stack>
+                    <trds-title level="3">JAVÍTÁS</trds-title>
+                    <trds-paragraph style="color:var(--trds-theme--secondary-text)" class="trds-size--s">A lefoglalt időpontban horpadásait minimum 15 perc, maximum pár órán belüli határidővel gyári állapotra varázsoljuk. Ez a TOP REPAIR élmény.</trds-paragraph>
+                </trds-stack>
+            </trds-timeline__step>
+        </trds-timeline>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--trds-theme--primary);">
+    <trds-stack>
+        <trds-title level="2" style="color: var(--trds-theme--primary-text)" class="variant--1">BEJELENTKEZÉS</trds-title>
+        <trds-text>Bejelentkezéshez hívjon minket, és munkatársunk az Ön számára legmegfelelőbb időpontot biztosítja.</trds-text>
+        <trds-button href="/kapcsolat" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></trds-button>
+    </trds-stack>
+</trds-section>
 
 <trds-section>
     <trds-stack>

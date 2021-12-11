@@ -1,49 +1,43 @@
-﻿<section class="services">
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">JÉGKÁR JAVÍTÁS SZOLGÁLTATÁSAINK</h2>
-        <trbs-grid class="boxes">
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/car" class="trbs-size--xl" style="color: var(--trbs-color--red)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>CASCO-S JÉGKÁR JAVÍTÁS</h3>
-                            <p class="trbs-size--s">Jégkár CASCO alapján történő kárrendezése során cégünk a káresemény bekövetkezése és az adott biztosítótársasághoz szükséges nyomtatványok kitöltése után a kárfelvételtől a javításig mindent elintéz, sőt a biztosítótársasággal javítási számla alapján közvetlenül elszámolunk.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-                <trbs-card__footer>
-                    <button is="trbs-button" href="/jegkarjavitas/cascojegkar" class="trbs-button--outline trbs-button--icon-on-right" text="Tovább" icon="solid/arrow-right"></button>
-                </trbs-card__footer>
-            </trbs-card>
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/hammer" class="trbs-size--xl" style="color: var(--trbs-color--red)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>ÖNFINANSZÍROZOTT JÉGKÁR JAVÍTÁS</h3>
-                            <p class="trbs-size--s">Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-                <trbs-card__footer>
-                    <button is="trbs-button" href="/jegkarjavitas/nemcascojegkar" class="trbs-button--outline trbs-button--icon-on-right" text="Tovább" icon="solid/arrow-right"></button>
-                </trbs-card__footer>
-            </trbs-card>
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/truck" class="trbs-size--xl" style="color: var(--trbs-color--red)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>KITELEPÜLÉS ORSZÁGSZERTE</h3>
-                            <p class="trbs-size--s">Nagyobb jégeső során csapatunkat biztosan megtalálja a káresemény helyszínén, ahol minden erőnkkel azon dolgozunk, hogy szakszerűen és minnél gyorsabban helyreállítsuk a jégeső okozta károkat. Cégünk országszerte vállalja kereskedések, kisebb logisztikai parkok, céges flották teljes jégkár mentesítését rövid határidővel. Érdeklődjön telefonon.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-                <trbs-card__footer>
-                    <button is="trbs-button" class="trbs-button--call trbs-button--outline" number="+36 70 593 9393"></button>
-                </trbs-card__footer>
-            </trbs-card>
-        </trbs-grid>
-    </trbs-stack>
-</section>
+﻿<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">JÉGKÁR JAVÍTÁS SZOLGÁLTATÁSAINK</trds-title>
+        <trds-grid class="boxes-layout">
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/car" class="trds-size--xl" style="color: var(--trds-theme--primary)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">CASCO-S JÉGKÁR JAVÍTÁS</trds-title>
+                        <trds-paragraph class="trds-size--s">Jégkár CASCO alapján történő kárrendezése során cégünk a káresemény bekövetkezése és az adott biztosítótársasághoz szükséges nyomtatványok kitöltése után a kárfelvételtől a javításig mindent elintéz, sőt a biztosítótársasággal javítási számla alapján közvetlenül elszámolunk.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+                <div slot="trds-card__footer">
+                    <trds-button href="/jegkarjavitas/cascojegkar" class="icon-on-right" text="Tovább" icon="solid/arrow-right"></trds-button>
+                </div>
+            </trds-card>
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/hammer" class="trds-size--xl" style="color: var(--trds-theme--primary)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">ÖNFINANSZÍROZOTT JÉGKÁR JAVÍTÁS</trds-title>
+                        <trds-paragraph class="trds-size--s">Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+                <div slot="trds-card__footer">
+                    <trds-button href="/jegkarjavitas/nemcascojegkar" class="icon-on-right" text="Tovább" icon="solid/arrow-right"></trds-button>
+                </div>
+            </trds-card>
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/truck" class="trds-size--xl" style="color: var(--trds-theme--primary)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">KITELEPÜLÉS ORSZÁGSZERTE</trds-title>
+                        <trds-paragraph class="trds-size--s">JNagyobb jégeső során csapatunkat biztosan megtalálja a káresemény helyszínén, ahol minden erőnkkel azon dolgozunk, hogy szakszerűen és minnél gyorsabban helyreállítsuk a jégeső okozta károkat. Cégünk országszerte vállalja kereskedések, kisebb logisztikai parkok, céges flották teljes jégkár mentesítését rövid határidővel. Érdeklődjön telefonon.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+                <div slot="trds-card__footer">
+                    <trds-button number="+36 70 593 9393" class="call outline"></trds-button>
+                </div>
+            </trds-card>
+        </trds-grid>
+    </trds-stack>
+</trds-section>

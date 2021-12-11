@@ -55,41 +55,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <trds-button href="/kapcsolat" text="Kapcsolat" icon="solid/arrow-right" class="icon-on-right"></trds-button>
     </trds-stack>
 </trds-section>
-<section class="services">
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">Szolgáltatásaink</h2>
-        <trbs-grid class="boxes">
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/hail" class="trbs-size--xl" style="color: var(--trbs-color--red)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>Jégkár javítás</h3>
-                            <p class="trbs-size--s">Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-                <trbs-card__footer>
-                    <button is="trbs-button" href="/jegkarjavitas" class="trbs-button--outline trbs-button--icon-on-right" text="Tovább" icon="solid/arrow-right"></button>
-                </trbs-card__footer>
-            </trbs-card>
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/hammer" class="trbs-size--xl" style="color: var(--trbs-color--red)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>Horpadás javítás</h3>
-                            <p class="trbs-size--s">Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-                <trbs-card__footer>
-                    <button is="trbs-button" href="/horpadasjavitas" class="trbs-button--outline trbs-button--icon-on-right" text="Tovább" icon="solid/arrow-right"></button>
-                </trbs-card__footer>
-            </trbs-card>
-        </trbs-grid>
-    </trbs-stack>
-</section>
+<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Szolgáltatásaink</trds-title>
+        <trds-grid class="boxes-layout">
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/hail" class="trds-size--xl" style="color: var(--trds-theme--primary)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">Jégkár javítás</trds-title>
+                        <trds-paragraph class="trds-size--s">Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+                <div slot="trds-card__footer">
+                    <trds-button href="/jegkarjavitas" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></trds-button>
+                </div>
+            </trds-card>
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/hammer" class="trds-size--xl" style="color: var(--trds-theme--primary)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">Horpadás javítás</trds-title>
+                        <trds-paragraph class="trds-size--s">Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+                <div slot="trds-card__footer">
+                    <trds-button href="/horpadasjavitas" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></trds-button>
+                </div>
+            </trds-card>
+        </trds-grid>
+    </trds-stack>
+</trds-section>
 
 <trds-section>
     <trds-stack>
@@ -164,78 +160,72 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </trds-grid>
     </trds-stack>
 </trds-section>
-<section class="extraservices">
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">Extra szolgáltatásaink</h2>
-        <trbs-grid class="boxes">
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>Ingyenes kiszállás</h3>
-                            <p class="trbs-size--s">Árajánlatot, illetve a javítást is kérheti kiszállással, amennyiben úgy kívánja. Technikusaink teljes felszereltséggel érkeznek Önhöz, és orvosolják horpadásait. ** Nem minden sérülést tudunk javítani kiszállással.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-            </trbs-card>
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>Ingyenes árajánlat</h3>
-                            <p class="trbs-size--s">Árajánlataink mindenkorra ingyenesek, és nem járnak semmilyen kötelezettséggel.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-            </trbs-card>
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <trbs-icon icon="solid/plus" class="trbs-size--xl" style="color: var(--trbs-color--green)"></trbs-icon>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <h3>Elégedettségi garancia</h3>
-                            <p class="trbs-size--s">Amennyiben Ön szerint a javítás eredménye nem az előre megbeszélt minőségben történt, nem kell kifizetnie a javítást. Ilyen egyszerű.</p>
-                        </trbs-stack>
-                    </trbs-stack>
-                </trbs-card__body>
-            </trbs-card>
-        </trbs-grid>
-    </trbs-stack>
-</section>
-<section class="callus" style="background-color: var(--trbs-color--red);">
-    <trbs-stack>
-        <span class="trbs-size--xl" style="font-weight: bold;">Kérdése van? Hívjon minket.</span>
-        <button is="trbs-button" class="trbs-button--call trbs-button--outline" number="+36 70 593 9393"></button>
-    </trbs-stack>
-</section>
-<section
-    class="trbs-bg-image trbs-bg-image--lazy"
-    style="--trbs-bg-image-url: url('/cdn/images/aboutus__bg1920.jpg');background-position:top center;--trbs-bg-image-overlay: var(--trbs-color--darkgrey2-overlay);">
-    <trbs-stack style="gap: var(--trbs-space--s)">
-        <h2 class="trbs-title--uppercasegrey">Rólunk</h2>
-        <span class="trbs-size--xl" style="font-weight: bold;">Számunkra ez nem egy szakma, hanem művészet.</span>
-        <p style="margin-bottom: var(--trbs-space--s); color: var(--trbs-color--lightgrey)">Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat. Több ezer megjavított áll a hátuk mögött, bejárták már szinte az egész világot, ahol gyárakban, nagyobb jégeső verte kereskedésekben illetve logisztikai parkokban állították vissza az autók karosszériáját gyári állapotra. Cégünk 2019-ben alakult,de technikusaink több mint 6 éves tapasztalattal rendelkeznek, melyet egy brazil mester (a szakma legjobbjai) által tartott 1 éves képzés előzött meg.</p>
-        <button is="trbs-button" text="Tovább" href="/rolunk" icon="solid/arrow-right" class="trbs-button--icon-on-right"></button>
-    </trbs-stack>
-</section>
-<section style="background-color: var(--trbs-color--red);">
-    <trbs-grid>
-        <trbs-stack style="gap:var(--trbs-space--0)">
-            <trbs-counter to="500000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
-            <span>Megjavított horpadás</span>
-        </trbs-stack>
-        <trbs-stack style="gap:var(--trbs-space--0)">
-            <trbs-counter to="5000" class="trbs-size--xl" style="font-weight: bold;">0</trbs-counter>
-            <span>Megjavított autó</span>
-        </trbs-stack>
-        <trbs-stack style="gap:var(--trbs-space--0)">
-            <span style="font-weight: bold;" class="trbs-size--xl"><trbs-counter to="5">0</trbs-counter>/5</span>
-            <span>Ügyfél elégedettség</span>
-        </trbs-stack>
-    </trbs-grid>
-</section>
+<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Extra szolgáltatásaink</trds-title>
+        <trds-grid class="boxes-layout">
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/plus" class="trds-size--xl" style="color: var(--trds-theme--success)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">Ingyenes kiszállás</trds-title>
+                        <trds-paragraph class="trds-size--s">Árajánlatot, illetve a javítást is kérheti kiszállással, amennyiben úgy kívánja. Technikusaink teljes felszereltséggel érkeznek Önhöz, és orvosolják horpadásait. ** Nem minden sérülést tudunk javítani kiszállással.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+            </trds-card>
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/plus" class="trds-size--xl" style="color: var(--trds-theme--success)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">Ingyenes árajánlat</trds-title>
+                        <trds-paragraph class="trds-size--s">Árajánlataink mindenkorra ingyenesek, és nem járnak semmilyen kötelezettséggel.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+            </trds-card>
+            <trds-card>
+                <trds-stack slot="trds-card__body">
+                    <trds-icon icon="solid/plus" class="trds-size--xl" style="color: var(--trds-theme--success)"></trds-icon>
+                    <trds-stack style="gap:var(--trds-space--s)">
+                        <trds-title level="3">Elégedettségi garancia</trds-title>
+                        <trds-paragraph class="trds-size--s">Amennyiben Ön szerint a javítás eredménye nem az előre megbeszélt minőségben történt, nem kell kifizetnie a javítást. Ilyen egyszerű.</trds-paragraph>
+                    </trds-stack>
+                </trds-stack>
+            </trds-card>
+        </trds-grid>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--trds-theme--primary);">
+    <trds-stack>
+        <trds-text class="trds-size--xl" style="font-weight: bold;">Kérdése van? Hívjon minket.</trds-text>
+        <trds-button class="call outline" number="+36 70 593 9393"></trds-button>
+    </trds-stack>
+</trds-section>
+<trds-section
+    class="trds-bg-image trds-bg-image--lazy"
+    style="--trds-bg-image-url: url('/cdn/images/aboutus__bg1920.jpg');background-position:top center;">
+    <trds-stack style="gap: var(--trds-space--s)">
+        <trds-title level="2" class="variant--1">Rólunk</trds-title>
+        <trds-text class="trds-size--xl" style="font-weight: bold;">Számunkra ez nem egy szakma, hanem művészet.</trds-text>
+        <trds-paragraph style="margin-bottom: var(--trds-space--s); color: var(--trds-theme--secondary-text)">Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat. Több ezer megjavított áll a hátuk mögött, bejárták már szinte az egész világot, ahol gyárakban, nagyobb jégeső verte kereskedésekben illetve logisztikai parkokban állították vissza az autók karosszériáját gyári állapotra. Cégünk 2019-ben alakult,de technikusaink több mint 6 éves tapasztalattal rendelkeznek, melyet egy brazil mester (a szakma legjobbjai) által tartott 1 éves képzés előzött meg.</trds-paragraph>
+        <trds-button text="Tovább" href="/rolunk" icon="solid/arrow-right" class="icon-on-right"></trds-button>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--trds-theme--primary);">
+    <trds-grid>
+        <trds-stack style="gap:var(--trds-space--0)">
+            <trds-counter to="500000" class="trds-size--xl" style="font-weight: bold;">0</trds-counter>
+            <trds-text>Megjavított horpadás</trds-text>
+        </trds-stack>
+        <trds-stack style="gap:var(--trds-space--0)">
+            <trds-counter to="5000" class="trds-size--xl" style="font-weight: bold;">0</trds-counter>
+            <trds-text>Megjavított autó</trds-text>
+        </trds-stack>
+        <trds-stack style="gap:var(--trds-space--0)">
+            <trds-text style="font-weight: bold;" class="trds-size--xl"><trds-counter to="5">0</trds-counter>/5</trds-text>
+            <trds-text>Ügyfél elégedettség</trds-text>
+        </trds-stack>
+    </trds-grid>
+</trds-section>
 <trds-section>
     <trds-stack>
         <trds-title level="2" class="variant--1">Gyakran ismételt kérdések</trds-title>
