@@ -1,32 +1,26 @@
-﻿<% 
-    process.env.mode = "production";
-    locals.trbUrl = process.env.mode === 'production' ? 'https://trbs.netlify.app' : 'http://192.168.56.1:5050';
-%> 
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <%- include('sections/head.ejs') %>
-    <script>
-
-        window.isProduction = <%= process.env.mode === 'production' %>;
-
-    </script>
-    <!-- this is until client side routing implemented -->
-    <script src="/cdn/js/pageloader.js"></script>
-    <script type="module" async src="<%- trbUrl %>/themes/tr-theme.js"></script>
-    <script type="module" async src="<%- trbUrl %>/trbs-bundle.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/danielkormos1993/trds@master/trds-bundle.js"></script>
 </head>
-<body class="trbs-loader--active">
+<body is="trds-body">
+
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW2HMCX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <%- include('sections/header.ejs') %>
-    <main>
+
+    <trds-main>
         <%- include(`pages/${page.name}/${page.name}.ejs`) %>
-    </main>
+    </trds-main>
+
     <%- include('sections/footer.ejs') %>
+
     <%- include('sections/cookiebar.ejs') %>
-    <script type="module" async src="<%- trbUrl %>/components/trbs-modal.js"></script>
+
+    <!-- <script type="module" async src="<%- trbUrl %>/components/trbs-modal.js"></script>
     <trbs-modal id="fontosinfo" showonfirsthit title="Fontos információ - 2021.09.11.">
         <trbs-stack>
             <p>
@@ -54,6 +48,6 @@
             ✔️ Horpadás javítás<br>
             </p>
         </trbs-stack>
-    </trbs-modal>
+    </trbs-modal> -->
 </body>
 </html>

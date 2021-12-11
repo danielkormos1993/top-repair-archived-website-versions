@@ -11,49 +11,49 @@
         "googleMapsLink": "https://goo.gl/maps/Xf7j1UjkcwmaE4M49"
     }];
 %>
-<section>
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">Kapcsolat</h2>
-        <trbs-grid>
+<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Kapcsolat</trds-title>
+        <trds-grid>
             <% contactData.forEach(contact => { %>
-                <trbs-stack style="gap:var(--trbs-space--m); grid-template-rows: auto auto auto 1fr">
-                    <h3><%- contact.city %></h3>
-                    <trbs-stack style="gap:var(--trbs-space--m)">
-                        <h4>Időpontfoglalás</h4>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <a href="tel:<%- contact.phoneNumber %>">
-                                <trbs-grid class="elements">
-                                    <trbs-icon icon="solid/phone" style="color:var(--trbs-color--red)"></trbs-icon>
-                                    <span style="font-weight: bold;"><%- contact.phoneNumber %></span>
-                                </trbs-grid>
-                            </a>
-                            <trbs-grid class="elements" style="flex-wrap: nowrap">
-                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
-                                <span>Hétfő-Péntek, 8:00 - 17:00</span>
-                            </trbs-grid>
-                            <trbs-grid class="isavailable elements" style="flex-wrap: nowrap">
-                                <trbs-icon icon="solid/circle" style="color:var(--trbs-color--red);flex-shrink: 0;"></trbs-icon>
-                                <span>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</span>
-                            </trbs-grid>
-                        </trbs-stack>
-                    </trbs-stack>
-                    <trbs-stack style="gap:var(--trbs-space--m)">
-                        <h4>Műhely</h4>
-                        <trbs-stack style="gap:var(--trbs-space--s)">
-                            <trbs-grid class="elements" style="flex-wrap: nowrap">
-                                <trbs-icon icon="solid/map-marker-alt" style="color:var(--trbs-color--red);  flex-shrink: 0; align-self: baseline"></trbs-icon>
-                                <span><%- contact.address %></span>
-                            </trbs-grid>
-                            <trbs-grid class="elements" style="flex-wrap: nowrap">
-                                <trbs-icon icon="solid/clock" style="color:var(--trbs-color--red)"></trbs-icon>
-                                <span>Nyitvatartás bejelentkezés alapján</span>
-                            </trbs-grid>
-                        </trbs-stack>
-                    </trbs-stack>
+                <trds-stack style="gap:var(--trds-space--m); grid-template-rows: auto auto auto 1fr">
+                    <trds-title level="3"><%- contact.city %></trds-title>
+                    <trds-stack style="gap:var(--trds-space--m)">
+                        <trds-title level="4">Időpontfoglalás</trds-title>
+                        <trds-stack style="gap:var(--trds-space--s)">
+                            <trds-link-block href="tel:<%- contact.phoneNumber %>">
+                                <trds-grid class="auto-width-layout">
+                                    <trds-icon icon="solid/phone" style="color:var(--trds-theme--primary)"></trds-icon>
+                                    <trds-text style="font-weight: bold;"><%- contact.phoneNumber %></trds-text>
+                                </trds-grid>
+                            </trds-link-block>
+                            <trds-grid class="auto-width-layout" style="flex-wrap: nowrap">
+                                <trds-icon icon="solid/clock" style="color:var(--trds-theme--primary)"></trds-icon>
+                                <trds-text>Hétfő-Péntek, 8:00 - 17:00</trds-text>
+                            </trds-grid>
+                            <trds-grid class="isavailable auto-width-layout" style="flex-wrap: nowrap">
+                                <trds-icon icon="solid/circle" style="color:var(--trds-theme--primary);flex-shrink: 0;"></trds-icon>
+                                <trds-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trds-text>
+                            </trds-grid>
+                        </trds-stack>
+                    </trds-stack>
+                    <trds-stack style="gap:var(--trds-space--m)">
+                        <trds-title level="4">Műhely</trds-title>
+                        <trds-stack style="gap:var(--trds-space--s)">
+                            <trds-grid class="auto-width-layout" style="flex-wrap: nowrap">
+                                <trds-icon icon="solid/map-marker-alt" style="color:var(--trds-theme--primary);  flex-shrink: 0; align-self: baseline"></trds-icon>
+                                <trds-text><%- contact.address %></trds-text>
+                            </trds-grid>
+                            <trds-grid class="auto-width-layout" style="flex-wrap: nowrap">
+                                <trds-icon icon="solid/clock" style="color:var(--trds-theme--primary)"></trds-icon>
+                                <trds-text>Nyitvatartás bejelentkezés alapján</trds-text>
+                            </trds-grid>
+                        </trds-stack>
+                    </trds-stack>
                     <% if(contact.googleMapsLink){ %>
-                    <button is="trbs-button" style="align-self: end; margin-top:var(--trbs-space--s)" text="Megnyitás google mapsben" href="<%- contact.googleMapsLink %>" icon="solid/map-marked-alt" class="trbs-button--icon-on-right"></button>
+                    <trds-button style="align-self: end; margin-top:var(--trds-space--s)" text="Megnyitás google mapsben" href="<%- contact.googleMapsLink %>" icon="solid/map-marked-alt" class="icon-on-right"></trds-button>
                     <% } %>
-                </trbs-stack>
+                </trds-stack>
             <% }); %>
             <script async>
 
@@ -63,29 +63,29 @@
         
                 if(isAvailable && $isAvailable.length > 0){
                     $isAvailable.forEach(el =>{
-                        el.querySelector('trbs-icon').style.color = 'var(--trbs-color--green)';
-                        el.querySelector('span').textContent = 'Időpontfoglalás lehetséges'
+                        el.querySelector('trds-icon').style.color = 'var(--trds-theme--success)';
+                        el.querySelector('trds-text').textContent = 'Időpontfoglalás lehetséges'
                     });
                 }
         
             </script>
-        </trbs-grid>
-    </trbs-stack>
-</section>
-<section style="background-color: var(--trbs-color--red);">
-    <trbs-grid>
-        <a href="mailto:toprepair.hu@gmail.com" style="justify-content: center;">
-            <trbs-stack style="justify-items: center;">
-                <trbs-icon icon="solid/envelope" class="trbs-size--xl"></trbs-icon>
-                <span>toprepair.hu@gmail.com</span>
-            </trbs-stack>
-        </a>
-        <a href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="justify-content: center;">
-            <trbs-stack style="justify-items: center;">
-                <trbs-icon icon="brands/google" class="trbs-size--xl"></trbs-icon>
-                <span>TOP REPAIR HUNGARY</span>
-            </trbs-stack>
-        </a>
+        </trds-grid>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--trds-color--primary);">
+    <trds-grid>
+        <trds-link-block href="mailto:toprepair.hu@gmail.com" style="justify-content: center;">
+            <trds-stack style="justify-items: center;">
+                <trds-icon icon="solid/envelope" class="trds-size--xl"></trds-icon>
+                <trds-text>toprepair.hu@gmail.com</trds-text>
+            </trds-stack>
+        </trds-link-block>
+        <trds-link-block href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="justify-content: center;">
+            <trds-stack style="justify-items: center;">
+                <trds-icon icon="brands/google" class="trds-size--xl"></trds-icon>
+                <trds-text>TOP REPAIR HUNGARY</trds-text>
+            </trds-stack>
+        </trds-link-block>
         <!-- <a href="https://facebook.com/toprepairhungary" style="justify-content: center;">
             <trbs-stack style="justify-items: center;">
                 <trbs-icon icon="brands/facebook" class="trbs-size--xl"></trbs-icon>
@@ -93,5 +93,5 @@
             </trbs-stack>
         </a> -->
          <!-- LOL  -->
-    </trbs-grid>
-</section>
+    </trds-grid>
+</trds-section>

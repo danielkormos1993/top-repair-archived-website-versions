@@ -1,8 +1,8 @@
-﻿<section>
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">Gyakran ismételt kérdések</h2>
+﻿<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Gyakran ismételt kérdések</trds-title>
         <form>
-            <trbs-stack style="gap:var(--trbs-space--xs)">
+            <trds-stack style="gap:var(--trds-space--xs)">
                 <label for="faq-category">Kategória</label>
                 <select 
                     name="faq-category"
@@ -15,21 +15,19 @@
                     <option value="pdr">Horpadás javítás</option>
                     <option value="hdr">Jégkár javítás</option>
                 </select>
-            </trbs-stack>
+            </trds-stack>
         </form>
-        <trbs-grid id="faq_category_target" class="boxes"></trbs-grid>
-    </trbs-stack>
+        <trds-grid id="faq_category_target" class="boxes-layout"></trds-grid>
+    </trds-stack>
     <script>
 
         document.getElementById('faq-category').viewTemplate = `
-            <trbs-card>
-                <trbs-card__body>
-                    <trbs-stack>
-                        <h3 style="text-transform: none">{{question}}</h3>
-                        <p>{{answer}}</p>
-                    </trbs-stack>
-                </trbs-card__body>
-            </trbs-card>
+            <trds-card>
+                <trbs-stack slot="trds-card__body">
+                    <trds-title level="3" style="text-transform: none">{{question}}</trds-title>
+                    <trds-paragraph>{{answer}}</trds-paragraph>
+                </trds-stack>
+            </trds-card>
         `;
 
     </script>

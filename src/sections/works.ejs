@@ -1,8 +1,8 @@
-﻿<section>
-    <trbs-stack>
-        <h2 class="trbs-title--uppercasegrey">Munkáink</h2>
+﻿<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Munkáink</trds-title>
         <form>
-            <trbs-stack style="gap:var(--trbs-space--xs)">
+            <trds-stack style="gap:var(--trds-space--xs)">
                 <label for="faq-category">Kategória</label>
                 <select 
                     name="works-category"
@@ -14,17 +14,16 @@
                     <option value="pdr">Horpadás javítás</option>
                     <option value="hdr">Jégkár javítás</option>
                 </select>
-            </trbs-stack>
+            </trds-stack>
         </form>
-        <trbs-grid id="works_category_target" class="boxes"></trbs-grid>
-        <p>További munkáinkért kérjük látogasson el <a class="link" href="https://facebook.com/toprepairhungary">facebook oldalunkra</a>, vagy <a class="link" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkra</a>.</p>
-    </trbs-stack>
+        <trds-grid id="works_category_target" class="boxes-layout"></trds-grid>
+        <trds-paragraph>További munkáinkért kérjük látogasson el <trds-link-text href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkra</trds-link-text>.</trds-paragraph>
+    </trds-stack>
     <script>
 
         document.getElementById('works-category').viewTemplate = `
-            <trbs-work format="{{format}}" src="{{src}}"></trbs-work>
+            <trds-work format="{{format}}" src="{{src}}"></trds-work>
         `;
 
     </script>
-    <script type="module" async src="<%= trbUrl %>/components/trbs-work.js"></script>
-</section>
+</trds-section>
