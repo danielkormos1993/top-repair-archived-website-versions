@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     
 <!-- Google Tag Manager -->
@@ -26,7 +26,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:title" content="Gyakran ismételt kérdések" />
 <meta property="og:description" content="Ügyfeleink által legtöbbet feltett kérdéseket böngészheti itt, kategorizálva." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/hero__bg1920.jpg" />
-    <script type="module" src="https://trds.netlify.app/trds-bundle.js"></script>
+    
+    <script type="module" src="http://localhost:1111//trds-bundle.js"></script>
 </head>
 <body is="trds-body">
 
@@ -52,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <form>
             <trds-stack style="gap:var(--trds-space--xs)">
                 <label for="faq-category">Kategória</label>
-                <select 
+                <select class="trds-select"
                     name="faq-category"
                     id="faq-category"
                     category-target="faq_category_target"
@@ -71,15 +72,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         document.getElementById('faq-category').viewTemplate = `
             <trds-card>
-                <trbs-stack slot="trds-card__body">
-                    <trds-title level="3" style="text-transform: none">{{question}}</trds-title>
-                    <trds-paragraph>{{answer}}</trds-paragraph>
+                <trds-stack slot="trds-card__body">
+                    <trds-title level="3">{{question}}</trds-title>
+                    <trds-paragraph style="color:var(--trds-theme--secondary-text)" class="trds-size--s">{{answer}}</trds-paragraph>
                 </trds-stack>
             </trds-card>
         `;
 
     </script>
-</section>
+</trds-section>
 <script type="module">
     import { initCategory } from '/cdn/js/category.js'; // port to cdn
     initCategory(document.getElementById('faq-category'));

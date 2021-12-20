@@ -17,7 +17,7 @@
         <trds-grid>
             <% contactData.forEach(contact => { %>
                 <trds-stack style="gap:var(--trds-space--m); grid-template-rows: auto auto auto 1fr">
-                    <trds-title level="3"><%- contact.city %></trds-title>
+                    <trds-title level="3" style="text-transform: uppercase;"><%- contact.city %></trds-title>
                     <trds-stack style="gap:var(--trds-space--m)">
                         <trds-title level="4">Időpontfoglalás</trds-title>
                         <trds-stack style="gap:var(--trds-space--s)">
@@ -33,7 +33,7 @@
                             </trds-grid>
                             <trds-grid class="isavailable auto-width-layout" style="flex-wrap: nowrap">
                                 <trds-icon icon="solid/circle" style="color:var(--trds-theme--primary);flex-shrink: 0;"></trds-icon>
-                                <trds-text>Jelenleg zárva vagyunk, így időpontfolgalás nem lehetséges.</trds-text>
+                                <trds-text>Jelenleg zárva vagyunk, így időpontfoglalás nem lehetséges.</trds-text>
                             </trds-grid>
                         </trds-stack>
                     </trds-stack>
@@ -72,15 +72,15 @@
         </trds-grid>
     </trds-stack>
 </trds-section>
-<trds-section style="background-color: var(--trds-color--primary);">
-    <trds-grid>
-        <trds-link-block href="mailto:toprepair.hu@gmail.com" style="justify-content: center;">
+<trds-section style="background-color: var(--trds-theme--primary);">
+    <trds-grid style="justify-content: space-around;">
+        <trds-link-block href="mailto:toprepair.hu@gmail.com">
             <trds-stack style="justify-items: center;">
                 <trds-icon icon="solid/envelope" class="trds-size--xl"></trds-icon>
                 <trds-text>toprepair.hu@gmail.com</trds-text>
             </trds-stack>
         </trds-link-block>
-        <trds-link-block href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="justify-content: center;">
+        <trds-link-block href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">
             <trds-stack style="justify-items: center;">
                 <trds-icon icon="brands/google" class="trds-size--xl"></trds-icon>
                 <trds-text>TOP REPAIR HUNGARY</trds-text>

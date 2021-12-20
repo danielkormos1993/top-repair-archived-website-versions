@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <%- include('sections/head.ejs') %>
-    <script type="module" src="https://trds.netlify.app/trds-bundle.js"></script>
+    <% const trdsUrl = process.env.mode === 'production' ? 'https://trds.netlify.app' : 'http://localhost:1111/'; %>
+    <script type="module" src="<%= trdsUrl %>/trds-bundle.js"></script>
 </head>
 <body is="trds-body">
 

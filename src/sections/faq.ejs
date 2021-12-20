@@ -4,7 +4,7 @@
         <form>
             <trds-stack style="gap:var(--trds-space--xs)">
                 <label for="faq-category">Kategória</label>
-                <select 
+                <select class="trds-select"
                     name="faq-category"
                     id="faq-category"
                     category-target="faq_category_target"
@@ -23,12 +23,12 @@
 
         document.getElementById('faq-category').viewTemplate = `
             <trds-card>
-                <trbs-stack slot="trds-card__body">
-                    <trds-title level="3" style="text-transform: none">{{question}}</trds-title>
-                    <trds-paragraph>{{answer}}</trds-paragraph>
+                <trds-stack slot="trds-card__body">
+                    <trds-title level="3">{{question}}</trds-title>
+                    <trds-paragraph style="color:var(--trds-theme--secondary-text)" class="trds-size--s">{{answer}}</trds-paragraph>
                 </trds-stack>
             </trds-card>
         `;
 
     </script>
-</section>
+</trds-section>
