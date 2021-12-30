@@ -5,11 +5,7 @@
 },{
     "category": "hdr",
     "format": "video",
-    "src": "/cdn/works/hdr/jegkar2.mp4"
-},{
-    "category": "hdr",
-    "format": "video",
-    "src": "/cdn/works/hdr/jegkar3.mp4"
+    "src": "/cdn/works/hdr/emilfrey.mp4"
 },{
     "category": "hdr",
     "format": "video",
@@ -22,6 +18,10 @@
     "category": "hdr",
     "format": "video",
     "src": "/cdn/works/hdr/bmwjegkar.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/jegkar3.mp4"
 },{
     "category": "hdr",
     "format": "video",

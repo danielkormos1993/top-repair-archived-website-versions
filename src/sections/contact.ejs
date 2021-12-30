@@ -1,25 +1,17 @@
 ﻿<% const contactData = 
     [{
-        "city": "Győr",
         "phoneNumber": "+36 70 593 9393",
-        "address": "A Céltrans 97 Zrt. telephelyén található. 9028 Győr, Sashegy puszta 1.",
+        "address": "9028 Győr, Sashegy puszta 1. A Céltrans 97 Zrt. telephelyén található.",
         "googleMapsLink": "https://goo.gl/maps/jEsfocXRGT9Ezg6U9"
-    },{
-        "city": "Budapest",
-        "phoneNumber": "+36 70 389 5187",
-        "address": "A Fugio Kft. telephelyén található. 1037 Budapest, Kunigunda útja 80.",
-        "googleMapsLink": "https://goo.gl/maps/Xf7j1UjkcwmaE4M49"
     }];
 %>
 <trds-section>
     <trds-stack>
-        <trds-title level="2" class="variant--1">Kapcsolat</trds-title>
-        <trds-grid>
+        <trds-title level="2" style="margin-bottom: var(--trds-space--m);" class="variant--1">Kapcsolat</trds-title>
             <% contactData.forEach(contact => { %>
                 <trds-stack style="gap:var(--trds-space--m); grid-template-rows: auto auto auto 1fr">
-                    <trds-title level="3" style="text-transform: uppercase;"><%- contact.city %></trds-title>
                     <trds-stack style="gap:var(--trds-space--m)">
-                        <trds-title level="4">Időpontfoglalás</trds-title>
+                        <trds-title level="3">Időpontfoglalás</trds-title>
                         <trds-stack style="gap:var(--trds-space--s)">
                             <trds-link-block href="tel:<%- contact.phoneNumber %>">
                                 <trds-grid class="auto-width-layout">
@@ -38,7 +30,7 @@
                         </trds-stack>
                     </trds-stack>
                     <trds-stack style="gap:var(--trds-space--m)">
-                        <trds-title level="4">Műhely</trds-title>
+                        <trds-title level="3">Műhely</trds-title>
                         <trds-stack style="gap:var(--trds-space--s)">
                             <trds-grid class="auto-width-layout" style="flex-wrap: nowrap">
                                 <trds-icon icon="solid/map-marker-alt" style="color:var(--trds-theme--primary);  flex-shrink: 0; align-self: baseline"></trds-icon>
@@ -69,7 +61,6 @@
                 }
         
             </script>
-        </trds-grid>
     </trds-stack>
 </trds-section>
 <trds-section style="background-color: var(--trds-theme--primary);">

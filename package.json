@@ -15,6 +15,8 @@
   "author": "Daniel Kormos",
   "license": "ISC",
   "devDependencies": {
+    "cloudinary": "^1.27.1",
+    "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "npm-watch": "^0.9.0"
   }

@@ -1,6 +1,6 @@
 ﻿[{
     "name": "index",
-    "title": "Jégkár javítás, horpadás javítás",
+    "title": "Jégkár és horpadás javítás",
     "description": "Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat.",
     "url": "/",
     "header_link": "Főoldal"
@@ -18,7 +18,7 @@
 },{
     "name": "hdr_nemcasco",
     "title": "Önfinanszírozott jégkár javítás",
-    "description": "Cégünk saját költséges jégkár javítás esetén Magyarország legkedvezményesebb árait kínálja.",
+    "description": "Cégünk saját költséges jégkár javítás esetén kedvezményes árat kínál.",
     "url": "/jegkarjavitas/nemcascojegkar"
 },{
     "name": "pdr",
