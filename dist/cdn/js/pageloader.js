@@ -6,7 +6,6 @@ pageloaderStyle.textContent = `
         min-height: 100vh;
         margin: 0;
         background-color: rgb(28, 28, 28);
-        color: rgb(204, 46, 40);
     }
 
     body.trbs-loader--active{
@@ -33,6 +32,7 @@ pageloaderStyle.textContent = `
         display: block;
         width: 1em;
         height: 1em;
+        color: rgb(204, 46, 40);
         position: absolute;
         top: 0;
         bottom: 0;
