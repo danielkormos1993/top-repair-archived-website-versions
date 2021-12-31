@@ -3,6 +3,7 @@
 <head>
     <%- include('sections/head.ejs') %>
     <% const trdsUrl = process.env.mode === 'production' ? 'https://trds.netlify.app' : 'http://localhost:1111/'; %>
+    <script src="/cdn/js/pageloader.js"></script>
     <script type="module" src="<%= trdsUrl %>/trds-bundle.js"></script>
 </head>
 <body is="trds-body">
@@ -33,7 +34,7 @@
             2022. Január 1.-től megszüntetjük BUDAPESTI műhelyünket. Megértésüket köszönjük.<br>
             GYŐRI műhelyünk továbbra is zavartalanul működik és várja minden horpadástól, jégkártól szabadulni vágyó ügyfelét 2022-ben is 🎉<br>
             <br>
-            A bejelentkezéshez minden információ megtalálható weboldalunkon<br>
+            A bejelentkezéshez minden információ megtalálható weboldalunkon.<br>
             </trds-paragraph>
             <trds-button text="Tovább" icon="solid/arrow-right" class="icon-on-right" onclick="this.closest('trds-modal').close()"></trds-button>
         </trds-stack>
