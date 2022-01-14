@@ -1,0 +1,20 @@
+{
+  "name": "tr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "watch": "npm-watch",
+    "build": "node build.js"
+  },
+  "watch": {
+    "build": "src/**/*.*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ejs": "^3.1.6",
+    "npm-watch": "^0.11.0"
+  }
+}
