@@ -1,0 +1,81 @@
+﻿[{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/jegkar1.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/emilfrey.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/jegkar4.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/jegkar5.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/bmwjegkar.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/jegkar3.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/lexuscompressed.mp4"
+},{
+    "category": "hdr",
+    "format": "video",
+    "src": "/cdn/works/hdr/seatjegkar.mp4"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/1before.jpg /cdn/works/pdr/1after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/2before.jpg /cdn/works/pdr/2after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/3before.jpg /cdn/works/pdr/3after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/4before.jpg /cdn/works/pdr/4after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/5before.jpg /cdn/works/pdr/5after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/7before.jpg /cdn/works/pdr/7after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/8before.jpg /cdn/works/pdr/8after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/9before.jpg /cdn/works/pdr/9after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/10before.jpg /cdn/works/pdr/10after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/11before.jpg /cdn/works/pdr/11after.jpg"
+},{
+    "category": "pdr",
+    "format": "image",
+    "src":"/cdn/works/pdr/12before.jpg /cdn/works/pdr/12after.jpg"
+},{
+    "category": "pdr",
+    "format": "video",
+    "src": "/cdn/works/pdr/sarvedo-timelapse.mp4"
+}]

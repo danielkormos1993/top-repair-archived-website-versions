@@ -1,0 +1,36 @@
+﻿<trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Gyakran ismételt kérdések</h2>
+        <form>
+            <trds-stack style="gap:var(--space--xs)">
+                <label for="faq-category">Kategória</label>
+                <select
+                    name="faq-category"
+                    id="faq-category"
+                    category-target="faq_category_target"
+                    category-data-url="/cdn/data/faq.json"
+                >
+                    <option value="all">Mind</option>
+                    <option value="common">Általános kérdések</option>
+                    <option value="pdr">Horpadás javítás</option>
+                    <option value="hdr">Jégkár javítás</option>
+                </select>
+            </trds-stack>
+        </form>
+        <trds-grid id="faq_category_target" class="boxes-layout"></trds-grid>
+    </trds-stack>
+    <script>
+
+        document.getElementById('faq-category').viewTemplate = `
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack >
+                        <h3>{{question}}</h3>
+                        <p style="color:var(--color--secondary-text)" class="size--s">{{answer}}</p>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+        `;
+
+    </script>
+</trds-section>

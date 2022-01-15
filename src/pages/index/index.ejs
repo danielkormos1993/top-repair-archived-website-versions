@@ -1,0 +1,13 @@
+﻿<%- include('sections/hero.ejs') %>
+<%- include('sections/services.ejs') %>
+<%- include('../../sections/reviews.ejs') %>
+<%- include('sections/extraservices.ejs') %>
+<%- include('sections/callus.ejs') %>
+<%- include('sections/aboutus.ejs') %>
+<%- include('sections/counter.ejs') %>
+<%- include('../../sections/faq.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('faq-category'));
+</script>
+<%- include('../../sections/contact.ejs') %>

@@ -1,0 +1,33 @@
+﻿<% const servicesCardData = [{
+    icon: 'solid/hail',
+    title: 'Jégkár javítás',
+    paragraph: 'Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.',
+    buttonHref: '/jegkarjavitas'
+},{
+    icon: 'solid/hammer',
+    title: 'Horpadás javítás',
+    paragraph: 'Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.',
+    buttonHref: '/horpadasjavitas'
+}] %>
+
+<trds-section>
+    <h2 class="variant--1" style="margin-bottom: var(--space--m)">Szolgáltatásaink</h2>
+    <trds-grid class="boxes-layout">
+        <% servicesCardData.forEach(service => { %>
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon icon="<%= service.icon %>" class="size--xl" style="color: var(--color--primary)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;"><%= service.title %></h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)"><%= service.paragraph %></p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+                <trds-card__footer>
+                    <a is="trds-button--link" href="<%= service.buttonHref %>" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></a>
+                </trds-card__footer>
+            </trds-card>
+        <% }); %>
+    </trds-grid>
+</trds-section>

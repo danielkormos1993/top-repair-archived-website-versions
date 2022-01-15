@@ -1,0 +1,25 @@
+﻿<% const useCases = [{
+    description: 'Ajtórányitásokon, jégkár okozta horpadásokon, fénytöréseken, benyomodásokon, és bármilyen jellegű sérüléseken, ameddig a fényezés nem sérült.'
+},{
+    description: 'Amennyiben a fényezés is sérült, abban az esetben is nagyszerű választás technológiánk, hiszen fényezésnél nem kell gittet használni, így évek múlva is hibátlan marad újrafényezett karosszériája.'
+},{
+    description: 'Technológiánk segítségével sok esetben olyan elemeket is meg tudunk menteni, amit lakatolásra, illetve fényezésre itélnénk alapesetben.'
+}] %>
+
+<trds-section>
+    <h2 class="variant--1" style="margin-bottom: var(--space--m)">MILYEN SÉRÜLÉSEKEN ALKALMAZHATÓ A FÉNYEZÉS NÉLKÜLI TECHNOLÓGIA?</h2>
+    <trds-grid class="boxes-layout">
+        <% useCases.forEach(useCase => { %>
+            
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon icon="solid/check" class="size--xl" style="color: var(--color--success)"></trds-icon>
+                        <p class="size--s" style="color:var(--color--secondary-text)"><%= useCase.description %></p>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+
+        <% }); %>
+    </trds-grid>
+</trds-section>

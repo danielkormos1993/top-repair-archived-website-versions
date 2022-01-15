@@ -1,0 +1,34 @@
+﻿<% const advantages = [{
+    icon: 'solid/money-bill-alt',
+    title: 'KÖLTSÉGHATÉKONY',
+    description: 'Egy hagyományos lakatos-fényező műhely áraihoz képest akár 60%-os megtakarítással is számolhat, emellett autója értéke nem csökken.'
+},{
+    icon: 'solid/clock',
+    title: 'GYORS',
+    description: 'A kisebb horpadásokat akár 15-45 perc alatt megjavítjuk, illetve nagyobb horpadások esetén is maximum pár óra, míg elérjük az Ön maximális elégedettségét.'
+},{
+    icon: 'solid/check',
+    title: 'MAGAS MINŐSÉGET KÉPVISEL',
+    description: 'Nincs színeltérési, fényezési hiba, hiszen a gyári fényezés megtartásával varázsoljuk autóját horpadás mentessé, mindezt teljesen környezetbarát módon.'
+}] %>
+
+<trds-section>
+    <h2 class="variant--1" style="margin-bottom: var(--space--m)">A TECHNOLÓGIA ELŐNYEI</h2>
+    <trds-grid class="boxes-layout">
+        <% advantages.forEach(advantage => { %>
+            
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon icon="<%= advantage.icon %>" class="size--xl" style="color: var(--color--success)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;"><%= advantage.title %></h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)"><%= advantage.description %></p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+
+        <% }); %>
+    </trds-grid>
+</trds-section>

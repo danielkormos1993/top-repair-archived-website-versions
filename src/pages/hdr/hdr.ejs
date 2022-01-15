@@ -1,0 +1,14 @@
+﻿<%- include('sections/hdr_hero.ejs') %>
+<%- include('sections/hdr_services.ejs') %>
+<%- include('../../sections/reviews.ejs') %>
+<%- include('../../sections/works.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to websites cdn
+    initCategory(document.getElementById('works-category'), 'hdr');
+</script>
+<%- include('../../sections/faq.ejs') %>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to websites cdn
+    initCategory(document.getElementById('faq-category'), 'hdr');
+</script>
+<%- include('../../sections/contact.ejs') %>

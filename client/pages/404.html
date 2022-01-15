@@ -2,36 +2,61 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/trds/dist/trds.css">
-    <script src="/trds/dist/trds.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Az oldal nem található - TOP REPAIR Jégkárjavító Kft.</title>
+<meta name="description" content="404-es hiba."/>
+<meta name="keywords" content="jégkár, horpadás, jégkár javítás, horpadás javítás"/>
+<link rel="icon" href="/cdn/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/cdn/images/apple-touch-icon.png"/>
+<link rel="canonical" href="https://toprepair.hu*"/>
+<meta property="og:url" content="https://toprepair.hu*" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TOP REPAIR Jégkárjavító Kft."> 
+<meta property="og:title" content="Az oldal nem található" />
+<meta property="og:description" content="404-es hiba." />
+<meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
+    <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script defer src="/trds/dist/trds.min.js"></script>
 </head>
 <body>
 
-    <trds-header>
+    <style>
+    trds-header a[is=trds-link].text{
+        text-decoration: none;
+        font-size: var(--size--xs);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color--secondary-text);
+    }
+</style>
+<trds-header>
     <a is="trds-link" slot="logo" class="block" href="/">
         <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
     </a>
-    <nav slot="nav">
-        <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
-        <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
-        <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
-        <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
-        <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
-        <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
-        <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
-    </nav>
+    <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
+    <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
+    <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
+    <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
+    <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
+    <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
+    <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
 </trds-header>
 
     <main>
-
+        <trds-section style="background-color: var(--color--primary);">
+    <trds-stack>
+        <h1 style="color: var(--color--primary-text)" class="variant--1">Az oldal nem található.</h1>
+        <span class="size--xl"><b>404-es hiba. Térjen vissza a főoldalra.</b></span>
+        <a is="trds-button--link" href="/" text="Vissza a főoldalra" icon="solid/home" class="outline icon-on-right"></a>
+    </trds-stack>
+</trds-section>
     </main>
 
     <trds-footer>
     <trds-stack style="text-align: center;justify-items: center;">
-        <span style="color: var(--color--secondary-text)">2022 © TOP REPAIR</span>
+        <span style="color: var(--color--secondary-text);">2022 © TOP REPAIR</span>
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>

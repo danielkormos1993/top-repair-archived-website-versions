@@ -2,36 +2,87 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/trds/dist/trds.css">
-    <script src="/trds/dist/trds.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Munkáink - TOP REPAIR Jégkárjavító Kft.</title>
+<meta name="description" content="Jégkár javításos munkáinkról videókat teszünk közzé, míg a horpadás javításos munkáinkról képeket a jobb szemléltetés érdekében."/>
+<meta name="keywords" content="jégkár, horpadás, jégkár javítás, horpadás javítás"/>
+<link rel="icon" href="/cdn/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/cdn/images/apple-touch-icon.png"/>
+<link rel="canonical" href="https://toprepair.hu/munkaink"/>
+<meta property="og:url" content="https://toprepair.hu/munkaink" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TOP REPAIR Jégkárjavító Kft."> 
+<meta property="og:title" content="Munkáink" />
+<meta property="og:description" content="Jégkár javításos munkáinkról videókat teszünk közzé, míg a horpadás javításos munkáinkról képeket a jobb szemléltetés érdekében." />
+<meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
+    <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script defer src="/trds/dist/trds.min.js"></script>
 </head>
 <body>
 
-    <trds-header>
+    <style>
+    trds-header a[is=trds-link].text{
+        text-decoration: none;
+        font-size: var(--size--xs);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color--secondary-text);
+    }
+</style>
+<trds-header>
     <a is="trds-link" slot="logo" class="block" href="/">
         <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
     </a>
-    <nav slot="nav">
-        <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
-        <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
-        <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
-        <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
-        <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
-        <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
-        <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
-    </nav>
+    <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
+    <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
+    <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
+    <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
+    <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
+    <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
+    <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
 </trds-header>
 
     <main>
+        <trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Munkáink</h2>
+        <form>
+            <trds-stack style="gap:var(--space--xs)">
+                <label for="faq-category">Kategória</label>
+                <select
+                    name="works-category"
+                    id="works-category"
+                    category-target="works_category_target"
+                    category-data-url="/cdn/data/works.json"
+                >
+                    <option value="all">Mind</option>
+                    <option value="pdr">Horpadás javítás</option>
+                    <option value="hdr">Jégkár javítás</option>
+                </select>
+            </trds-stack>
+        </form>
+        <trds-grid id="works_category_target" class="boxes-layout"></trds-grid>
+        <p>További munkáinkért kérjük látogasson el <a is="trds-link" class="text" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkra</a>.</p>
+    </trds-stack>
+    <script>
 
+        document.getElementById('works-category').viewTemplate = `
+            <trds-work format="{{format}}" src="{{src}}"></trds-work>
+        `;
+
+    </script>
+</trds-section>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('works-category'));
+</script>
     </main>
 
     <trds-footer>
     <trds-stack style="text-align: center;justify-items: center;">
-        <span style="color: var(--color--secondary-text)">2022 © TOP REPAIR</span>
+        <span style="color: var(--color--secondary-text);">2022 © TOP REPAIR</span>
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>

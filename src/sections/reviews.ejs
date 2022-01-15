@@ -1,0 +1,56 @@
+﻿<% const reviews = 
+    [{
+        "profileImgUrl": "/cdn/images/reviews/review_2_profileImg.png",
+        "profileName": "Zoltán Szabó E.V.",
+        "reviewText": "Gyors, korrekt barátságos szakember. A végeredmény hibátlan lett. Bátran ajánlom mindenkinek! Bármi hasonló problémám lenne csak ide hozom az autóm. Szemle miatt bátran hívjátok, ingyenes és kötelezettség mentes az árajánlat! 5/5"
+    },{
+        "profileImgUrl": "/cdn/images/reviews/review_3_profileImg.png",
+        "profileName": "papppi88",
+        "reviewText": "Gyors kapcsolatfelvétel. Szimpatikus mester, aki kiváló minőségű munkát végzett, korrekt áron. Köszönöm! Ajánlani tudom mindenkinek."
+    },{
+        "profileImgUrl": "/cdn/images/reviews/review_1_profileImg.png",
+        "profileName": "Neumann Zsolti",
+        "reviewText": "Nagyon ügyesek, rugalmasak, szépen, gyorsan dolgoznak. Forduljatok hozzájuk bizalommal!"
+    }]
+%>
+<trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Google vélemények</h2>
+        <trds-stack style="gap:var(--trds-space--0)">
+            <trds-grid class="auto-width-layout">
+                <span class="size--xxl" style="font-weight: bold;">4.9</span>
+                <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                </trds-grid>
+            </trds-grid>
+            <a is="trds-link" class="text" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="color:var(--color--secondary-text)">62 vélemény</a>
+        </trds-stack>
+        <p>Néhány, a <a is="trds-link" class="text" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkon</a> szereplő értékelésekből összeállított válogatás.</p>
+        <trds-grid class="boxes-layout">
+            <% reviews.forEach(review => { %>
+                <trds-card>
+                    <trds-card__body>
+                        <trds-stack>
+                            <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
+                                <trds-image src="<%- review.profileImgUrl %>" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <span><%- review.profileName %></span>
+                            </trds-grid>
+                            <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                            </trds-grid>
+                            <p><%- review.reviewText %></p>
+                        </trds-stack>
+                    </trds-card__body>
+                </trds-card>
+            <% }); %>
+        </trds-grid>
+    </trds-stack>
+</trds-section>

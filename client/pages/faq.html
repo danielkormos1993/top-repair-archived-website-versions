@@ -2,36 +2,94 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/trds/dist/trds.css">
-    <script src="/trds/dist/trds.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gyakran ismételt kérdések - TOP REPAIR Jégkárjavító Kft.</title>
+<meta name="description" content="Ügyfeleink által legtöbbet feltett kérdéseket böngészheti itt, kategorizálva."/>
+<meta name="keywords" content="jégkár, horpadás, jégkár javítás, horpadás javítás"/>
+<link rel="icon" href="/cdn/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/cdn/images/apple-touch-icon.png"/>
+<link rel="canonical" href="https://toprepair.hu/gyik"/>
+<meta property="og:url" content="https://toprepair.hu/gyik" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TOP REPAIR Jégkárjavító Kft."> 
+<meta property="og:title" content="Gyakran ismételt kérdések" />
+<meta property="og:description" content="Ügyfeleink által legtöbbet feltett kérdéseket böngészheti itt, kategorizálva." />
+<meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
+    <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script defer src="/trds/dist/trds.min.js"></script>
 </head>
 <body>
 
-    <trds-header>
+    <style>
+    trds-header a[is=trds-link].text{
+        text-decoration: none;
+        font-size: var(--size--xs);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color--secondary-text);
+    }
+</style>
+<trds-header>
     <a is="trds-link" slot="logo" class="block" href="/">
         <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
     </a>
-    <nav slot="nav">
-        <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
-        <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
-        <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
-        <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
-        <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
-        <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
-        <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
-    </nav>
+    <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
+    <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
+    <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
+    <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
+    <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
+    <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
+    <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
 </trds-header>
 
     <main>
+        <trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Gyakran ismételt kérdések</h2>
+        <form>
+            <trds-stack style="gap:var(--space--xs)">
+                <label for="faq-category">Kategória</label>
+                <select
+                    name="faq-category"
+                    id="faq-category"
+                    category-target="faq_category_target"
+                    category-data-url="/cdn/data/faq.json"
+                >
+                    <option value="all">Mind</option>
+                    <option value="common">Általános kérdések</option>
+                    <option value="pdr">Horpadás javítás</option>
+                    <option value="hdr">Jégkár javítás</option>
+                </select>
+            </trds-stack>
+        </form>
+        <trds-grid id="faq_category_target" class="boxes-layout"></trds-grid>
+    </trds-stack>
+    <script>
 
+        document.getElementById('faq-category').viewTemplate = `
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack >
+                        <h3>{{question}}</h3>
+                        <p style="color:var(--color--secondary-text)" class="size--s">{{answer}}</p>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+        `;
+
+    </script>
+</trds-section>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('faq-category'));
+</script>
     </main>
 
     <trds-footer>
     <trds-stack style="text-align: center;justify-items: center;">
-        <span style="color: var(--color--secondary-text)">2022 © TOP REPAIR</span>
+        <span style="color: var(--color--secondary-text);">2022 © TOP REPAIR</span>
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>

@@ -1,0 +1,91 @@
+﻿<% const contactData = 
+    [{
+        "phoneNumber": "+36 70 593 9393",
+        "address": "9028 Győr, Sashegy puszta 1. A Céltrans 97 Zrt. telephelyén található.",
+        "googleMapsLink": "https://goo.gl/maps/jEsfocXRGT9Ezg6U9"
+    }];
+%>
+
+<style>
+
+    .contact-block{
+        gap: var(--space--s);
+    }
+
+    .contact-block h3{
+        margin-bottom:var(--space--s)
+    }
+
+    .contact-block trds-icon{
+        flex-shrink: 0;
+        color: var(--color--primary);
+    }
+
+    .contact-block__entry{
+        flex-wrap: nowrap;
+    }
+
+</style>
+
+<trds-section>
+    <trds-stack>
+        <h2 style="margin-bottom: var(--space--l);" class="variant--1">Kapcsolat</h2>
+        <trds-stack class="contact-block">
+            <h3>Időpontfoglalás</h3>
+            <a is="trds-link" class="block contact-block__entry" href="tel: +36 70 593 9393">
+                <trds-grid class="auto-width-layout">
+                    <trds-icon lazy icon="solid/phone"></trds-icon>
+                    <span style="font-weight: bold;">+36 70 593 9393</span>
+                </trds-grid>
+            </a>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/clock"></trds-icon>
+                <span>Hétfő-Péntek, 8:00 - 17:00</span>
+            </trds-grid>
+            <trds-grid class="isavailable auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/circle"></trds-icon>
+                <span>Jelenleg zárva vagyunk, így időpontfoglalás nem lehetséges.</span>
+            </trds-grid>
+        </trds-stack>
+        <trds-stack class="contact-block">
+            <h3>Műhely</h3>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/map-marker-alt" style="align-self: baseline"></trds-icon>
+                <span>9028 Győr, Sashegy puszta 1. A Céltrans 97 Zrt. telephelyén található.</span>
+            </trds-grid>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/clock"></trds-icon>
+                <span>Nyitvatartás bejelentkezés alapján</span>
+            </trds-grid>
+        </trds-stack>
+        <a is="trds-button--link" text="Megnyitás google mapsben" href="https://goo.gl/maps/jEsfocXRGT9Ezg6U9" icon="solid/map-marked-alt" class="icon-on-right"></a>
+        <script async>
+
+            let     now = new Date(),
+                    isAvailable = ((now.getHours() >= 8) && (now.getHours() < 17) && (now.getDay() != 0) && (now.getDay() != 6)),
+                    IsAvailable = document.querySelector('.isavailable');
+    
+            if(isAvailable){
+                IsAvailable.querySelector('trds-icon').style.color = 'var(--color--success)';
+                IsAvailable.querySelector('span').textContent = 'Időpontfoglalás lehetséges.'
+            }
+                        
+        </script>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--color--primary);">
+    <trds-grid style="justify-content: space-around;">
+        <a is="trds-link" class="block" href="mailto:toprepair.hu@gmail.com">
+            <trds-stack style="justify-items: center;">
+                <trds-icon lazy icon="solid/envelope" class="size--xl"></trds-icon>
+                <span>toprepair.hu@gmail.com</span>
+            </trds-stack>
+        </a>
+        <a is="trds-link" class="block" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">
+            <trds-stack style="justify-items: center;">
+                <trds-icon lazy icon="brands/google" class="size--xl"></trds-icon>
+                <spant>TOP REPAIR HUNGARY</span>
+            </trds-stack>
+        </a>
+    </trds-grid>
+</trds-section>

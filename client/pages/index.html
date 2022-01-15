@@ -2,36 +2,394 @@
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/trds/dist/trds.css">
-    <script src="/trds/dist/trds.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Jégkár és horpadás javítás - TOP REPAIR Jégkárjavító Kft.</title>
+<meta name="description" content="Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat."/>
+<meta name="keywords" content="jégkár, horpadás, jégkár javítás, horpadás javítás"/>
+<link rel="icon" href="/cdn/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/cdn/images/apple-touch-icon.png"/>
+<link rel="canonical" href="https://toprepair.hu/"/>
+<meta property="og:url" content="https://toprepair.hu/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TOP REPAIR Jégkárjavító Kft."> 
+<meta property="og:title" content="Jégkár és horpadás javítás" />
+<meta property="og:description" content="Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat." />
+<meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
+    <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script defer src="/trds/dist/trds.min.js"></script>
 </head>
 <body>
 
-    <trds-header>
+    <style>
+    trds-header a[is=trds-link].text{
+        text-decoration: none;
+        font-size: var(--size--xs);
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--color--secondary-text);
+    }
+</style>
+<trds-header>
     <a is="trds-link" slot="logo" class="block" href="/">
         <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
     </a>
-    <nav slot="nav">
-        <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
-        <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
-        <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
-        <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
-        <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
-        <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
-        <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
-    </nav>
+    <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
+    <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
+    <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
+    <a is="trds-link" class="text" href="/munkaink">Munkáink</a>
+    <a is="trds-link" class="text" href="/rolunk">Rólunk</a>
+    <a is="trds-link" class="text" href="/gyik">Gyakran ismételt kérdések</a>
+    <a is="trds-link" class="text" href="/kapcsolat">Kapcsolat</a>
 </trds-header>
 
     <main>
+        <trds-section
+    class="bg-image"
+    style="--bg-image-url: url('/cdn/images/herobg.jpg');--bg-image-overlay: rgb(50,50,50);background-position:85% center;">
+    <trds-stack style="gap:var(--space--s)">
+        <h1 style="max-width: 30rem">Jégkár és horpadás javítás mesterfokon.</h1>
+        <p style="color:var(--color--secondary-text); margin-bottom: var(--space--s); max-width: 27rem;">A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat.</p>
+        <a is="trds-button--link" class="call" number="+36 70 593 9393"></a>
+    </trds-stack>
+</trds-section>
 
+
+<trds-section>
+    <h2 class="variant--1" style="margin-bottom: var(--space--m)">Szolgáltatásaink</h2>
+    <trds-grid class="boxes-layout">
+        
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon icon="solid/hail" class="size--xl" style="color: var(--color--primary)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;">Jégkár javítás</h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)">Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.</p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+                <trds-card__footer>
+                    <a is="trds-button--link" href="/jegkarjavitas" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></a>
+                </trds-card__footer>
+            </trds-card>
+        
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon icon="solid/hammer" class="size--xl" style="color: var(--color--primary)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;">Horpadás javítás</h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)">Csapatunk professzionális eszközökkel, fényezés nélküli technológiával javítja a horpadásokat. Legyen szó bármilyen jellegű horpadásról, ameddig a fényezés nem sérült, mi nagy valószínűséggel visszaállítjuk autója karosszériáját eredeti állapotába, mintha az a gyárból gurult volna ki.</p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+                <trds-card__footer>
+                    <a is="trds-button--link" href="/horpadasjavitas" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></a>
+                </trds-card__footer>
+            </trds-card>
+        
+    </trds-grid>
+</trds-section>
+
+<trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Google vélemények</h2>
+        <trds-stack style="gap:var(--trds-space--0)">
+            <trds-grid class="auto-width-layout">
+                <span class="size--xxl" style="font-weight: bold;">4.9</span>
+                <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                    <trds-icon lazy icon="solid/star"></trds-icon>
+                </trds-grid>
+            </trds-grid>
+            <a is="trds-link" class="text" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu" style="color:var(--color--secondary-text)">62 vélemény</a>
+        </trds-stack>
+        <p>Néhány, a <a is="trds-link" class="text" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">google oldalunkon</a> szereplő értékelésekből összeállított válogatás.</p>
+        <trds-grid class="boxes-layout">
+            
+                <trds-card>
+                    <trds-card__body>
+                        <trds-stack>
+                            <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
+                                <trds-image src="/cdn/images/reviews/review_2_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <span>Zoltán Szabó E.V.</span>
+                            </trds-grid>
+                            <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                            </trds-grid>
+                            <p>Gyors, korrekt barátságos szakember. A végeredmény hibátlan lett. Bátran ajánlom mindenkinek! Bármi hasonló problémám lenne csak ide hozom az autóm. Szemle miatt bátran hívjátok, ingyenes és kötelezettség mentes az árajánlat! 5/5</p>
+                        </trds-stack>
+                    </trds-card__body>
+                </trds-card>
+            
+                <trds-card>
+                    <trds-card__body>
+                        <trds-stack>
+                            <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
+                                <trds-image src="/cdn/images/reviews/review_3_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <span>papppi88</span>
+                            </trds-grid>
+                            <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                            </trds-grid>
+                            <p>Gyors kapcsolatfelvétel. Szimpatikus mester, aki kiváló minőségű munkát végzett, korrekt áron. Köszönöm! Ajánlani tudom mindenkinek.</p>
+                        </trds-stack>
+                    </trds-card__body>
+                </trds-card>
+            
+                <trds-card>
+                    <trds-card__body>
+                        <trds-stack>
+                            <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
+                                <trds-image src="/cdn/images/reviews/review_1_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <span>Neumann Zsolti</span>
+                            </trds-grid>
+                            <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                                <trds-icon lazy icon="solid/star"></trds-icon>
+                            </trds-grid>
+                            <p>Nagyon ügyesek, rugalmasak, szépen, gyorsan dolgoznak. Forduljatok hozzájuk bizalommal!</p>
+                        </trds-stack>
+                    </trds-card__body>
+                </trds-card>
+            
+        </trds-grid>
+    </trds-stack>
+</trds-section>
+
+
+<trds-section>
+    <h2 class="variant--1" style="margin-bottom: var(--space--m)">Extra szolgáltatásaink</h2>
+    <trds-grid class="boxes-layout">
+        
+            
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon lazy icon="solid/plus" class="size--xl" style="color: var(--color--success)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;">Ingyenes kiszállás</h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)">Árajánlatot, illetve a javítást is kérheti kiszállással, amennyiben úgy kívánja. Technikusaink teljes felszereltséggel érkeznek Önhöz, és orvosolják horpadásait. ** Nem minden sérülést tudunk javítani kiszállással.</p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+
+        
+            
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon lazy icon="solid/plus" class="size--xl" style="color: var(--color--success)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;">Ingyenes árajánlat</h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)">Árajánlataink mindenkorra ingyenesek, és nem járnak semmilyen kötelezettséggel.</p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+
+        
+            
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack>
+                        <trds-icon lazy icon="solid/plus" class="size--xl" style="color: var(--color--success)"></trds-icon>
+                        <trds-stack style="gap:var(--space--s)">
+                            <h3 style="text-transform: uppercase;">Elégedettségi garancia</h3>
+                            <p class="size--s" style="color:var(--color--secondary-text)">Amennyiben Ön szerint a javítás eredménye nem az előre megbeszélt minőségben történt, nem kell kifizetnie a javítást. Ilyen egyszerű.</p>
+                        </trds-stack>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+
+        
+    </trds-grid>
+</trds-section>
+<trds-section style="background-color: var(--color--primary);">
+    <trds-stack>
+        <span class="size--xl" style="font-weight: bold;">Kérdése van? Hívjon minket.</span>
+        <a is="trds-button--link" class="call outline" number="+36 70 593 9393"></a>
+    </trds-stack>
+</trds-section>
+<trds-section
+    class="bg-image bg-image--lazy"
+    style="--bg-image-url: url('/cdn/images/aboutus__bg1920.jpg');background-position:bottom center;">
+    <trds-stack style="gap: var(--space--s)">
+        <h2 class="variant--1">Rólunk</h2>
+        <span class="size--xl" style="font-weight: bold;">Számunkra ez nem egy szakma, hanem művészet.</span>
+        <p style="margin-bottom: var(--space--s); color: var(--color--secondary-text)">Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat. Több ezer megjavított áll a hátuk mögött, bejárták már szinte az egész világot, ahol gyárakban, nagyobb jégeső verte kereskedésekben illetve logisztikai parkokban állították vissza az autók karosszériáját gyári állapotra. Cégünk 2019-ben alakult,de technikusaink több mint 6 éves tapasztalattal rendelkeznek, melyet egy brazil mester (a szakma legjobbjai) által tartott 1 éves képzés előzött meg.</p>
+        <a is="trds-button--link" text="Tovább" href="/rolunk" icon="solid/arrow-right" class="icon-on-right"></a>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--color--primary);">
+    <trds-grid>
+        <trds-stack style="gap:var(--space--0)">
+            <span class="size--xl" style="font-weight: bold;">
+                <trds-counter to="500000">0</trds-counter>
+            </span>
+            <span>Megjavított horpadás</span>
+        </trds-stack>
+        <trds-stack style="gap:var(--space--0)">
+            <span class="size--xl" style="font-weight: bold;">
+                <trds-counter to="5000">0</trds-counter>
+            </span>
+            <span>Megjavított autó</span>
+        </trds-stack>
+        <trds-stack style="gap:var(--space--0)">
+            <span class="size--xl" style="font-weight: bold;">
+                <trds-counter to="5">0</trds-counter>/5
+            </span>
+            <span>Ügyfél elégedettség</span>
+        </trds-stack>
+    </trds-grid>
+</trds-section>
+<trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Gyakran ismételt kérdések</h2>
+        <form>
+            <trds-stack style="gap:var(--space--xs)">
+                <label for="faq-category">Kategória</label>
+                <select
+                    name="faq-category"
+                    id="faq-category"
+                    category-target="faq_category_target"
+                    category-data-url="/cdn/data/faq.json"
+                >
+                    <option value="all">Mind</option>
+                    <option value="common">Általános kérdések</option>
+                    <option value="pdr">Horpadás javítás</option>
+                    <option value="hdr">Jégkár javítás</option>
+                </select>
+            </trds-stack>
+        </form>
+        <trds-grid id="faq_category_target" class="boxes-layout"></trds-grid>
+    </trds-stack>
+    <script>
+
+        document.getElementById('faq-category').viewTemplate = `
+            <trds-card>
+                <trds-card__body>
+                    <trds-stack >
+                        <h3>{{question}}</h3>
+                        <p style="color:var(--color--secondary-text)" class="size--s">{{answer}}</p>
+                    </trds-stack>
+                </trds-card__body>
+            </trds-card>
+        `;
+
+    </script>
+</trds-section>
+<script type="module">
+    import { initCategory } from '/cdn/js/category.js'; // port to cdn
+    initCategory(document.getElementById('faq-category'));
+</script>
+
+
+<style>
+
+    .contact-block{
+        gap: var(--space--s);
+    }
+
+    .contact-block h3{
+        margin-bottom:var(--space--s)
+    }
+
+    .contact-block trds-icon{
+        flex-shrink: 0;
+        color: var(--color--primary);
+    }
+
+    .contact-block__entry{
+        flex-wrap: nowrap;
+    }
+
+</style>
+
+<trds-section>
+    <trds-stack>
+        <h2 style="margin-bottom: var(--space--l);" class="variant--1">Kapcsolat</h2>
+        <trds-stack class="contact-block">
+            <h3>Időpontfoglalás</h3>
+            <a is="trds-link" class="block contact-block__entry" href="tel: +36 70 593 9393">
+                <trds-grid class="auto-width-layout">
+                    <trds-icon lazy icon="solid/phone"></trds-icon>
+                    <span style="font-weight: bold;">+36 70 593 9393</span>
+                </trds-grid>
+            </a>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/clock"></trds-icon>
+                <span>Hétfő-Péntek, 8:00 - 17:00</span>
+            </trds-grid>
+            <trds-grid class="isavailable auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/circle"></trds-icon>
+                <span>Jelenleg zárva vagyunk, így időpontfoglalás nem lehetséges.</span>
+            </trds-grid>
+        </trds-stack>
+        <trds-stack class="contact-block">
+            <h3>Műhely</h3>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/map-marker-alt" style="align-self: baseline"></trds-icon>
+                <span>9028 Győr, Sashegy puszta 1. A Céltrans 97 Zrt. telephelyén található.</span>
+            </trds-grid>
+            <trds-grid class="auto-width-layout contact-block__entry">
+                <trds-icon lazy icon="solid/clock"></trds-icon>
+                <span>Nyitvatartás bejelentkezés alapján</span>
+            </trds-grid>
+        </trds-stack>
+        <a is="trds-button--link" text="Megnyitás google mapsben" href="https://goo.gl/maps/jEsfocXRGT9Ezg6U9" icon="solid/map-marked-alt" class="icon-on-right"></a>
+        <script async>
+
+            let     now = new Date(),
+                    isAvailable = ((now.getHours() >= 8) && (now.getHours() < 17) && (now.getDay() != 0) && (now.getDay() != 6)),
+                    IsAvailable = document.querySelector('.isavailable');
+    
+            if(isAvailable){
+                IsAvailable.querySelector('trds-icon').style.color = 'var(--color--success)';
+                IsAvailable.querySelector('span').textContent = 'Időpontfoglalás lehetséges.'
+            }
+                        
+        </script>
+    </trds-stack>
+</trds-section>
+<trds-section style="background-color: var(--color--primary);">
+    <trds-grid style="justify-content: space-around;">
+        <a is="trds-link" class="block" href="mailto:toprepair.hu@gmail.com">
+            <trds-stack style="justify-items: center;">
+                <trds-icon lazy icon="solid/envelope" class="size--xl"></trds-icon>
+                <span>toprepair.hu@gmail.com</span>
+            </trds-stack>
+        </a>
+        <a is="trds-link" class="block" href="https://maps.google.com/maps?cid=10727131549895732878&hl=hu">
+            <trds-stack style="justify-items: center;">
+                <trds-icon lazy icon="brands/google" class="size--xl"></trds-icon>
+                <spant>TOP REPAIR HUNGARY</span>
+            </trds-stack>
+        </a>
+    </trds-grid>
+</trds-section>
     </main>
 
     <trds-footer>
     <trds-stack style="text-align: center;justify-items: center;">
-        <span style="color: var(--color--secondary-text)">2022 © TOP REPAIR</span>
+        <span style="color: var(--color--secondary-text);">2022 © TOP REPAIR</span>
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>
