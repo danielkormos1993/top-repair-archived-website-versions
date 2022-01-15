@@ -1,0 +1,6 @@
+/* TODO: add header height only when header is in page */
+
+main{
+    display: flex;
+    flex-direction: column;
+}

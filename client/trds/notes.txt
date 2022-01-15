@@ -1,0 +1,1 @@
+- try out webpack for js bundling because dependency order is shit

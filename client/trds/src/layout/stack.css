@@ -1,0 +1,5 @@
+trds-stack{
+    display: grid;
+    gap: var(--space--m);
+    align-content: start;
+}
