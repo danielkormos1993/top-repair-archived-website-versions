@@ -594,6 +594,7 @@ TrdsButtonStyle.textContent = `
         overflow: hidden;
         max-width: max-content;
         min-width: max-content;
+        --base-bg-color: var(--color--primary);
         background-color: var(--color--primary);
         font-weight: bold;
         text-transform: uppercase;
@@ -633,6 +634,7 @@ TrdsButtonStyle.textContent = `
     }
 
     .trds-button.call{
+        --base-bg-color: var(--color--success);
         background-color: var(--color--success);
         border-radius: 50px;
     }
@@ -640,6 +642,12 @@ TrdsButtonStyle.textContent = `
     .trds-button.outline{
         box-shadow: inset 0 0 0 2px currentColor;
         background-color: transparent;
+    }
+
+    .trds-button.outline:hover,
+    .trds-button.outline:focus{
+        box-shadow: none;
+        background-color: var(--base-bg-color);
     }
 
     .trds-button trds-icon{

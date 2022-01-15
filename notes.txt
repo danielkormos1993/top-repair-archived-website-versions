@@ -1,11 +1,13 @@
 1. aim for 100 pagescore 
     - convert images to webp(implement with picture element both webp and jpg support) DONE 2022.01.15 
-    - create a critical css from theme and body and add the rest add the end of the html DONE 2022.01.15 TESTING
+    - create a critical css from theme and body and add the rest add the end of the html DONE 2022.01.15 TESTING -> PERFECT SCORE ACHIVED !!! :)))))
 
 - add body loader (?CLS) DONE 2022.01.15
 
 - add necessary shits like sitemap etc DONE 2022.01.15
 
-- ios timeline not working
-- outline button hovers
+- ios timeline not working - i think its problem with the slotted:before css --> test it
+- outline button hovers DONE 2022.01.15
 - improve works section
+
+- see trds notes.txt
