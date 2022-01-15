@@ -1,0 +1,13 @@
+select{
+    display: block;
+    max-width: var(--element--max-width);
+    background-color: var(--color--secondary-bg);
+    font-weight: bold;
+    color: inherit;
+    font-size: inherit;
+    padding: var(--space--s);
+    border: none;
+    border-bottom: 2px solid var(--color--primary);
+    font-family: inherit;
+    margin: 0;
+}

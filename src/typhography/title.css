@@ -1,0 +1,40 @@
+/* usage: <h1...4> */
+
+h1, h2, h3, h4{
+    max-width: var(--element--max-width);
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    font-weight: bold;
+}
+
+h1{
+    font-size: var(--size--xxl);
+    line-height:  var(--size--xxl--line-height);
+}
+
+h2{
+    font-size: var(--size--xl);
+    line-height: var(--size--xl--line-height);
+}
+
+h3{
+    font-size: var(--size--l);
+    line-height: var(--size--l--line-height);
+}
+
+h4{
+    font-size: var(--size--m);
+    line-height: var(--size--m--line-height);
+    text-decoration: underline;
+}
+
+h1.variant--1,
+h2.variant--1,
+h3.variant--1,
+h4.variant--1{
+    font-size: var(--size--m);
+    line-height: var(--size--m--line-height);
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: var(--color--secondary-text);
+}

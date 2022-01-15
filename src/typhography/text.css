@@ -1,0 +1,6 @@
+/* usage: <span> */
+
+span{
+    -webkit-text-size-adjust: 100%;
+    max-width: var(--element--max-width);
+}
