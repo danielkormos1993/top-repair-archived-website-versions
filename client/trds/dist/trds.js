@@ -1307,7 +1307,7 @@ class TrdsTimeline extends HTMLElement{
                 :host(.row-oriented) ::slotted(trds-timeline__step:last-child){
                     padding-bottom: 0;
                 }
-                ::slotted(trds-timeline__step):before,
+                ::slotted(trds-timeline__step)::before,
                 trds-timeline__finish-flag{
                     content: attr(number);
                     width: 2rem;
@@ -1320,13 +1320,13 @@ class TrdsTimeline extends HTMLElement{
                     position: absolute;
                     left: -3.05rem;
                     top: -.28rem;
-                    font-size: var(--trds-size--m);
+                    font-size: var(--size--m);
                     font-weight: bold;
                 }
-                ::slotted(trds-timeline__step[digit-number="3"]):before{
+                ::slotted(trds-timeline__step[digit-number="3"])::before{
                     font-size: var(--size--s);
                 }
-                ::slotted(trds-timeline__step[digit-number="4"]):before{
+                ::slotted(trds-timeline__step[digit-number="4"])::before{
                     font-size: var(--size--xs);
                 }
 
@@ -1336,7 +1336,7 @@ class TrdsTimeline extends HTMLElement{
                     bottom: 0;
                     animation: TrdsIconRotater 1s infinite;
                 }
-                :host(.row-oriented) ::slotted(trds-timeline__step):before{
+                :host(.row-oriented) ::slotted(trds-timeline__step)::before{
                     top: -4.1rem;
                     left: auto;
                 }
