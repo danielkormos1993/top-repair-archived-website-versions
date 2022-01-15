@@ -1046,9 +1046,7 @@ class TrdsHeader extends HTMLElement{
 
     connectedCallback(){
 
-        let Main = document.querySelector('main');
-
-        if(Main) Main.style.paddingTop = 'var(--header-height)';
+        document.body.style.paddingTop = 'var(--header-height)';
 
     }
 

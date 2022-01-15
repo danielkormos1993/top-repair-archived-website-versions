@@ -1,0 +1,7 @@
+- aim for 100 pagescore --> need to reduce CLS
+- convert images to webp(implement with picture element both webp and jpg support)
+- add body loader (?CLS) DONE
+- add necessary shits like sitemap etc
+- ios timeline not working
+- outline button hovers
+- improve works section

@@ -3,9 +3,14 @@
 <head>
     <%- include('sections/head.ejs') %>
     <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script>
+
+        window.addEventListener('load', () => document.body.classList.remove('loading'))
+
+    </script>
     <script defer src="/trds/dist/trds.min.js"></script>
 </head>
-<body>
+<body class="loading">
 
     <%- include('sections/header.ejs') %>
 

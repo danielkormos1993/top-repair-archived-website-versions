@@ -18,9 +18,14 @@
 <meta property="og:description" content="Ez számunkra nem csak egy szakma, hanem művészet. Csapatunk fiatal és tehetséges technikusai szenvedéllyel javítják a horpadásokat." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
     <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <script>
+
+        window.addEventListener('load', () => document.body.classList.remove('loading'))
+
+    </script>
     <script defer src="/trds/dist/trds.min.js"></script>
 </head>
-<body>
+<body class="loading">
 
     <style>
     trds-header a[is=trds-link].text{
