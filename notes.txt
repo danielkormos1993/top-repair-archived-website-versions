@@ -8,9 +8,11 @@
 
 - ios timeline not working - i think its problem with the slotted:before css --> test it --> DONE 2022.01.16
 - outline button hovers DONE 2022.01.15
-- improve works section
+- improve works section -> DONE 2022.01.16
 
 - see trds notes.txt -> DONE 2022.01.16
 - consider google analytics -> i wont implement as it does not affect google ranking DONE 2022.01.16
+
+- ios does not play autplay videos -> nvm it does play(only not when using localhost)
 
 AFTER THIS SUBMIT RECRAWL GOOGLE

@@ -943,6 +943,9 @@ class TrdsShowcase extends HTMLElement{
                 :host([after-image-active]) trds-showcase__before{
                     opacity: 0;
                 }
+                trds-image{
+                    object-fit: cover;
+                }
             </style>
             <trds-showcase__before>
             </trds-showcase__before>
