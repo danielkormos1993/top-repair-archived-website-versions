@@ -890,6 +890,89 @@ class TrdsCarousel extends HTMLElement{
 }
 
 window.customElements.define('trds-carousel', TrdsCarousel);
+
+
+class TrdsShowcase extends HTMLElement{
+
+    constructor(){
+        super();
+
+        this.attachShadow({mode:'open'}).innerHTML = `
+            <style>
+                :host{
+                    display: block;
+                    max-width: var(--element--max-width);
+                    position: relative;
+                    background-color: var(--color--secondary-bg);
+                }
+                trds-showcase__before,
+                trds-showcase__after{
+                    display: block;
+                    transition: opacity .5s;
+                    position: relative;
+                }
+                trds-showcase__before:before,
+                trds-showcase__after:before{
+                    content: 'Előtte';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: var(--space--xs) var(--space--s);
+                    font-size: var(--size--s);
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    background-color: var(--color--primary-bg);
+                    mix-blend-mode: screen;
+                    z-index: 1;
+                }
+                trds-showcase__after:before{
+                    content: 'Utána';
+                }
+                trds-showcase__after{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+                :host([after-image-active]) trds-showcase__after{
+                    opacity: 1;
+                }
+                :host([after-image-active]) trds-showcase__before{
+                    opacity: 0;
+                }
+            </style>
+            <trds-showcase__before>
+            </trds-showcase__before>
+            <trds-showcase__after>
+            </trds-showcase__after>
+        `;
+
+        this.addEventListener('click', this.toggleAfterImg);
+                
+    }
+
+    toggleAfterImg = () => {
+        this.hasAttribute('after-image-active') ? this.removeAttribute('after-image-active') : this.setAttribute('after-image-active', '');
+    }
+
+    connectedCallback(){
+
+        this.shadowRoot.querySelector('trds-showcase__before').innerHTML = `
+            <trds-image alt="Javítás előtti kép" lazy src="${this.getAttribute('before-image-url')}"></trds-image>
+        `;
+
+        this.shadowRoot.querySelector('trds-showcase__after').innerHTML = `
+            <trds-image alt="Javítás utáni kép" lazy src="${this.getAttribute('after-image-url')}"></trds-image>
+        `;
+
+    }
+
+}
+
+window.customElements.define('trds-showcase', TrdsShowcase);
 // usage: trds-cookiebar[cookieName(required), cookieValue(required)]
 // use at body > level
 // add class .SetCookieButton to the cookie setter button
@@ -1184,94 +1267,59 @@ class TrdsModal extends HTMLElement{
 }
 
 window.customElements.define('trds-modal', TrdsModal);
-
-
-class TrdsShowcase extends HTMLElement{
-
-    constructor(){
-        super();
-
-        this.attachShadow({mode:'open'}).innerHTML = `
-            <style>
-                :host{
-                    display: block;
-                    max-width: var(--element--max-width);
-                    position: relative;
-                    background-color: var(--color--secondary-bg);
-                }
-                trds-showcase__before,
-                trds-showcase__after{
-                    display: block;
-                    transition: opacity .5s;
-                    position: relative;
-                }
-                trds-showcase__before:before,
-                trds-showcase__after:before{
-                    content: 'Előtte';
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    padding: var(--space--xs) var(--space--s);
-                    font-size: var(--size--s);
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    background-color: var(--color--primary-bg);
-                    mix-blend-mode: screen;
-                    z-index: 1;
-                }
-                trds-showcase__after:before{
-                    content: 'Utána';
-                }
-                trds-showcase__after{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                }
-                :host([after-image-active]) trds-showcase__after{
-                    opacity: 1;
-                }
-                :host([after-image-active]) trds-showcase__before{
-                    opacity: 0;
-                }
-            </style>
-            <trds-showcase__before>
-            </trds-showcase__before>
-            <trds-showcase__after>
-            </trds-showcase__after>
-        `;
-
-        this.addEventListener('click', this.toggleAfterImg);
-                
-    }
-
-    toggleAfterImg = () => {
-        this.hasAttribute('after-image-active') ? this.removeAttribute('after-image-active') : this.setAttribute('after-image-active', '');
-    }
-
-    connectedCallback(){
-
-        this.shadowRoot.querySelector('trds-showcase__before').innerHTML = `
-            <trds-image alt="Javítás előtti kép" lazy src="${this.getAttribute('before-image-url')}"></trds-image>
-        `;
-
-        this.shadowRoot.querySelector('trds-showcase__after').innerHTML = `
-            <trds-image alt="Javítás utáni kép" lazy src="${this.getAttribute('after-image-url')}"></trds-image>
-        `;
-
-    }
-
-}
-
-window.customElements.define('trds-showcase', TrdsShowcase);
 // usage: trds-timeline
 // add trds-timeline__step element for a step which MUST HAVE A NUMBER attribute which displayed as count in timeline
 // it automatically set timeline to row oriented if all elements can fit 
 
 
+
+let TrdsTimelineStyle = document.createElement('style');
+TrdsTimelineStyle.textContent = `
+
+    trds-timeline__step{
+        display: block;
+        position: relative;
+    }
+
+    trds-timeline__step:last-child{
+        padding-bottom: 2.85rem;
+    }
+
+    trds-timeline.row-oriented trds-timeline__step:last-child{
+        padding-bottom: 0;
+    }
+
+    trds-timeline__step:before{
+        content: attr(number);
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color--primary);
+        border-radius: 50%;
+        position: absolute;
+        left: -3.05rem;
+        top: -.28rem;
+        font-size: var(--size--m);
+        font-weight: bold;
+    }
+
+    trds-timeline__step[digit-number="3"]:before{
+        font-size: var(--size--s);
+    }
+
+    trds-timeline__step[digit-number="4"]:before{
+        font-size: var(--size--xs);
+    }
+
+    trds-timeline.row-oriented trds-timeline__step:before{
+        top: -4.1rem;
+        left: auto;
+    }
+
+`;
+document.head.appendChild(TrdsTimelineStyle);
 
 class TrdsTimeline extends HTMLElement{
     
@@ -1280,6 +1328,7 @@ class TrdsTimeline extends HTMLElement{
 
         this.attachShadow({mode: 'open'}).innerHTML = `
             <style>
+
                 :host{
                     display: grid;
                     border-left: 3px solid var(--color--primary);
@@ -1289,6 +1338,7 @@ class TrdsTimeline extends HTMLElement{
                     box-sizing: border-box;
                     position: relative;
                 }
+
                 :host(.row-oriented){
                     grid-template-columns: repeat(auto-fit, minmax(1px, 1fr));
                     border-left: none;
@@ -1297,17 +1347,7 @@ class TrdsTimeline extends HTMLElement{
                     margin-left: 0;
                     padding-top: 3rem;
                 }
-                ::slotted(trds-timeline__step){
-                    display: block;
-                    position: relative;
-                }
-                ::slotted(trds-timeline__step:last-child){
-                    padding-bottom: 2.85rem;
-                }
-                :host(.row-oriented) ::slotted(trds-timeline__step:last-child){
-                    padding-bottom: 0;
-                }
-                ::slotted(trds-timeline__step)::before,
+                
                 trds-timeline__finish-flag{
                     content: attr(number);
                     width: 2rem;
@@ -1318,36 +1358,20 @@ class TrdsTimeline extends HTMLElement{
                     background-color: var(--color--primary);
                     border-radius: 50%;
                     position: absolute;
-                    left: -3.05rem;
-                    top: -.28rem;
-                    font-size: var(--size--m);
-                    font-weight: bold;
-                }
-                ::slotted(trds-timeline__step[digit-number="3"])::before{
-                    font-size: var(--size--s);
-                }
-                ::slotted(trds-timeline__step[digit-number="4"])::before{
-                    font-size: var(--size--xs);
-                }
-
-                trds-timeline__finish-flag{
-                    top: auto;
                     left: -1.05rem;
                     bottom: 0;
+                    font-size: var(--size--m);
+                    font-weight: bold;
                     animation: TrdsIconRotater 1s infinite;
                 }
-                :host(.row-oriented) ::slotted(trds-timeline__step)::before{
-                    top: -4.1rem;
-                    left: auto;
-                }
+   
                 :host(.row-oriented) trds-timeline__finish-flag{
                     top: -1.1rem;
                     left: auto;
-                }
-                :host(.row-oriented) trds-timeline__finish-flag{
                     right: 0;
                     bottom: auto;
                 }
+
                 @keyframes TrdsIconRotater{
                     0%{
                         transform:rotate(30deg);

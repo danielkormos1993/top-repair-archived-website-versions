@@ -28,12 +28,15 @@ gulp.src([
 
 gulp.src([
     './src/libs/**/*.js',
-    './src/layout/**/*.js',
-    './src/typhography/**/*.js',
+    './src/layout/container.js',
+    './src/layout/section.js',
     './src/elements/icon.js',
     './src/elements/loader.js',
     './src/elements/**/*.js',
-    './src/components/**/*.js'
+    './src/components/button.js',
+    './src/components/carousel.js',
+    './src/components/showcase.js',
+    './src/components/**/*.js',
     ])
     .pipe(replace(/^import.*/gm, ''))
     .pipe(replace(/export[^\n]*/g, ''))
