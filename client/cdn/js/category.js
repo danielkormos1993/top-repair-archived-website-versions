@@ -1,4 +1,4 @@
-﻿// function for init category and render it after init
+// function for init category and render it after init
 const initCategory = (select, category = 'all') => {
 
     [...select.options].forEach((option, index) => {

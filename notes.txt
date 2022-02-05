@@ -15,4 +15,7 @@
 
 - ios does not play autplay videos -> nvm it does play(only not when using localhost)
 
-AFTER THIS SUBMIT RECRAWL GOOGLE
+AFTER THIS SUBMIT RECRAWL GOOGLE DONE 20220116
+
+NEXT STEPS:
+- works section as the dream CONFIRMED

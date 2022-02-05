@@ -2,11 +2,12 @@
 <%- include('sections/pdr_timeline.ejs') %>
 <%- include('sections/pdr_getrepair.ejs') %>
 <%- include('../../sections/reviews.ejs') %>
-<%- include('../../sections/works.ejs') %>
-<script type="module">
-    import { initCategory } from '/cdn/js/category.js'; // port to cdn
-    initCategory(document.getElementById('works-category'), 'pdr');
-</script>
+<trds-section>
+    <trds-stack>
+        <h2 class="variant--1">Munkáink</h2>
+        <div id="workmedia-list" class="short"></div>
+    <script defer src="/cdn/js/main.faf5ace6.js"></script>
+</trds-section>
 <%- include('../../sections/faq.ejs') %>
 <script type="module">
     import { initCategory } from '/cdn/js/category.js'; // port to cdn
