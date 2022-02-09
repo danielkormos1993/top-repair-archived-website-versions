@@ -21,5 +21,8 @@
     <%- include('sections/footer.ejs') %>
     
     <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <% if(page.name === 'hdr' || page.name === 'pdr' || page.name === 'works'){ %>
+    <script defer src="/cdn/js/WMList.js"></script>
+    <% } %>
 </body>
 </html>
