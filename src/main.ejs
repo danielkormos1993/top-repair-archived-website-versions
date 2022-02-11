@@ -2,13 +2,13 @@
 <html lang="hu">
 <head>
     <%- include('sections/head.ejs') %>
-    <link rel="stylesheet" href="/trds/dist/trds-critical.min.css">
+    <link rel="stylesheet" href="/trds/trds-critical.min.css">
     <script>
 
         window.addEventListener('load', () => document.body.classList.remove('loading'))
 
     </script>
-    <script defer src="/trds/dist/trds.min.js"></script>
+    <script defer src="/trds/trds.min.js"></script>
 </head>
 <body class="loading">
 
@@ -20,7 +20,7 @@
 
     <%- include('sections/footer.ejs') %>
     
-    <link rel="stylesheet" href="/trds/dist/trds.min.css">
+    <link rel="stylesheet" href="/trds/trds.min.css">
     <% if(page.name === 'hdr' || page.name === 'pdr' || page.name === 'works'){ %>
     <script defer src="/cdn/js/WMList.js"></script>
     <% } %>

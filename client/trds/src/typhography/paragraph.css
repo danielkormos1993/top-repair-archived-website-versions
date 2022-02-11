@@ -1,7 +1,0 @@
-/* usage: <p> */
-
-p{
-    margin: 0;
-    -webkit-text-size-adjust: 100%;
-    max-width: var(--element--max-width);
-}
