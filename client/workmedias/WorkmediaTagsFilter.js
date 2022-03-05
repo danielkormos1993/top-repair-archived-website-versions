@@ -70,6 +70,12 @@ export default class WorkmediaTagsFilter extends HTMLElement{
         if(this.selectedTags.includes(e.target.textContent)){
 
             this.selectedTags = this.selectedTags.filter(tag => tag !== e.target.textContent);
+
+            if(this.selectedTags.length === 0){
+                this.selectedTags = 'all';
+                this.querySelector('#show-all-tags').classList.remove('outline');
+            }
+            
             this.dispatchEvent(new CustomEvent('selectedTagsUpdated',{
                 detail: {selectedTags: this.selectedTags}
             }));
