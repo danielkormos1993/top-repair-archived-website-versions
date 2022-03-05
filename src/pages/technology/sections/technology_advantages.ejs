@@ -13,20 +13,20 @@
 }] %>
 
 <trds-section>
-    <h2 class="variant--1" style="margin-bottom: var(--space--m)">A TECHNOLÓGIA ELŐNYEI</h2>
+    <trds-title level="2" class="variant--1" style="margin-bottom: var(--space--m)">A TECHNOLÓGIA ELŐNYEI</trds-title>
     <trds-grid class="boxes-layout">
         <% advantages.forEach(advantage => { %>
             
             <trds-card>
-                <trds-card__body>
+                <trds-card_body>
                     <trds-stack>
                         <trds-icon icon="<%= advantage.icon %>" class="size--xl" style="color: var(--color--success)"></trds-icon>
                         <trds-stack style="gap:var(--space--s)">
-                            <h3 style="text-transform: uppercase;"><%= advantage.title %></h3>
+                            <trds-title level="3" style="text-transform: uppercase;"><%= advantage.title %></trds-title>
                             <p class="size--s" style="color:var(--color--secondary-text)"><%= advantage.description %></p>
                         </trds-stack>
                     </trds-stack>
-                </trds-card__body>
+                </trds-card_body>
             </trds-card>
 
         <% }); %>

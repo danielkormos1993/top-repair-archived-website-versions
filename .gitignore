@@ -1,2 +1,4 @@
 node_modules
 client/trds/node_modules
+# Local Netlify folder
+.netlify

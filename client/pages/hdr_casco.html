@@ -17,15 +17,10 @@
 <meta property="og:title" content="CASCO-s jégkár javítás" />
 <meta property="og:description" content="CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
-    <link rel="stylesheet" href="/trds/trds-critical.css">
-    <script>
-
-        window.addEventListener('load', () => document.body.classList.remove('loading'))
-
-    </script>
-    <script defer src="/trds/trds.js"></script>
+    <link rel="stylesheet" href="/trds-elements/tr-theme.css">
+    <script defer src="/trds-elements/trds.js"></script>
 </head>
-<body class="loading">
+<body>
 
     <style>
     trds-header a[is=trds-link].text{
@@ -36,10 +31,7 @@
         color: var(--color--secondary-text);
     }
 </style>
-<trds-header>
-    <a is="trds-link" slot="logo" class="block" href="/">
-        <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
-    </a>
+<trds-header logo-src="/cdn/images/logo544x170.png">
     <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
     <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
     <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
@@ -52,38 +44,38 @@
     <main>
         <trds-section style="background-color: var(--color--primary);">
     <trds-stack style="gap:var(--space--s)">
-        <h1 style="color: var(--color--primary-text)" class="variant--1">CASCO-S JÉGKÁR JAVÍTÁS</h1>
-        <span class="size--xl" style="font-weight: bold">CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz.</span>
+        <trds-title style="color: var(--color--primary-text)" class="variant--1">CASCO-S JÉGKÁR JAVÍTÁS</trds-title>
+        <span class="size--xl" style="font-weight: bold; max-width: var(--element--max-width);">CASCO biztosítás alapján történő jégkár javítás során cégünk a káresemény bekövetkezésétől a javításig mindent elintéz.</span>
     </trds-stack>
 </trds-section>
 <trds-section>
     <trds-stack style="gap:var(--space--xxl)">
-        <h2 class="variant--1">A KÁRRENDEZÉS MENETE</h2>
+        <trds-title level="2" class="variant--1">A KÁRRENDEZÉS MENETE</trds-title>
         <trds-timeline>
-            <trds-timeline__step number="1">
+            <trds-timeline_step number="1">
                 <trds-stack>
-                    <h3>A KÁR BEJELENTÉSE</h3>
+                    <trds-title level="3">A KÁR BEJELENTÉSE</trds-title>
                     <p style="color:var(--color--secondary-text)" class="size--s">A kár bejelentése történhet ONLINE vagy telefonon keresztül is. A biztosító a bejelentést követően kárszakértőt küld a kár felmérésére, mely a kárszakártővel előre egyeztetett időpontban történik.</p>
                 </trds-stack>
-            </trds-timeline__step>
-            <trds-timeline__step number="2">
+            </trds-timeline_step>
+            <trds-timeline_step number="2">
                 <trds-stack>
-                    <h3>SZEMLE (KÁRFELVÉTEL)</h3>
+                    <trds-title level="3">SZEMLE (KÁRFELVÉTEL)</trds-title>
                     <p style="color:var(--color--secondary-text)" class="size--s">A jégeső okozta horpadások feljelölésre kerülnek, illetve minden cserélendő alkatrészt jegyzőkönyvbe vesz a kárszakértő. Ezt a lépést érdemes jégkárjavító szakember közreműködésével megtenni, mivel a kárszakértő szaktudás hiányában lehetséges, hogy nem látja, nem veszi fel a kár egészét. Amennyiben a kárt elsőre nem sikerült helyesen felvenni, úgy pótszemlére kerül sor.</p>
                 </trds-stack>
-            </trds-timeline__step>
-            <trds-timeline__step number="3">
+            </trds-timeline_step>
+            <trds-timeline_step number="3">
                 <trds-stack>
-                    <h3>JAVÍTÁS</h3>
+                    <trds-title level="3">JAVÍTÁS</trds-title>
                     <p style="color:var(--color--secondary-text)" class="size--s">Egy kisebb jégverés javítása 1 napon belül történik, és egy nagyobb jégverés javítása is maximum pár napot vehet igénybe, illetve extrém esetekben akár 1-2 hetet is. Szakszerű javítással a gépjármű teljesen visszanyeri gyári állapotát.</p>
                 </trds-stack>
-            </trds-timeline__step>
+            </trds-timeline_step>
         </trds-timeline>
     </trds-stack>
 </trds-section>
 <trds-section style="background-color: var(--color--primary);">
     <trds-stack>
-        <h2 style="color: var(--color--primary-text)" class="variant--1">ÜGYINTÉZÉS INDÍTÁSA</h2>
+        <trds-title level="2" style="color: var(--color--primary-text)" class="variant--1">ÜGYINTÉZÉS INDÍTÁSA</trds-title>
         <span>Amennyiben szeretné velünk intéztetni kárügyét, úgy kérjük vegye fel velünk a kapcsolatot.</span>
         <a is="trds-button--link" class="call outline" number="+36 70 593 9393"></a>
     </trds-stack>
@@ -113,9 +105,9 @@
 
 <trds-section>
     <trds-stack>
-        <h2 style="margin-bottom: var(--space--l);" class="variant--1">Kapcsolat</h2>
+        <trds-title level="2" style="margin-bottom: var(--space--l);" class="variant--1">Kapcsolat</trds-title>
         <trds-stack class="contact-block">
-            <h3>Időpontfoglalás</h3>
+            <trds-title level="3">Időpontfoglalás</trds-title>
             <a is="trds-link" class="block contact-block__entry" href="tel: +36 70 593 9393">
                 <trds-grid class="auto-width-layout">
                     <trds-icon lazy icon="solid/phone"></trds-icon>
@@ -132,7 +124,7 @@
             </trds-grid>
         </trds-stack>
         <trds-stack class="contact-block">
-            <h3>Műhely</h3>
+            <trds-title level="3">Műhely</trds-title>
             <trds-grid class="auto-width-layout contact-block__entry">
                 <trds-icon lazy icon="solid/map-marker-alt" style="align-self: baseline"></trds-icon>
                 <span>9028 Győr, Sashegy puszta 1. A Céltrans 97 Zrt. telephelyén található.</span>
@@ -181,8 +173,10 @@
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>
+
     
-    <link rel="stylesheet" href="/trds/trds.css">
+
+    
     
 </body>
 </html>

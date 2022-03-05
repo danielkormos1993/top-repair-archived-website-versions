@@ -11,22 +11,22 @@
 }] %>
 
 <trds-section>
-    <h2 class="variant--1" style="margin-bottom: var(--space--m)">Szolgáltatásaink</h2>
+    <trds-title level="2" class="variant--1" style="margin-bottom: var(--space--m)">Szolgáltatásaink</trds-title>
     <trds-grid class="boxes-layout">
         <% servicesCardData.forEach(service => { %>
             <trds-card>
-                <trds-card__body>
+                <trds-card_body>
                     <trds-stack>
                         <trds-icon icon="<%= service.icon %>" class="size--xl" style="color: var(--color--primary)"></trds-icon>
                         <trds-stack style="gap:var(--space--s)">
-                            <h3 style="text-transform: uppercase;"><%= service.title %></h3>
+                            <trds-title level="3" style="text-transform: uppercase;"><%= service.title %></trds-title>
                             <p class="size--s" style="color:var(--color--secondary-text)"><%= service.paragraph %></p>
                         </trds-stack>
                     </trds-stack>
-                </trds-card__body>
-                <trds-card__footer>
+                </trds-card_body>
+                <trds-card_footer>
                     <a is="trds-button--link" href="<%= service.buttonHref %>" class="outline icon-on-right" text="Tovább" icon="solid/arrow-right"></a>
-                </trds-card__footer>
+                </trds-card_footer>
             </trds-card>
         <% }); %>
     </trds-grid>

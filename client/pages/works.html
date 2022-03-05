@@ -17,15 +17,10 @@
 <meta property="og:title" content="Munkáink" />
 <meta property="og:description" content="Jégkár javításos munkáinkról videókat teszünk közzé, míg a horpadás javításos munkáinkról képeket a jobb szemléltetés érdekében." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
-    <link rel="stylesheet" href="/trds/trds-critical.css">
-    <script>
-
-        window.addEventListener('load', () => document.body.classList.remove('loading'))
-
-    </script>
-    <script defer src="/trds/trds.js"></script>
+    <link rel="stylesheet" href="/trds-elements/tr-theme.css">
+    <script defer src="/trds-elements/trds.js"></script>
 </head>
-<body class="loading">
+<body>
 
     <style>
     trds-header a[is=trds-link].text{
@@ -36,10 +31,7 @@
         color: var(--color--secondary-text);
     }
 </style>
-<trds-header>
-    <a is="trds-link" slot="logo" class="block" href="/">
-        <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
-    </a>
+<trds-header logo-src="/cdn/images/logo544x170.png">
     <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
     <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
     <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
@@ -52,8 +44,9 @@
     <main>
         <trds-section>
     <trds-stack>
-        <h2 class="variant--1">Munkáink</h2>
-        <div id="workmedia-list"></div>
+        <trds-title class="variant--1">Munkáink</trds-title>
+        <!-- <div id="workmedias"></div> -->
+        <workmedias-long></workmedias-long>
     </trds-stack>
 </trds-section>
     </main>
@@ -64,10 +57,12 @@
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>
+
     
-    <link rel="stylesheet" href="/trds/trds.css">
+
     
-    <script defer src="/cdn/js/WMList.js"></script>
+        <script type="module" src="/workmedias/dist/WorkmediasLongBundle.js"></script>
+    
     
 </body>
 </html>

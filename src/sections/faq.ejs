@@ -1,6 +1,6 @@
 ﻿<trds-section>
     <trds-stack>
-        <h2 class="variant--1">Gyakran ismételt kérdések</h2>
+        <trds-title level="2" class="variant--1">Gyakran ismételt kérdések</trds-title>
         <form>
             <trds-stack style="gap:var(--space--xs)">
                 <label for="faq-category">Kategória</label>
@@ -23,12 +23,12 @@
 
         document.getElementById('faq-category').viewTemplate = `
             <trds-card>
-                <trds-card__body>
+                <trds-card_body>
                     <trds-stack >
-                        <h3>{{question}}</h3>
+                        <trds-title level="3">{{question}}</trds-title>
                         <p style="color:var(--color--secondary-text)" class="size--s">{{answer}}</p>
                     </trds-stack>
-                </trds-card__body>
+                </trds-card_body>
             </trds-card>
         `;
 

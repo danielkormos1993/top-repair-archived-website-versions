@@ -17,15 +17,10 @@
 <meta property="og:title" content="Adatvédelmi tájékoztató" />
 <meta property="og:description" content="GDPR szabályzatunkban megtalál minden fontos információt adatai biztonságáról." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
-    <link rel="stylesheet" href="/trds/trds-critical.css">
-    <script>
-
-        window.addEventListener('load', () => document.body.classList.remove('loading'))
-
-    </script>
-    <script defer src="/trds/trds.js"></script>
+    <link rel="stylesheet" href="/trds-elements/tr-theme.css">
+    <script defer src="/trds-elements/trds.js"></script>
 </head>
-<body class="loading">
+<body>
 
     <style>
     trds-header a[is=trds-link].text{
@@ -36,10 +31,7 @@
         color: var(--color--secondary-text);
     }
 </style>
-<trds-header>
-    <a is="trds-link" slot="logo" class="block" href="/">
-        <trds-image alt="logo" src="/cdn/images/logo544x170.png"></trds-image>
-    </a>
+<trds-header logo-src="/cdn/images/logo544x170.png">
     <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
     <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
     <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
@@ -52,33 +44,33 @@
     <main>
         <trds-section>
     <trds-stack>
-        <h1 class="variant--1">Adatvédelmi tájékoztató</h1>
+        <trds-title class="variant--1">Adatvédelmi tájékoztató</trds-title>
         <trds-stack>
-            <h2 class="size--l">Az adatkezelő</h2>
+            <trds-title level="2" class="size--l">Az adatkezelő</trds-title>
             <p>TOP REPAIR Kft.<br>Székhelye: 9062 Kisbajcs, Árpád u. 34. 2/6.<br>Adószáma:27077175-2-08<br>a továbbiakban: Adatkezelő<br>Adatvédelemmel kapcsolatos elérhetőségei: toprepair.hu@gmail.com, tel.: +36 70 593 9393.</p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">Az adatkezelés jogalapja</h2>
+            <trds-title level="2" class="size--l">Az adatkezelés jogalapja</trds-title>
             <p>Tájékoztató rendelkezéseinek kialakításakor az adatkezelő különös tekintettel vette figyelembe az Európai Parlament és a Tanács 2016/679 Rendeletében („Általános Adatvédelmi Rendelet” vagy „GDPR”), az információs önrendelkezési jogról és az információszabadságról szóló 2011. évi CXII. törvény („Infotv.”), a Polgári Törvénykönyvről szóló 2013. évi V. törvény („Ptk.”), továbbá a gazdasági reklámtevékenység alapvető feltételeiről és egyes korlátairól szóló 2008. évi XLVIII. törvény („Grtv.”) rendelkezéseit. Jelen Tájékoztató az érintett teljes körű tájékoztatásának minősül.</p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">A kezelt adatok köre</h2>
+            <trds-title level="2" class="size--l">A kezelt adatok köre</trds-title>
             <p>A honlapot bárki látogathatja személyes adatok megadása nélkül, kivétel ez alól a Google Analytics által begyűjtött IP-cím és látogatás időpontja. Szolgáltatásaink igénybevételéhez viszont a következdő adatokra lehet szükségünk, illetve Mi(TOP REPAIR KFT.), mint adatkezelők a következőképpen kezeljük az Ön számunkra megadott személyes adatait:<ul><li>Azonosító és elérhetőségi adatok* - név, email cím, telefonszám, cím/székhely, szem. ig. szám/cégjegyzékszám, adóazonosító/adószám<br>Cél(ok)<br>Kapcsolatfelvétel, kommunikáció és javítások teljesítése</li><li>Javítandó gépjármű részletei*- márka, modell, vin, biztosító neve, káresemény dátuma, Lízingcég neve<br>Cél(ok)<br>Javítás teljesítése</li></ul>A fent felsorolt, *-gal jelzett adatelemek megadása kötelező. Ha nem adja meg az adatokat, nem tudjuk teljesíteni a kérését. A fent felsorolt adatokat ezen szerződéses kapcsolat megszüntetését követően három évig tároljuk.<br>Címzettek<ul>Az Ön személyes adatainak megosztására az alábbi címzettek számára kerül sor:<li>Azonosító és elérhetőségi adatok<br>Címzett(ek)<br>Adott bíztosító, adott lízingcég</li><li>Javítandó gépjármű részletei<br>Címzett(ek)<br>Adott bíztosító, adott lízingcég</li></ul></p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">Technikai adatok (cookie-k)</h2>
+            <trds-title level="2" class="size--l">Technikai adatok (cookie-k)</trds-title>
             <p>A weboldal a Google Inc. („Google”) Google Analytics rendszerét használja a látogatottságának elemzésére. A Google Analytics rendszere ún. „cookie-kat” – egyszerű, rövid, kisméretű szöveges fájlokat – tárol el az Ön informatikai eszközén és ezek segítségével elemzi a weboldalunk látogatottságát, segítve ezzel a weboldalunk fejlesztését a felhasználói élmény fokozása érdekében. A „cookie-ban” rögzített, weboldal látogatottságára vonatkozó adatok (a látogatás időpontjával és az Ön IP címével együtt) a Google USA szervereire kerülnek átvitelre és letárolásra. A Google arra használja ezeket az adatokat, hogy az Ön honlap-látogatási szokásait kiértékelje,  valamint arra, hogy egyéb, a weboldallal és az internet használatával kapcsolatos szolgáltatásokat nyújtson. Azok a felhasználók, akik nem szeretnék, hogy a Google Analytics jelentést készítsen a látogatásukról, telepíthetik a Google Analytics letiltó böngészőbővítményt. Ez a kiegészítő arra utasítja a Google Analytics JavaScript-szkriptjeit (ga.js, analytics.js, and dc.js), hogy ne küldjenek látogatási információt a Google számára. Emellett azok a felhasználók, akik telepítették a letiltó böngészőbővítményt, a tartalmi kísérletekben sem vesznek részt. Ha le szeretné tiltani az Analytics webes tevékenységét, keresse fel a Google Analytics letiltó oldalát (http://tools.google.com/dlpage/gaoptout), és telepítse a bővítményt böngészőjéhez. A bővítmény telepítéséről és eltávolításáról további tájékoztatásért tekintse meg az adott böngészőhöz tartozó súgót. Amennyiben nem szeretné, hogy a weboldalon való viselkedését elemezzük, akkor böngészője megfelelő beállításait használva le tilthatja a cookie-k tárolását.</p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">Az adatbiztonság követelményének érvényesülése</h2>
+            <trds-title level="2" class="size--l">Az adatbiztonság követelményének érvényesülése</trds-title>
             <p>- gondoskodik az adatok biztonságáról, továbbá megteszi azokat a technikai és szervezési intézkedéseket és kialakítja azokat az eljárási szabályokat, amelyek az Adatvédelmi tv. rendelkezéseinek érvényre juttatásához szükségesek,<br>- védi az adatokat a jogosulatlan hozzáférés, megváltoztatás, továbbítás, nyilvánosságra hozatal, törlés vagy megsemmisítés, valamint a véletlen megsemmisülés és sérülés, továbbá az alkalmazott technika megváltozásából fakadó hozzáférhetetlenné válás ellen.</p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">Az érintett jogai az adatkezeléssel kapcsolatban</h2>
+            <trds-title level="2" class="size--l">Az érintett jogai az adatkezeléssel kapcsolatban</trds-title>
             <p>Az érintett kérelmezheti az Adatkezelőnél<br>a) tájékoztatását személyes adatai kezeléséről, valamint<br>b) személyes adatainak - a kötelező adatkezelés kivételével - törlését vagy zárolását.</p>
         </trds-stack>
         <trds-stack>
-            <h2 class="size--l">Jogérvényesítési lehetőségek</h2>
+            <trds-title level="2" class="size--l">Jogérvényesítési lehetőségek</trds-title>
             <p>Az érintett adatvédelmi jogainak sérelme esetén a Polgári Törvénykönyv (2013. évi V. törvény) és az Adatvédelmi tv. alapján bírósághoz (törvényszék), valamint a Nemzeti Adatvédelmi és Információszabadság Hatósághoz fordulhat.</p>
         </trds-stack>
     </trds-stack>
@@ -91,8 +83,10 @@
         <a is="trds-link" class="text" href="/adatvedelem">Adatvédelmi tájékoztató</a>
     </trds-stack>
 </trds-footer>
+
     
-    <link rel="stylesheet" href="/trds/trds.css">
+
+    
     
 </body>
 </html>

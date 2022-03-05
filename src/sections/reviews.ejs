@@ -15,7 +15,7 @@
 %>
 <trds-section>
     <trds-stack>
-        <h2 class="variant--1">Google vélemények</h2>
+        <trds-title level="2" class="variant--1">Google vélemények</trds-title>
         <trds-stack style="gap:var(--trds-space--0)">
             <trds-grid class="auto-width-layout">
                 <span class="size--xxl" style="font-weight: bold;">4.9</span>
@@ -33,7 +33,7 @@
         <trds-grid class="boxes-layout">
             <% reviews.forEach(review => { %>
                 <trds-card>
-                    <trds-card__body>
+                    <trds-card_body>
                         <trds-stack>
                             <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
                                 <trds-image src="<%- review.profileImgUrl %>" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
@@ -48,7 +48,7 @@
                             </trds-grid>
                             <p><%- review.reviewText %></p>
                         </trds-stack>
-                    </trds-card__body>
+                    </trds-card_body>
                 </trds-card>
             <% }); %>
         </trds-grid>
