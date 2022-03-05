@@ -24,7 +24,14 @@ class WorkmediasShort extends HTMLElement{
 
     getWorkmedias = async () => {
 
-        const dbQuery = query(collection(database, 'workmedias'), where("category.value", "==",  this.getAttribute('category')), limit(9));
+        let dbQuery;
+
+        if(this.getAttribute('category') === 'all'){
+            dbQuery = query(collection(database, 'workmedias'), limit(9));
+        } else {
+            dbQuery = query(collection(database, 'workmedias'), where("category.value", "==",  this.getAttribute('category')), limit(9));
+        }
+
         const dbQueryResults = await getDocs(dbQuery);
         
         dbQueryResults.forEach(workmedia => {
