@@ -126,7 +126,7 @@ class TrdsWorkmedia extends TrdsElement{
             this.BeforeMedia = document.createElement('video', {is: 'trds-video'});
             this.BeforeMedia.setAttribute('preload', 'metadata');
             this.BeforeMedia.setAttribute('onplay', 'this.closest("trds-workmedia").onPlay(this)');
-            this.BeforeMedia.setAttribute('src', `${this.getAttribute('before-media-src')}#t=1`);
+            this.BeforeMedia.setAttribute('lazy-src', `${this.getAttribute('before-media-src')}#t=1`);
             this.BeforeMedia.setAttribute('controls', '');
             this.BeforeMedia.setAttribute('playsinline', '');
             this.BeforeMedia.setAttribute('muted', '');
@@ -145,7 +145,7 @@ class TrdsWorkmedia extends TrdsElement{
             this.AfterMedia = document.createElement('video', {is: 'trds-video'});
             this.AfterMedia.setAttribute('preload', 'metadata');
             this.AfterMedia.setAttribute('onplay', 'this.closest("trds-workmedia").onPlay(this)');
-            this.AfterMedia.setAttribute('src', `${this.getAttribute('after-media-src')}#t=1`);
+            this.AfterMedia.setAttribute('lazy-src', `${this.getAttribute('after-media-src')}#t=1`);
             this.AfterMedia.setAttribute('controls', '');
             this.AfterMedia.setAttribute('playsinline', '');
             this.AfterMedia.setAttribute('muted', '');
