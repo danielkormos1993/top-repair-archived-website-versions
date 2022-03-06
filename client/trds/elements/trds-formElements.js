@@ -5,6 +5,7 @@ TrdsElement.addStyle(`
     input,
     select{
         display: block;
+        width: 100%;
         max-width: var(--element--max-width);
         background-color: var(--color--secondary-bg);
         color: inherit;

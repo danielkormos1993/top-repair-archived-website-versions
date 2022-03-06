@@ -7,7 +7,7 @@ class WorkmediaCount extends HTMLElement{
     setCount = number => {
 
         this.innerHTML = `
-            <span>${number} találat</span>
+            <span style="font-weight: bold; font-style: italic; color: var(--color--secondary-text)">${number} találat</span>
         `;
 
     }

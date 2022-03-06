@@ -17,7 +17,7 @@ class WorkmediasLong extends HTMLElement{
         }
 
         this.innerHTML = `
-            <trds-stack>
+            <trds-stack style="gap:var(--space--s); margin-top: var(--space--xs)">
                 <workmedia-category-filter></workmedia-category-filter>
                 <workmedia-tags-filter></workmedia-tags-filter>
                 <workmedia-count></workmedia-count>

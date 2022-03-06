@@ -18,21 +18,25 @@ export default class WorkmediaTagsFilter extends HTMLElement{
             });
 
             this.innerHTML = `
-                <trds-stack style="gap: var(--space--s)">
-                    <label>Tagek</label>
-                    <trds-grid 
-                        class="auto-width-layout"
-                        style="max-width: var(--element--max-width)"
-                    >
-                        <trds-tag 
-                            id="show-all-tags"
-                            style="cursor: pointer"
-                        >Összes</trds-tag>
-                        ${this.tags.map(tag => {
-                            return `<trds-tag class="outline" style="cursor: pointer">${tag}</trds-tag>`
-                        }).join('')}
-                    </trds-grid>
-                </trds-stack>
+                <trds-drawer>
+                    <trds-drawer_toggler>
+                        <label>Tagek</label>
+                    </trds-drawer_toggler>
+                    <trds-drawer_drawer>
+                        <trds-grid 
+                                class="auto-width-layout"
+                                style="max-width: var(--element--max-width)"
+                            >
+                            <trds-tag 
+                                id="show-all-tags"
+                                style="cursor: pointer"
+                            >Összes</trds-tag>
+                            ${this.tags.map(tag => {
+                                return `<trds-tag class="outline" style="cursor: pointer">${tag}</trds-tag>`
+                            }).join('')}
+                        </trds-grid>
+                    </trds-drawer_drawer>
+                </trds-drawer>
             `;
 
             this.querySelectorAll('trds-tag').forEach(Tag => {

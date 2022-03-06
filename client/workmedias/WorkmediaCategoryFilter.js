@@ -6,16 +6,18 @@ class WorkmediaCategoryFilter extends HTMLElement{
         this.category = 'all';
 
         this.innerHTML = `
-            <trds-stack style="gap: var(--space--s)">
-                <label for="category-select">Kategória</label>
-                <select
-                    id="category-select"
-                >
+            <trds-drawer class="opened">
+                <trds-drawer_toggler>
+                    <label for="category-select">Kategória</label>
+                </trds-drawer_toggler>
+                <trds-drawer_drawer>
+                <select id="category-select">
                     <option value="all">Mind</option>
                     <option value="dent">Horpadás</option>
                     <option value="hail">Jégkár</option>
                 </select>
-            </trds-stack>
+                </trds-drawer_drawer>
+            </trds-drawer>
         `;
 
         this.querySelector('#category-select').addEventListener('change', e => {
