@@ -45,19 +45,6 @@ body.loading{
     visibility: hidden;
 }
 
-body:not(.loading){
-    animation: fadeIn .5s forwards;
-}
-
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 body.loading:before{
     content: '';
     display: block;
