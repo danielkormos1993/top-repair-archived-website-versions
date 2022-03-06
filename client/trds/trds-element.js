@@ -71,4 +71,4 @@ TrdsElement.addStyle(`
 
 `);
 
-window.addEventListener('load', () => document.body.style.visibility = 'visible');
+window.addEventListener('load', () => document.body.classList.remove('loading'));
