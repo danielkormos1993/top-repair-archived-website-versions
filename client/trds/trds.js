@@ -2026,7 +2026,7 @@ class TrdsWorkmedia extends TrdsElement{
             this.BeforeMedia.setAttribute('lazy-src', `${this.getAttribute('before-media-src')}#t=1`);
             this.BeforeMedia.setAttribute('controls', '');
             this.BeforeMedia.setAttribute('playsinline', '');
-            this.BeforeMedia.setAttribute('muted', '');
+            this.BeforeMedia.muted = true;
 
         }
 
@@ -2045,7 +2045,7 @@ class TrdsWorkmedia extends TrdsElement{
             this.AfterMedia.setAttribute('lazy-src', `${this.getAttribute('after-media-src')}#t=1`);
             this.AfterMedia.setAttribute('controls', '');
             this.AfterMedia.setAttribute('playsinline', '');
-            this.AfterMedia.setAttribute('muted', '');
+            this.AfterMedia.muted = true;
 
         }
 
