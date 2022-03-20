@@ -1,0 +1,4 @@
+TYPHOGRAPHY
+-------------
+text element -> use span, no imports needed
+paragraph element -> use p, import typhography/trds-paragraph

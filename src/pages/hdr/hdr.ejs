@@ -8,9 +8,11 @@
         <a is="trds-button--link" text="További munkáink" icon="solid/arrow-right" class="icon-on-right" href="/munkaink"></a>
     <trds-stack>
 </trds-section>
-<%- include('../../sections/faq.ejs') %>
-<script type="module">
-    import { initCategory } from '/cdn/js/category.js'; // port to websites cdn
-    initCategory(document.getElementById('faq-category'), 'hdr');
-</script>
+<trds-section>
+    <trds-stack>
+        <trds-title level="2" class="variant--1">Gyakran ismételt kérdések</trds-title>
+        <tr-faq category="hdr"></tr-faq>
+    </trds-stack>
+</trds-section>
+<script type="module" src="/modules/tr-faq.js"></script>
 <%- include('../../sections/contact.ejs') %>

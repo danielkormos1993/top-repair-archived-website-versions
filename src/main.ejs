@@ -2,8 +2,8 @@
 <html lang="hu">
 <head>
     <%- include('sections/head.ejs') %>
-    <link rel="stylesheet" href="/trds/tr-theme.css">
-    <script defer src="/trds/trds.js"></script>
+    <link rel="stylesheet" href="/modules/trds/tr-theme.css">
+    <script defer src="/modules/trds/trds.js"></script>
 </head>
 <body class="loading">
 
@@ -16,11 +16,11 @@
     <%- include('sections/footer.ejs') %>
 
     <% if(page.name === 'hdr' || page.name === 'pdr' || page.name === 'index'){ %>
-        <script type="module" src="/workmedias/dist/WorkmediasShortBundle.js"></script>
+        <script type="module" src="/modules/workmedias/dist/WorkmediasShortBundle.js"></script>
     <% } %>
 
     <% if(page.name === 'works'){ %>
-        <script type="module" src="/workmedias/dist/WorkmediasLongBundle.js"></script>
+        <script type="module" src="/modules/workmedias/dist/WorkmediasLongBundle.js"></script>
     <% } %>
     
 </body>

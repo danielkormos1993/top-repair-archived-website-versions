@@ -17,8 +17,8 @@
 <meta property="og:title" content="Jégkár javítás mesterfokon" />
 <meta property="og:description" content="Jégkár javítás fényezés nélküli technológiával. Autóját, flottáját, kereskedését rövid határidővel jégkár mentesítjük. CASCO-s jégkár javítás ügyintézés." />
 <meta property="og:image" content="https://toprepair.hu/cdn/images/herobg.jpg" />
-    <link rel="stylesheet" href="/trds/tr-theme.css">
-    <script defer src="/trds/trds.js"></script>
+    <link rel="stylesheet" href="/modules/trds/tr-theme.css">
+    <script defer src="/modules/trds/trds.js"></script>
 </head>
 <body class="loading">
 
@@ -31,7 +31,7 @@
         color: var(--color--secondary-text);
     }
 </style>
-<trds-header logo-src="/cdn/images/logo544x170.png">
+<trds-header logo-src="/media/images/logo544x170.png">
     <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
     <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
     <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
@@ -50,7 +50,7 @@
             <p>Jégeső során a szabad ég alatt tartozkodó autón akár több száz, több ezer kisebb horpadás is keletkezhet. A jégkár mértékétől függően, az esetek nagy részében visszaállítható az autó karosszériája gyári állapotra fényezés nélküli technológiánk segítségével. Technikusaink hatalmas szenvedéllyel és a legkorszerűbb jégkár javító eszközökkel varázsolják az autókat teljesen horpadás mentessé, mintha mi sem történt volna.</p>
         </trds-stack>
         <div>
-            <video is="trds-video" src="/cdn/works/hdr/bmwjegkar.mp4" controls loop autoplay muted playsinline></video>
+            <video is="trds-video" src="/media/videos/bmwjegkar.mp4" controls loop autoplay muted playsinline></video>
         </div>
     </trds-grid>
 </trds-section>
@@ -122,7 +122,7 @@
                     <trds-card_body>
                         <trds-stack>
                             <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
-                                <trds-image src="/cdn/images/reviews/review_2_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <trds-image src="/media/images/reviews/review_2_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
                                 <span>Zoltán Szabó E.V.</span>
                             </trds-grid>
                             <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
@@ -141,7 +141,7 @@
                     <trds-card_body>
                         <trds-stack>
                             <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
-                                <trds-image src="/cdn/images/reviews/review_3_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <trds-image src="/media/images/reviews/review_3_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
                                 <span>papppi88</span>
                             </trds-grid>
                             <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
@@ -160,7 +160,7 @@
                     <trds-card_body>
                         <trds-stack>
                             <trds-grid class="auto-width-layout" style="gap:var(--space--m)">
-                                <trds-image src="/cdn/images/reviews/review_1_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
+                                <trds-image src="/media/images/reviews/review_1_profileImg.png" lazy aspect-ratio="1 1" style="width:3.5rem" alt="Google felhasználó profilképe"></trds-image>
                                 <span>Neumann Zsolti</span>
                             </trds-grid>
                             <trds-grid class="auto-width-layout" style="color: var(--color--warning);">
@@ -188,43 +188,10 @@
 <trds-section>
     <trds-stack>
         <trds-title level="2" class="variant--1">Gyakran ismételt kérdések</trds-title>
-        <form>
-            <trds-stack style="gap:var(--space--xs)">
-                <label for="faq-category">Kategória</label>
-                <select
-                    name="faq-category"
-                    id="faq-category"
-                    category-target="faq_category_target"
-                    category-data-url="/cdn/data/faq.json"
-                >
-                    <option value="all">Mind</option>
-                    <option value="common">Általános kérdések</option>
-                    <option value="pdr">Horpadás javítás</option>
-                    <option value="hdr">Jégkár javítás</option>
-                </select>
-            </trds-stack>
-        </form>
-        <trds-grid id="faq_category_target" class="boxes-layout"></trds-grid>
+        <tr-faq category="hdr"></tr-faq>
     </trds-stack>
-    <script>
-
-        document.getElementById('faq-category').viewTemplate = `
-            <trds-card>
-                <trds-card_body>
-                    <trds-stack >
-                        <trds-title level="3">{{question}}</trds-title>
-                        <p style="color:var(--color--secondary-text)" class="size--s">{{answer}}</p>
-                    </trds-stack>
-                </trds-card_body>
-            </trds-card>
-        `;
-
-    </script>
 </trds-section>
-<script type="module">
-    import { initCategory } from '/cdn/js/category.js'; // port to websites cdn
-    initCategory(document.getElementById('faq-category'), 'hdr');
-</script>
+<script type="module" src="/modules/tr-faq.js"></script>
 
 
 <style>
@@ -320,7 +287,7 @@
 </trds-footer>
 
     
-        <script type="module" src="/workmedias/dist/WorkmediasShortBundle.js"></script>
+        <script type="module" src="/modules/workmedias/dist/WorkmediasShortBundle.js"></script>
     
 
     

@@ -1,0 +1,16 @@
+{
+  "name": "workmedias",
+  "version": "1.0.0",
+  "description": "",
+  "main": "WorkmediaCategoryFilter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
