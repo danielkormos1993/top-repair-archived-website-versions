@@ -54,7 +54,7 @@ TrdsElement.addStyle(`
     trds-modal_header trds-icon{
         flex-shrink: 0;
     }
-    trds-modal_header trds-heading{
+    trds-modal_header trds-title{
         text-transform: uppercase;
         margin-right: var(--space--m);
         letter-spacing: 2px;
@@ -68,7 +68,7 @@ const TrdsModalTemplate = document.createElement('template');
 TrdsModalTemplate.innerHTML = `
     <trds-modal_container>
         <trds-modal_header>
-            <trds-heading level="2"></trds-heading>
+            <trds-title level="2"></trds-title>
             <trds-icon icon="solid/times" onclick="this.closest('trds-modal').close()"></trds-icon>
         </trds-modal_header>
         <trds-modal_body>
@@ -111,9 +111,22 @@ class TrdsModal extends TrdsElement{
         if(currentModal) currentModal.close();
         
         this.classList.add('show');
+
+        window.addEventListener('click', this.outsideClick);
+
     }
 
-    close = () => this.classList.remove('show');
+    close = () => {
+        this.classList.remove('show');
+        window.removeEventListener('click', this.outsideClick);
+    }
+
+    outsideClick = e => {
+
+        if(e.target.matches('trds-modal'))
+            this.close();
+
+    }
     
 }
 
