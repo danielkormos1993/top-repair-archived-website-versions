@@ -9,7 +9,6 @@ export default class TrdsElementV2 extends HTMLElement{
             StyleTag.textContent = this.styles();
             document.head.appendChild(StyleTag);
 
-
         }
 
         if(!this.rendered){
@@ -22,6 +21,13 @@ export default class TrdsElementV2 extends HTMLElement{
     render(){
 
         this.innerHTML = this.template();
+        this.afterRender();
+
+    }
+
+    afterRender(){
+
+        return;
 
     }
 

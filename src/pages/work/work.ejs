@@ -1,0 +1,43 @@
+<script type="module">
+
+    import { database } from "/modules/workmedias/src/firebase.js";
+    import { doc, getDoc } from "/modules/workmedias/src/firebase-firestore.js";
+
+    const params = new URLSearchParams(location.search);
+    const id = params.get('id');
+
+    if(!id) console.log('no id provided!');
+    else{
+
+        const docRef = doc(database, "workmedias", id);
+
+        (async() => {
+
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()){
+
+                const workmedia = docSnap.data();
+
+                document.body.querySelector('main').innerHTML = `
+                    <trds-section>
+                        <trds-workmedia
+                            before-media-type="${workmedia.beforeMediaType}"
+                            before-media-src="${workmedia.beforeMediaUrl}"
+                            after-media-type="${workmedia.afterMediaType}"
+                            after-media-src="${workmedia.afterMediaUrl}"
+                            category="${workmedia.category.label}"
+                            tags="${workmedia.tags}"
+                        ></trds-workmedia>
+                    </trds-section>
+                `;
+     
+            } else {
+                console.log("No such document!");
+            }
+
+        })();
+
+    }
+
+</script>
