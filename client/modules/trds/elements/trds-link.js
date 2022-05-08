@@ -16,7 +16,7 @@ TrdsElement.addStyle(`
     a[is="trds-link"]:hover,
     a[is="trds-link"]:active,
     a[is="trds-link"]:focus{
-        filter: brightness(125%);
+        filter: brightness(150%);
     }
 
     a[is="trds-link"].text{

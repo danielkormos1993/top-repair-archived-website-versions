@@ -58,6 +58,10 @@ TrdsElement.addStyle(`
         opacity: 0;
     }
 
+    trds-title.variant--1.workmedia_title .trds-title_tag{
+        font-size: var(--size--s);
+    }
+
 `);
 
 const TrdsWorkmediaTemplate = document.createElement('template');
@@ -75,22 +79,20 @@ TrdsWorkmediaTemplate.innerHTML = `
             <button 
                 is="trds-button"
                 text="Előtte"
-                onclick="this.closest('trds-workmedia').toggleBefore()"
             ></button>
             <button 
                 is="trds-button"
                 class="outline"
                 text="Utána"
-                onclick="this.closest('trds-workmedia').toggleAfter()"
             ></button>
         </trds-grid>
         <trds-stack>
             <trds-stack style="gap:var(--space--xs)">
-                <trds-title level="2" class="variant--1" style="font-weight: normal;">Kategória</trds-title>
+                <trds-title level="2" class="variant--1 workmedia_title" style="font-weight: normal;">Kategória</trds-title>
                 <span class="size--xl category" style="font-weight: bold"></span>
             </trds-stack>
             <trds-stack style="gap:var(--space--xs)">
-                <trds-title level="2" class="variant--1" style="font-weight: normal; margin-bottom: var(--space--xs)">Címkék</trds-title>
+                <trds-title level="2" class="variant--1 workmedia_title" style="font-weight: normal; margin-bottom: var(--space--xs)">Címkék</trds-title>
                 <trds-grid class="auto-width-layout tags-grid"></trds-grid>
             </trds-stack>
         </trds-stack>
@@ -107,6 +109,14 @@ class TrdsWorkmedia extends TrdsElement{
         this.BeforeToggler = this.template.querySelector('button[text="Előtte"]');
         this.AfterToggler = this.template.querySelector('button[text="Utána"]');
 
+        this.BeforeToggler.addEventListener('click', () => {
+            this.toggleBefore();
+        });
+
+        this.AfterToggler.addEventListener('click', () => {
+            this.toggleAfter();
+        });
+
     }
 
     render(){
@@ -120,6 +130,10 @@ class TrdsWorkmedia extends TrdsElement{
             this.BeforeMedia.setAttribute('alt', 'Javítás előtt');
             this.BeforeMedia.setAttribute('lazy', '');
             this.BeforeMedia.setAttribute('src', this.getAttribute('before-media-src'));
+
+            this.BeforeMedia.addEventListener('click', () => {
+                this.toggleAfter();
+            });
 
         } else {
 
@@ -139,6 +153,10 @@ class TrdsWorkmedia extends TrdsElement{
             this.AfterMedia.setAttribute('alt', 'Javítás után');
             this.AfterMedia.setAttribute('lazy', '');
             this.AfterMedia.setAttribute('src', this.getAttribute('after-media-src'));
+
+            this.AfterMedia.addEventListener('click', () => {
+                this.toggleBefore();
+            });
 
         } else {
 

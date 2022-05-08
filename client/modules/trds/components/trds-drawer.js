@@ -37,7 +37,9 @@ TrdsElement.addStyle(`
     trds-drawer_drawer{
         display: block;
         height: 0;
+        box-sizing: border-box;
         overflow: hidden;
+        margin-bottom: var(--space--s);
     }
 
     trds-drawer.opened trds-drawer_drawer{
