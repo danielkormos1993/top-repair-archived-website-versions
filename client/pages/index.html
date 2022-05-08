@@ -19,6 +19,11 @@
 <meta property="og:image" content="https://toprepair.hu/media/images/backgrounds/herobg.jpg" />
     <link rel="stylesheet" href="/modules/trds/tr-theme.css">
     <script defer src="/modules/trds/trds.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
 </head>
 <body class="loading">
 
@@ -32,13 +37,13 @@
     }
 </style>
 <trds-header logo-src="/media/images/logo544x170.png">
-    <a 
+    <!-- <a 
         is="trds-link"
         class="text"
         href="javascript:void(0)"
         onclick="document.getElementById('fontosinfo').show()">
         Fontos információ
-    </a>
+    </a> -->
     <a is="trds-link" class="text" href="/jegkarjavitas">Jégkár javítás</a>
     <a is="trds-link" class="text" href="/horpadasjavitas">Horpadás javítás</a>
     <a is="trds-link" class="text" href="/pdrtechnologia">A technológia</a>
@@ -54,9 +59,11 @@
     style="
         --bg-image-src: url('/media/images/backgrounds/herobg.webp');
         background-position:85% center;
-        --bg-image-overlay: rgb(75,75,75)">
+        --bg-image-overlay: rgb(75,75,75);
+        padding-top: 6rem;
+        padding-bottom: 6rem;">
     <trds-stack style="gap:var(--space--s)">
-        <trds-title style="max-width: 30rem">Jégkár és horpadás javítás mesterfokon.</trds-title>
+        <trds-title style="max-width: 31rem">Jégkár és horpadás javítás mesterfokon.</trds-title>
         <p style="color:var(--color--secondary-text); margin-bottom: var(--space--s); max-width: 27rem;">A gyárban kapott fényezés egyszeri és pótolhatatlan. Mi ennek megtartásával javítjuk a horpadásokat.</p>
         <a is="trds-button--link" class="call" number="+36 70 593 9393"></a>
     </trds-stack>

@@ -86,11 +86,11 @@ TrdsWorkmediaTemplate.innerHTML = `
         </trds-grid>
         <trds-stack>
             <trds-stack style="gap:var(--space--xs)">
-                <trds-title level="2" class="variant--1">Kategória</trds-title>
+                <trds-title level="2" class="variant--1" style="font-weight: normal;">Kategória</trds-title>
                 <span class="size--xl category" style="font-weight: bold"></span>
             </trds-stack>
             <trds-stack style="gap:var(--space--xs)">
-                <trds-title level="2" class="variant--1">Tagek</trds-title>
+                <trds-title level="2" class="variant--1" style="font-weight: normal; margin-bottom: var(--space--xs)">Címkék</trds-title>
                 <trds-grid class="auto-width-layout tags-grid"></trds-grid>
             </trds-stack>
         </trds-stack>

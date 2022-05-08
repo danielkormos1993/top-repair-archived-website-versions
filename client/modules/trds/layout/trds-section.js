@@ -12,6 +12,7 @@ TrdsElement.addStyle(`
     trds-section{
         display: block;
         padding: var(--space--xxl) 0;
+        box-sizing: border-box;
     }
 
     trds-section:last-child{

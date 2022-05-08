@@ -20,7 +20,7 @@ export default class WorkmediaTagsFilter extends HTMLElement{
             this.innerHTML = `
                 <trds-drawer>
                     <trds-drawer_toggler>
-                        <label>Tagek</label>
+                        <label>Címkék</label>
                     </trds-drawer_toggler>
                     <trds-drawer_drawer>
                         <trds-grid 
