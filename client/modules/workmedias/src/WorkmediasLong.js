@@ -11,6 +11,7 @@ class WorkmediasLong extends HTMLElement{
         super();
 
         this.workmedias = [];
+
         this.filterState = {
             tags: 'all',
             category: 'all'

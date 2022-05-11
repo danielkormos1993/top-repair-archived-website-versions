@@ -26,3 +26,4 @@ workmedias todos(for the sort version)(createad at 2022.05.08)
 1. when image is the active slide enable swtich by click DONE 2022.05.08
 2. category and tag title -> lower the font size DONE 2022.05.08
 3. click on tag will fire work page with active tags
+4. shareable workmedias
