@@ -8,9 +8,7 @@ class WorkmediasModule extends HTMLElement{
         super();
 
         this.perPage = 9;
-        this.currentPage = 1;
-
-        this.workmedias = [];
+        this.dbQuery = query(collection(database, "workmedias"), orderBy("createdAt", "desc"), limit(this.perPage));
 
         this.innerHTML = `
             <trds-stack>
@@ -18,39 +16,45 @@ class WorkmediasModule extends HTMLElement{
                 <button is="trds-button" text="Következő ${this.perPage} munka" icon="solid/arrow-right" class="icon-on-right" id="workmedia-list_more-button"></button>
             </trds-stack>
         `;
-
         this.WorkmediasList = this.querySelector('workmedias-list');
         this.MoreButton = this.querySelector('#workmedia-list_more-button');
 
+        this.getWorkmedias();
+
         this.MoreButton.addEventListener('click', () => {
 
-            this.showMore();
+            this.getMoreWorkmedias();
 
         });
  
-        this.getWorkmedias(this.currentPage);
-
     }
 
-    getWorkmedias = async (currentPage) => {
+    getWorkmedias = async () => {
 
-        const dbQuery = query(collection(database, 'workmedias'), orderBy("createdAt", "desc"), startAfter((currentPage-1)*this.perPage), limit(this.perPage));
-        const dbQueryResults = await getDocs(dbQuery);
+        const dbQueryResults = await getDocs(this.dbQuery);
+
+        this.lastVisible = dbQueryResults.docs[dbQueryResults.docs.length - 1];
+    
         
         dbQueryResults.forEach(workmedia => {
             this.workmedias.push({...workmedia.data()})
         });
 
-        console.log(dbQueryResults);
-
         this.WorkmediasList.render(this.workmedias);
 
     }
 
-    showMore = () => {
+    getMoreWorkmedias = async () => {
 
-        this.currentPage = this.currentPage + 1;
-        this.getWorkmedias(this.currentPage);
+        if(this.currentPage === 1){
+
+            this.dbQuery = query(this.baseDbQuery, limit(this.perPage));
+
+        } else {
+
+            this.dbQuery = query(this.db, orderBy("createdAt", "desc"), startAfter(this.lastVisible), limit(this.perPage));
+
+        }
 
     }
 
